@@ -52,7 +52,8 @@ public class ShopUI : MonoBehaviour {
         { PerkType.BattlePace, "Боевой темп" },
         { PerkType.DoubleHit,  "Двойной удар" },
         { PerkType.Amulet,     "Амулет" },
-        { PerkType.FireRing,   "Огненный круг" }
+        { PerkType.FireRing,   "Огненный круг" },
+        { PerkType.Orda,       "Орда" }
     };
 
     private static readonly Dictionary<PerkType, string> perkDescs = new()
@@ -71,7 +72,8 @@ public class ShopUI : MonoBehaviour {
         { PerkType.BattlePace, "+20% к скорости атаки" },
         { PerkType.DoubleHit,  "35% шанс нанести двойной удар" },
         { PerkType.Amulet,     "Враги замедляются на 20%" },
-        { PerkType.FireRing,   "Огненный круг вокруг тебя" }
+        { PerkType.FireRing,   "Огненный круг вокруг тебя" },
+        { PerkType.Orda,       "Призывает мини-дракона" }
     };
 
     void Start()
@@ -180,8 +182,8 @@ public class ShopUI : MonoBehaviour {
         if (pm == null) return;
 
         float damage = 15f * pm.damageMultiplier;
-        float speed = 6f * pm.speedMultiplier;
-        float attackSpeed = 0.4f / pm.attackSpeedMultiplier;
+        float speed = 5f * pm.speedMultiplier;
+        float attackSpeed = 0.6f / pm.attackSpeedMultiplier;
 
         if (damageText != null)
             damageText.text = $"{damage:F0}";

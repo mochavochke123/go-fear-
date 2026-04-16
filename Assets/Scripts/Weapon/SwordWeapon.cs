@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class SwordWeapon : MonoBehaviour {
@@ -151,9 +151,10 @@ public class SwordWeapon : MonoBehaviour {
                 var dasher = col.GetComponent<DasherAI>();
                 if (dasher != null)
                 {
-                    dasher.TakeDamage(damage);
+                    float dasherDamage = pm != null ? pm.GetDasherPiercingDamage(dasher, damage) : damage;
+                    dasher.TakeDamage(dasherDamage);
                     
-                    Debug.Log($"💥 {col.gameObject.name} получил {damage} урона!");
+                    Debug.Log($"💥 {col.gameObject.name} получил {dasherDamage} урона!");
                 }
             }
         }
@@ -180,8 +181,21 @@ public class SwordWeapon : MonoBehaviour {
             foreach (var col in hits)
             {
                 if (col.CompareTag("Player")) continue;
-                col.GetComponent<EnemyAI>()?.TakeDamage(damage);
-                col.GetComponent<DasherAI>()?.TakeDamage(damage);
+
+                var enemy = col.GetComponent<EnemyAI>();
+                if (enemy != null)
+                {
+                    float finalDamage = pm != null ? pm.GetPiercingDamage(enemy, damage) : damage;
+                    enemy.TakeDamage(finalDamage);
+                    continue;
+                }
+
+                var dasher = col.GetComponent<DasherAI>();
+                if (dasher != null)
+                {
+                    float finalDamage = pm != null ? pm.GetDasherPiercingDamage(dasher, damage) : damage;
+                    dasher.TakeDamage(finalDamage);
+                }
             }
         }
     }

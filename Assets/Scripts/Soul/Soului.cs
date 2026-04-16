@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
@@ -10,13 +10,14 @@ public class SoulUI : MonoBehaviour {
 
     private void Start()
     {
-        // Если не назначены - ищем по имени
         if (soulCountText == null)
         {
             GameObject soulCountObj = GameObject.Find("SoulCountText");
             if (soulCountObj != null)
                 soulCountText = soulCountObj.GetComponent<TextMeshProUGUI>();
         }
+
+        totalSouls = 20;
 
         Debug.Log($"🔍 SoulUI инициализирован. SoulCountText найден: {soulCountText != null}");
         UpdateDisplay();

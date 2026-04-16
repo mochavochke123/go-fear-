@@ -170,14 +170,30 @@ public class EnemyAI : MonoBehaviour {
 
     private void MoveToPlayer()
     {
+        if (rb == null) return;
+
         var pm = PassiveItemManager.Instance;
-        float speed = moveSpeed * (pm?.enemySlowMultiplier ?? 1f); // Амулет
+        float speed = moveSpeed * (pm?.enemySlowMultiplier ?? 1f);
 
         Vector3 direction = (player.position - transform.position).normalized;
-        transform.position += direction * speed * Time.deltaTime;
+        rb.velocity = direction * speed;
 
         if (spriteRenderer != null)
             spriteRenderer.flipX = direction.x < 0;
+    }
+
+    private Rigidbody2D rb;
+    private void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        if (rb == null)
+        {
+            rb = gameObject.AddComponent<Rigidbody2D>();
+        }
+        rb.bodyType = RigidbodyType2D.Dynamic;
+        rb.freezeRotation = true;
+        rb.gravityScale = 0f;
+        rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
     }
 
     private void AttackPlayer()

@@ -27,8 +27,14 @@ public class LevelGenerator : MonoBehaviour {
 
     private void BuildSequence()
     {
+        Debug.Log($"[LevelGenerator] room02Variants count: {room02Variants?.Length ?? -1}");
+        Debug.Log($"[LevelGenerator] room03Variants count: {room03Variants?.Length ?? -1}");
+
         GameObject room02 = PickRandom(room02Variants, room02Variants[0]);
         GameObject room03 = PickRandom(room03Variants, room03Variants[0]);
+
+        Debug.Log($"[LevelGenerator] room02 selected: {room02?.name ?? "NULL"}");
+        Debug.Log($"[LevelGenerator] room03 selected: {room03?.name ?? "NULL"}");
 
         sequence = new GameObject[]
         {

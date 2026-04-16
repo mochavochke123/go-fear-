@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections.Generic;
 
 public enum PerkType {
@@ -16,7 +16,8 @@ public enum PerkType {
     BattlePace,     // Боевой темп
     DoubleHit,      // Двойной удар
     Amulet,         // Амулет
-    FireRing        // Огненный круг
+    FireRing,       // Огненный круг
+    Orda            // Орда
 }
 
 public class PassiveItemManager : MonoBehaviour {
@@ -28,6 +29,7 @@ public class PassiveItemManager : MonoBehaviour {
     public PlayerHealth playerHealth;
     public SwordWeapon swordWeapon;
     public GameObject fireRingPrefab;
+    public GameObject minionPrefab;
 
     // Статы модифицированные перками
     [HideInInspector] public float damageMultiplier = 1f;
@@ -45,7 +47,10 @@ public class PassiveItemManager : MonoBehaviour {
     [HideInInspector] public float reflectionMultiplier = 0f;
 
     private HashSet<EnemyAI> piercedEnemies = new HashSet<EnemyAI>();
+    private HashSet<DasherAI> piercedDashers = new HashSet<DasherAI>();
     private List<GameObject> fireRings = new List<GameObject>();
+    private List<GameObject> minions = new List<GameObject>();
+    private int ordaCount = 0;
 
     void Awake()
     {
@@ -58,6 +63,7 @@ public class PassiveItemManager : MonoBehaviour {
     public void ClearPiercedEnemies()
     {
         piercedEnemies.Clear();
+        piercedDashers.Clear();
     }
 
     public bool ApplyPerk(PerkType perk)
@@ -118,9 +124,15 @@ public class PassiveItemManager : MonoBehaviour {
                     fireRings.Add(ring);
                 }
                 break;
+            case PerkType.Orda:
+                SpawnOrda();
+                break;
         }
 
         Debug.Log($"[PassiveItemManager] Получен перк: {perk}");
+
+        FindObjectOfType<OwnedPerksUI>()?.OnPerkAdded(perk);
+
         return true;
     }
 
@@ -142,7 +154,7 @@ public class PassiveItemManager : MonoBehaviour {
     {
         if (reflectionMultiplier <= 0) return;
         float reflectDamage = damage * reflectionMultiplier;
-        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, 8f);
+        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, 12f);
         foreach (var col in hits)
         {
             col.GetComponent<EnemyAI>()?.TakeDamage(reflectDamage);
@@ -153,12 +165,21 @@ public class PassiveItemManager : MonoBehaviour {
     // Вызывается из SwordWeapon при атаке
     public bool TryDoubleHit() => doubleHitChance > 0 && Random.value < doubleHitChance;
 
-    // Пронзание — первый удар по врагу
+    // Пронзание — первый удар по врагу (EnemyAI)
     public float GetPiercingDamage(EnemyAI enemy, float baseDamage)
     {
         if (!piercingActive) return baseDamage;
         if (piercedEnemies.Contains(enemy)) return baseDamage;
         piercedEnemies.Add(enemy);
+        return baseDamage * 1.5f;
+    }
+
+    // Пронзание — первый удар по врагу (DasherAI)
+    public float GetDasherPiercingDamage(DasherAI dasher, float baseDamage)
+    {
+        if (!piercingActive) return baseDamage;
+        if (piercedDashers.Contains(dasher)) return baseDamage;
+        piercedDashers.Add(dasher);
         return baseDamage * 1.5f;
     }
     private void OnDestroy()
@@ -168,5 +189,40 @@ public class PassiveItemManager : MonoBehaviour {
             if (ring != null) Destroy(ring);
         }
         fireRings.Clear();
+
+        foreach (var minion in minions)
+        {
+            if (minion != null) Destroy(minion);
+        }
+        minions.Clear();
+    }
+
+    private void SpawnOrda()
+    {
+        if (minionPrefab == null)
+        {
+            Debug.LogError("[PassiveItemManager] minionPrefab не назначен!");
+            return;
+        }
+
+        Vector3 pos = transform.position;
+        pos.x += Random.Range(-1f, 1f);
+        pos.y += Random.Range(-1f, 1f);
+
+        GameObject minion = Instantiate(minionPrefab, pos, Quaternion.identity);
+        minions.Add(minion);
+        ordaCount++;
+
+        Debug.Log($"[PassiveItemManager] Орда! Дракон #{ordaCount} заспавнен!");
+    }
+
+    public void RemoveMinion(GameObject minion)
+    {
+        minions.Remove(minion);
+    }
+
+    public void AddMinion(GameObject minion)
+    {
+        minions.Add(minion);
     }
 }  // ← это последняя скобка класса

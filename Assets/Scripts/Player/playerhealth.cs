@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class PlayerHealth : MonoBehaviour {
@@ -86,7 +86,7 @@ public class PlayerHealth : MonoBehaviour {
     {
         isDead = true;
         Debug.Log($"💀 Игрок умер!");
-        Time.timeScale = 0;
+        GameReset.Instance?.ShowDeathScreen();
     }
 
     public float GetHealth() => currentHealth;

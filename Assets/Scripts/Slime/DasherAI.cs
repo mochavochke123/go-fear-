@@ -2,19 +2,19 @@ using UnityEngine;
 using System.Collections;
 
 public class DasherAI : MonoBehaviour {
-    [Header("Здоровье")]
+    [Header("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ")]
     [SerializeField] private float maxHealth = 20f;
     private float currentHealth;
     private bool isDead = false;
 
-    [Header("Движение")]
+    [Header("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ")]
     [SerializeField] private float moveSpeed = 3f;
     [SerializeField] private float dashSpeed = 10f;
     [SerializeField] private float dashDuration = 0.15f;
     [SerializeField] private float dashCooldown = 3f;
     [SerializeField] private float dashTowardChance = 0.7f;
 
-    [Header("Атака")]
+    [Header("пїЅпїЅпїЅпїЅпїЅ")]
     [SerializeField] private float attackRange = 1.2f;
     [SerializeField] private float attackDamage = 1f;
     [SerializeField] private float attackCooldown = 1.2f;
@@ -71,10 +71,35 @@ public class DasherAI : MonoBehaviour {
             }
             else if (dist > attackRange)
             {
-                Vector3 dir = (player.position - transform.position).normalized;
-                transform.position += dir * moveSpeed * Time.deltaTime;
+                MoveTowardsPlayer();
             }
         }
+        else
+        {
+            if (rb != null) rb.velocity = Vector2.zero;
+        }
+    }
+
+    private void MoveTowardsPlayer()
+    {
+        if (rb == null) return;
+
+        Vector3 dir = (player.position - transform.position).normalized;
+        rb.velocity = dir * moveSpeed;
+    }
+
+    private Rigidbody2D rb;
+    private void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        if (rb == null)
+        {
+            rb = gameObject.AddComponent<Rigidbody2D>();
+        }
+        rb.bodyType = RigidbodyType2D.Dynamic;
+        rb.freezeRotation = true;
+        rb.gravityScale = 0f;
+        rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
     }
 
     private IEnumerator Dash(bool toward)
