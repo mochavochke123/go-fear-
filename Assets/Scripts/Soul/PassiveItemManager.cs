@@ -42,6 +42,9 @@ public class PassiveItemManager : MonoBehaviour {
     [HideInInspector] public float dodgeChance = 0f;
     [HideInInspector] public float cursedSoulChance = 0f;
     [HideInInspector] public float vampirismChance = 0f;
+    [Header("Vampirism Settings")]
+    public float vampirismHealAmount = 0.5f;
+    public GameObject vampirismParticlePrefab;
     [HideInInspector] public float doubleHitChance = 0f;
     [HideInInspector] public bool piercingActive = false;
     [HideInInspector] public float reflectionMultiplier = 0f;
@@ -74,10 +77,10 @@ public class PassiveItemManager : MonoBehaviour {
         switch (perk)
         {
             case PerkType.Dodge:
-                dodgeChance += 0.25f;
+                dodgeChance += 0.19f;
                 break;
             case PerkType.Horror:
-                enemyHealthMultiplier *= 0.88f;
+                enemyHealthMultiplier *= 0.85f;
                 break;
             case PerkType.Power:
                 damageMultiplier *= 1.2f;
@@ -87,10 +90,11 @@ public class PassiveItemManager : MonoBehaviour {
                 break;
             case PerkType.NutrFood:
                 playerHealth?.AddMaxHP(1);
+                FindObjectOfType<Healthcontainer>()?.AddHeartContainer();
                 damageMultiplier *= 1.1f;
                 break;
             case PerkType.CursedSoul:
-                cursedSoulChance += 0.25f;
+                cursedSoulChance += 0.6f;
                 break;
             case PerkType.BigSize:
                 weaponSizeMultiplier *= 1.2f;
@@ -103,16 +107,17 @@ public class PassiveItemManager : MonoBehaviour {
                 break;
             case PerkType.Vitality:
                 playerHealth?.AddMaxHP(1);
-                speedMultiplier *= 1.1f;
+                FindObjectOfType<Healthcontainer>()?.AddHeartContainer();
+                speedMultiplier *= 1.15f;
                 break;
             case PerkType.Vampirism:
-                vampirismChance += 0.15f;
+                vampirismChance += 0.175f;
                 break;
             case PerkType.BattlePace:
-                attackSpeedMultiplier *= 1.2f;
+                attackSpeedMultiplier *= 1.25f;
                 break;
             case PerkType.DoubleHit:
-                doubleHitChance += 0.35f;
+                doubleHitChance += 0.25f;
                 break;
             case PerkType.Amulet:
                 enemySlowMultiplier = 0.8f;
@@ -129,8 +134,6 @@ public class PassiveItemManager : MonoBehaviour {
                 break;
         }
 
-        Debug.Log($"[PassiveItemManager] Получен перк: {perk}");
-
         FindObjectOfType<OwnedPerksUI>()?.OnPerkAdded(perk);
 
         return true;
@@ -140,10 +143,32 @@ public class PassiveItemManager : MonoBehaviour {
     public void OnEnemyKilled(GameObject enemy)
     {
         if (vampirismChance > 0 && Random.value < vampirismChance)
-            playerHealth?.Heal(1);
+        {
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            player?.GetComponent<PlayerHealth>()?.Heal(vampirismHealAmount);
+
+            SpawnVampirismEffect(enemy.transform.position);
+        }
 
         if (cursedSoulChance > 0 && Random.value < cursedSoulChance)
             FindObjectOfType<SoulUI>()?.AddSouls(1);
+    }
+
+    private void SpawnVampirismEffect(Vector3 enemyPos)
+    {
+        if (vampirismParticlePrefab != null)
+        {
+            Instantiate(vampirismParticlePrefab, enemyPos, Quaternion.identity);
+        }
+        else
+        {
+            GameObject particle = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+            particle.transform.position = enemyPos;
+            particle.transform.localScale = new Vector3(0.3f, 0.3f, 0.3f);
+            particle.GetComponent<Renderer>().material.color = Color.red;
+            Destroy(particle.GetComponent<Collider>());
+            particle.AddComponent<VampirismParticle>();
+        }
     }
 
     // Вызывается из PlayerHealth.TakeDamage()
@@ -200,10 +225,7 @@ public class PassiveItemManager : MonoBehaviour {
     private void SpawnOrda()
     {
         if (minionPrefab == null)
-        {
-            Debug.LogError("[PassiveItemManager] minionPrefab не назначен!");
             return;
-        }
 
         Vector3 pos = transform.position;
         pos.x += Random.Range(-1f, 1f);
@@ -212,8 +234,6 @@ public class PassiveItemManager : MonoBehaviour {
         GameObject minion = Instantiate(minionPrefab, pos, Quaternion.identity);
         minions.Add(minion);
         ordaCount++;
-
-        Debug.Log($"[PassiveItemManager] Орда! Дракон #{ordaCount} заспавнен!");
     }
 
     public void RemoveMinion(GameObject minion)
@@ -225,4 +245,4 @@ public class PassiveItemManager : MonoBehaviour {
     {
         minions.Add(minion);
     }
-}  // ← это последняя скобка класса
+}

@@ -80,12 +80,8 @@ public class EnemyAI : MonoBehaviour {
         if (spriteRenderer == null)
             yield break;
 
-        // Белая вспышка - очень яркая чтобы видно было
         spriteRenderer.color = Color.white;
-        Debug.Log($"✨✨✨ {gameObject.name} БЕЛАЯ ВСПЫШКА ✨✨✨");
-
         yield return new WaitForSeconds(0.25f);
-
         spriteRenderer.color = originalColor;
     }
 

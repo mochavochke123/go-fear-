@@ -1,14 +1,14 @@
 using UnityEngine;
 
 public class RoomEnemySpawner : MonoBehaviour {
-    [Header("Враги")]
+    [Header("Enemies")]
     public GameObject[] enemyPrefabs;
 
-    [Header("Сколько спавнить")]
+    [Header("Spawn Count")]
     public int minEnemies = 2;
     public int maxEnemies = 4;
 
-    [Header("Зона спавна (задай размер комнаты)")]
+    [Header("Spawn Area")]
     public Vector2 spawnAreaSize = new Vector2(8f, 8f);
     public Vector2 spawnAreaOffset = Vector2.zero;
 
@@ -20,10 +20,7 @@ public class RoomEnemySpawner : MonoBehaviour {
     private void SpawnEnemies()
     {
         if (enemyPrefabs == null || enemyPrefabs.Length == 0)
-        {
-            Debug.LogWarning("[RoomEnemySpawner] Нет префабов врагов!");
             return;
-        }
 
         int count = Random.Range(minEnemies, maxEnemies + 1);
 
@@ -44,8 +41,6 @@ public class RoomEnemySpawner : MonoBehaviour {
             GameObject enemy = enemyPrefabs[Random.Range(0, enemyPrefabs.Length)];
             Instantiate(enemy, spawnPos, Quaternion.identity, parent);
         }
-
-        Debug.Log($"[RoomEnemySpawner] Заспавнено врагов: {count}");
     }
 
     private void OnDrawGizmosSelected()

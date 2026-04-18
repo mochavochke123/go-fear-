@@ -2,51 +2,36 @@ using UnityEngine;
 using System.Collections;
 
 public class PlayerHealth : MonoBehaviour {
-    [Header("Здоровье")]
+    [Header("Health")]
     [SerializeField] private float maxHealth = 6f;
     private float currentHealth;
     private bool isDead = false;
-    private bool isInvulnerable = false;   // ← ДОБАВЛЕНО
+    private bool isInvulnerable = false;
 
     private Healthcontainer healthcontainer;
 
     private void Start()
     {
         currentHealth = maxHealth;
-        Debug.Log($"✅ PlayerHealth: HP = {currentHealth}/{maxHealth}");
-
         healthcontainer = FindObjectOfType<Healthcontainer>();
-        Debug.Log($"🔍 Ищу Healthcontainer... Найден: {healthcontainer != null}");
 
         if (healthcontainer != null)
         {
-            Debug.Log($"📍 Healthcontainer найден на: {healthcontainer.gameObject.name}");
             healthcontainer.UpdateUI();
-            Debug.Log("✓ Healthcontainer.UpdateUI() вызван");
-        }
-        else
-        {
-            Debug.LogError("❌ HEALTHCONTAINER НЕ НАЙДЕН! Проверь имя скрипта и объект в сцене");
         }
     }
 
-    /// <summary>
-    /// Получить урон
-    /// </summary>
     public void TakeDamage(float damage)
     {
         if (isDead || isInvulnerable) return;
 
         if (PassiveItemManager.Instance?.TryDodge() == true)
         {
-            Debug.Log("🌀 Уклонение!");
             return;
         }
 
         currentHealth -= damage;
         PassiveItemManager.Instance?.OnPlayerDamaged(damage);
-
-        Debug.Log($"💔 Игрок получил {damage} урона! HP: {currentHealth}/{maxHealth}");
 
         healthcontainer?.UpdateUI();
         StartCoroutine(FlashDamage());
@@ -55,18 +40,11 @@ public class PlayerHealth : MonoBehaviour {
             Die();
     }
 
-    /// <summary>
-    /// Управление неуязвимостью извне (рывок, катсцены и т.д.)
-    /// </summary>
-    public void SetInvulnerable(bool value)   // ← ДОБАВЛЕНО
+    public void SetInvulnerable(bool value)
     {
         isInvulnerable = value;
-        Debug.Log($"🛡️ Неуязвимость: {value}");
     }
 
-    /// <summary>
-    /// Красная вспышка при уроне
-    /// </summary>
     private IEnumerator FlashDamage()
     {
         SpriteRenderer spriteRenderer = GetComponentInChildren<SpriteRenderer>();
@@ -79,13 +57,9 @@ public class PlayerHealth : MonoBehaviour {
         }
     }
 
-    /// <summary>
-    /// Смерть игрока
-    /// </summary>
     private void Die()
     {
         isDead = true;
-        Debug.Log($"💀 Игрок умер!");
         GameReset.Instance?.ShowDeathScreen();
     }
 
@@ -93,7 +67,7 @@ public class PlayerHealth : MonoBehaviour {
     public float GetMaxHealth() => maxHealth;
     public void Heal(float amount)
     {
-        currentHealth = Mathf.Min(currentHealth + amount, maxHealth);
+        currentHealth = Mathf.Min(currentHealth + amount, maxHealth + 1f);
         healthcontainer?.UpdateUI();
     }
 

@@ -54,7 +54,7 @@ MonoBehaviour:
   dashCooldown: 3
   dashTowardChance: 0.7
   attackRange: 1.2
-  attackDamage: 1
+  attackDamage: 0.5
   attackCooldown: 1.2
   detectionRange: 10
 --- !u!212 &2938794228626642912

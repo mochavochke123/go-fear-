@@ -4,12 +4,12 @@ using System.Collections.Generic;
 public class LevelGenerator : MonoBehaviour {
     public static LevelGenerator Instance;
 
-    [Header("Фиксированные префабы")]
+    [Header("Fixed Prefabs")]
     public GameObject room01Prefab;
     public GameObject corridorPrefab;
     public GameObject bossRoomPrefab;
 
-    [Header("Случайные комнаты (заполни в Inspector)")]
+    [Header("Random Rooms")]
     public GameObject[] room02Variants;
     public GameObject[] room03Variants;
 
@@ -27,14 +27,8 @@ public class LevelGenerator : MonoBehaviour {
 
     private void BuildSequence()
     {
-        Debug.Log($"[LevelGenerator] room02Variants count: {room02Variants?.Length ?? -1}");
-        Debug.Log($"[LevelGenerator] room03Variants count: {room03Variants?.Length ?? -1}");
-
         GameObject room02 = PickRandom(room02Variants, room02Variants[0]);
         GameObject room03 = PickRandom(room03Variants, room03Variants[0]);
-
-        Debug.Log($"[LevelGenerator] room02 selected: {room02?.name ?? "NULL"}");
-        Debug.Log($"[LevelGenerator] room03 selected: {room03?.name ?? "NULL"}");
 
         sequence = new GameObject[]
         {
@@ -46,8 +40,6 @@ public class LevelGenerator : MonoBehaviour {
             corridorPrefab,
             bossRoomPrefab
         };
-
-        Debug.Log("[LevelGenerator] Последовательность построена, комнат: " + sequence.Length);
     }
 
     private void SpawnAllRooms()
@@ -67,7 +59,6 @@ public class LevelGenerator : MonoBehaviour {
         {
             GameObject spawned = Instantiate(sequence[i], positions[i], Quaternion.identity);
             spawnedRooms.Add(spawned);
-            Debug.Log("[LevelGenerator] Spawned: " + spawned.name + " at " + positions[i]);
         }
     }
 
@@ -77,7 +68,6 @@ public class LevelGenerator : MonoBehaviour {
 
         if (currentIndex >= sequence.Length)
         {
-            Debug.Log("[LevelGenerator] Level complete");
             foreach (GameObject room in spawnedRooms)
             {
                 Destroy(room);
@@ -85,8 +75,6 @@ public class LevelGenerator : MonoBehaviour {
             spawnedRooms.Clear();
             return;
         }
-
-        Debug.Log("[LevelGenerator] currentIndex: " + currentIndex);
     }
 
     private GameObject PickRandom(GameObject[] arr, GameObject fallback)

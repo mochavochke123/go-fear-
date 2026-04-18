@@ -103,8 +103,6 @@ public class SwordWeapon : MonoBehaviour {
         Vector3 mouseWorld = mainCamera.ScreenToWorldPoint(mouseScreen);
         lastAttackDirection = (mouseWorld - swordVisual.position).normalized;
 
-        Debug.Log("⚔️ Атака мечом!");
-
         animator?.SetTrigger("Attack");
         PlaySlashSound();
 
@@ -143,8 +141,6 @@ public class SwordWeapon : MonoBehaviour {
                 {
                     float finalDamage = pm != null ? pm.GetPiercingDamage(enemy, damage) : damage;
                     enemy.TakeDamage(finalDamage);
-                    
-                    Debug.Log($"💥 {col.gameObject.name} получил {finalDamage} урона!");
                     continue;
                 }
 
@@ -153,15 +149,11 @@ public class SwordWeapon : MonoBehaviour {
                 {
                     float dasherDamage = pm != null ? pm.GetDasherPiercingDamage(dasher, damage) : damage;
                     dasher.TakeDamage(dasherDamage);
-                    
-                    Debug.Log($"💥 {col.gameObject.name} получил {dasherDamage} урона!");
                 }
             }
         }
         if (pm != null && pm.TryDoubleHit())
         {
-            Debug.Log("⚡ Двойной удар!");
-
             if (slashEffectPrefab != null)
             {
                 int slashCount = 6;

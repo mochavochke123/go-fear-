@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -87,18 +87,12 @@ public class PlayerDash : MonoBehaviour {
         dashTimer = dashDuration;
         cooldownTimer = dashCooldown;
 
-        // Сбрасываем velocity чтобы рывок начался чисто
         rb.velocity = Vector2.zero;
-
-        // Неуязвимость на время рывка
         playerHealth?.SetInvulnerable(true);
 
-        // Проход сквозь врагов через смену слоя
         int dashLayerIndex = LayerMask.NameToLayer(DashLayer);
         if (dashLayerIndex >= 0)
             gameObject.layer = dashLayerIndex;
-
-        Debug.Log($"💨 Рывок! dir={dashDirection}");
     }
 
     private void EndDash()
@@ -108,8 +102,6 @@ public class PlayerDash : MonoBehaviour {
 
         gameObject.layer = originalLayer;
         playerHealth?.SetInvulnerable(false);
-
-        Debug.Log("✅ Рывок завершён");
     }
 
     private void OnDestroy()
