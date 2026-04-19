@@ -5,7 +5,7 @@ public class MinionAI : MonoBehaviour {
     [Header("Параметры")]
     [SerializeField] private float moveSpeed = 3f;
     [SerializeField] private float followDistance = 2f;
-    [SerializeField] private float detectionRange = 6f;
+    [SerializeField] private float detectionRange = 20f;
     [SerializeField] private float attackRange = 2.5f;
     [SerializeField] private float attackDamage = 5f;
     [SerializeField] private float attackCooldown = 1f;
@@ -108,6 +108,17 @@ public class MinionAI : MonoBehaviour {
                     nearest = dasher.transform;
                 }
             }
+
+            MimicAI mimic = hit.GetComponent<MimicAI>();
+            if (mimic != null)
+            {
+                float dist = Vector3.Distance(transform.position, mimic.transform.position);
+                if (dist < minDist)
+                {
+                    minDist = dist;
+                    nearest = mimic.transform;
+                }
+            }
         }
 
         return nearest;
@@ -148,6 +159,9 @@ public class MinionAI : MonoBehaviour {
 
             DasherAI dasher = target.GetComponent<DasherAI>();
             dasher?.TakeDamage(attackDamage);
+
+            MimicAI mimic = target.GetComponent<MimicAI>();
+            mimic?.TakeDamage(attackDamage);
 
             attackTimer = attackCooldown;
             StartCoroutine(LeanTowardsTarget());

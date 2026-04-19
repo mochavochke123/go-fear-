@@ -172,10 +172,12 @@ public class EnemyAI : MonoBehaviour {
         float speed = moveSpeed * (pm?.enemySlowMultiplier ?? 1f);
 
         Vector3 direction = (player.position - transform.position).normalized;
+        direction += GetSeparationVector();
+        direction.Normalize();
         rb.velocity = direction * speed;
 
         if (spriteRenderer != null)
-            spriteRenderer.flipX = direction.x < 0;
+            spriteRenderer.flipX = direction.x > 0;
     }
 
     private Rigidbody2D rb;
@@ -245,5 +247,30 @@ public class EnemyAI : MonoBehaviour {
 
         GetComponentInParent<RoomManager>()?.OnEnemyDied();
         Destroy(gameObject, 1f);
+    }
+
+    private Vector3 GetSeparationVector()
+    {
+        Vector3 separation = Vector3.zero;
+        float minDist = 1.2f;
+        int count = 0;
+
+        foreach (EnemyAI other in GetComponentsInParent<EnemyAI>())
+        {
+            if (other == this || other == null) continue;
+
+            float dist = Vector3.Distance(transform.position, other.transform.position);
+            if (dist < minDist && dist > 0)
+            {
+                Vector3 pushDir = (transform.position - other.transform.position).normalized;
+                separation += pushDir / dist;
+                count++;
+            }
+        }
+
+        if (count > 0)
+            separation /= count;
+
+        return separation * 1.2f;
     }
 }

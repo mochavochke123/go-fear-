@@ -85,6 +85,8 @@ public class DasherAI : MonoBehaviour {
         if (rb == null) return;
 
         Vector3 dir = (player.position - transform.position).normalized;
+        dir += GetSeparationVector();
+        dir.Normalize();
         rb.velocity = dir * moveSpeed;
     }
 
@@ -157,9 +159,33 @@ public class DasherAI : MonoBehaviour {
         SoulUI soulUI = FindObjectOfType<SoulUI>();
         soulUI?.AddSouls(1);
 
-        GetComponentInParent<RoomManager>()?.OnEnemyDied();
-
+GetComponentInParent<RoomManager>()?.OnEnemyDied();
         Destroy(gameObject, 1f);
     }
 
+    private Vector3 GetSeparationVector()
+    {
+        Vector3 separation = Vector3.zero;
+        float minDist = 1.2f;
+        int count = 0;
+
+        foreach (DasherAI other in FindObjectsOfType<DasherAI>())
+        {
+            if (other == this || other == null) continue;
+
+            float dist = Vector3.Distance(transform.position, other.transform.position);
+            if (dist < minDist && dist > 0)
+            {
+                Vector3 pushDir = (transform.position - other.transform.position).normalized;
+                separation += pushDir / dist;
+                count++;
+            }
+        }
+
+        if (count > 0)
+            separation /= count;
+
+        return separation * 1.2f;
+    }
 }
+

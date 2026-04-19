@@ -25,10 +25,7 @@ public class PlayerHealth : MonoBehaviour {
     {
         if (isDead || isInvulnerable) return;
 
-        if (PassiveItemManager.Instance?.TryDodge() == true)
-        {
-            return;
-        }
+        if (PassiveItemManager.Instance?.TryDodge() == true) return;
 
         currentHealth -= damage;
         PassiveItemManager.Instance?.OnPlayerDamaged(damage);

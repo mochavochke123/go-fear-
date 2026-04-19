@@ -115,6 +115,12 @@ public class SwordWeapon : MonoBehaviour {
         }
 
         DealDamageToEnemies();
+
+        var pm = PassiveItemManager.Instance;
+        if (pm != null && pm.TryDoubleHit())
+        {
+            DealDamageToEnemies();
+        }
     }
 
     private void DealDamageToEnemies()
@@ -149,44 +155,20 @@ public class SwordWeapon : MonoBehaviour {
                 {
                     float dasherDamage = pm != null ? pm.GetDasherPiercingDamage(dasher, damage) : damage;
                     dasher.TakeDamage(dasherDamage);
-                }
-            }
-        }
-        if (pm != null && pm.TryDoubleHit())
-        {
-            if (slashEffectPrefab != null)
-            {
-                int slashCount = 6;
-                for (int i = 0; i < slashCount; i++)
-                {
-                    float angle = i * (360f / slashCount);
-                    Quaternion rotation = Quaternion.Euler(0f, 0f, angle);
-                    GameObject effect = Instantiate(
-                        slashEffectPrefab,
-                        playerTransform.position,
-                        rotation
-                    );
-                    Destroy(effect, 0.4f);
-                }
-            }
-
-            foreach (var col in hits)
-            {
-                if (col.CompareTag("Player")) continue;
-
-                var enemy = col.GetComponent<EnemyAI>();
-                if (enemy != null)
-                {
-                    float finalDamage = pm != null ? pm.GetPiercingDamage(enemy, damage) : damage;
-                    enemy.TakeDamage(finalDamage);
                     continue;
                 }
 
-                var dasher = col.GetComponent<DasherAI>();
-                if (dasher != null)
+var ghost = col.GetComponent<GhostAI>();
+                if (ghost != null)
                 {
-                    float finalDamage = pm != null ? pm.GetDasherPiercingDamage(dasher, damage) : damage;
-                    dasher.TakeDamage(finalDamage);
+                    ghost.TakeDamage(damage);
+                    continue;
+                }
+
+                var mimic = col.GetComponent<MimicAI>();
+                if (mimic != null)
+                {
+                    mimic.TakeDamage(damage);
                 }
             }
         }

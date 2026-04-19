@@ -19,7 +19,9 @@ public class RoomManager : MonoBehaviour {
 
         EnemyAI[] slimes = GetComponentsInChildren<EnemyAI>();
         DasherAI[] dashers = GetComponentsInChildren<DasherAI>();
-        enemiesAlive = slimes.Length + dashers.Length;
+        GhostAI[] ghosts = GetComponentsInChildren<GhostAI>();
+        MimicAI[] mimics = GetComponentsInChildren<MimicAI>();
+        enemiesAlive = slimes.Length + dashers.Length + ghosts.Length + mimics.Length;
 
         if (enemiesAlive > 0)
         {
