@@ -1,5 +1,6 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.InputSystem;
+using System.Collections;
 
 public class Player : MonoBehaviour {
     // Singleton
@@ -42,11 +43,21 @@ public class Player : MonoBehaviour {
         {
             animator = playerVisioTransform.GetComponent<Animator>();
             spriteRenderer = playerVisioTransform.GetComponent<SpriteRenderer>();
-            Debug.Log("✓ PlayerVisio найден");
+            if (spriteRenderer != null)
+            {
+                baseColor = spriteRenderer.color;
+                Debug.Log($"✓ PlayerVisio найден, baseColor={baseColor}");
+            }
         }
         else
         {
             Debug.LogError("✗ PlayerVisio не найден!");
+        }
+
+        BloodBerserkerAura aura = FindObjectOfType<BloodBerserkerAura>();
+        if (aura == null)
+        {
+            gameObject.AddComponent<BloodBerserkerAura>();
         }
     }
 
@@ -55,6 +66,54 @@ public class Player : MonoBehaviour {
         HandleMovement();
         HandleLook();
         UpdateAnimations();
+        UpdateBloodBerserkerEffect();
+
+#if UNITY_EDITOR
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            PassiveItemManager.Instance?.ApplyPerk(PerkType.Power);
+            Debug.Log("DEBUG: Power perk added");
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            PassiveItemManager.Instance?.ApplyPerk(PerkType.Vitality);
+            Debug.Log("DEBUG: Vitality perk added");
+        }
+#endif
+    }
+
+    private Color baseColor = Color.white;
+    private bool isFlashing = false;
+
+    public void OnDamageTaken()
+    {
+        if (spriteRenderer == null || isFlashing) return;
+        StartCoroutine(FlashRed());
+    }
+
+    private IEnumerator FlashRed()
+    {
+        isFlashing = true;
+        spriteRenderer.color = Color.red;
+        yield return new WaitForSeconds(0.1f);
+        isFlashing = false;
+    }
+
+    private void UpdateBloodBerserkerEffect()
+    {
+        var pm = PassiveItemManager.Instance;
+        bool hasSynergy = pm != null && pm.HasBloodBerserkerSynergy();
+
+        BloodBerserkerAura aura = GetComponent<BloodBerserkerAura>();
+        if (aura != null)
+            aura.SetActive(hasSynergy);
+
+        if (spriteRenderer == null || isFlashing) return;
+
+        if (!hasSynergy)
+        {
+            spriteRenderer.color = baseColor;
+        }
     }
 
     void HandleMovement()

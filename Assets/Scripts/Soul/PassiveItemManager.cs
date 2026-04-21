@@ -63,6 +63,34 @@ public class PassiveItemManager : MonoBehaviour {
 
     public bool HasPerk(PerkType perk) => activePerks.Contains(perk);
 
+    public bool HasBloodBerserkerSynergy()
+    {
+        return activePerks.Contains(PerkType.Power) && activePerks.Contains(PerkType.Vitality);
+    }
+
+    public float GetBloodBerserkerMultiplier()
+    {
+        if (!HasBloodBerserkerSynergy()) return 1f;
+
+        PlayerHealth ph = playerHealth;
+        if (ph == null)
+        {
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            if (player != null)
+                ph = player.GetComponent<PlayerHealth>();
+        }
+
+        if (ph == null) return 1f;
+
+        float hpCurrent = ph.GetHealth();
+        float hpMax = ph.GetMaxHealth();
+
+        if (hpMax <= 0) return 1f;
+
+        float hpPercent = hpCurrent / hpMax;
+        return 1f + (1f - hpPercent) * 0.5f;
+    }
+
     public void ClearPiercedEnemies()
     {
         piercedEnemies.Clear();
@@ -84,6 +112,7 @@ public class PassiveItemManager : MonoBehaviour {
                 break;
             case PerkType.Power:
                 damageMultiplier *= 1.2f;
+                CheckBloodBerserkerSynergy(PerkType.Power);
                 break;
             case PerkType.Piercing:
                 piercingActive = true;
@@ -109,6 +138,7 @@ public class PassiveItemManager : MonoBehaviour {
                 playerHealth?.AddMaxHP(1);
                 FindObjectOfType<Healthcontainer>()?.AddHeartContainer();
                 speedMultiplier *= 1.15f;
+                CheckBloodBerserkerSynergy(PerkType.Vitality);
                 break;
             case PerkType.Vampirism:
                 vampirismChance += 0.175f;
@@ -137,6 +167,16 @@ public class PassiveItemManager : MonoBehaviour {
         FindObjectOfType<OwnedPerksUI>()?.OnPerkAdded(perk);
 
         return true;
+    }
+
+    private void CheckBloodBerserkerSynergy(PerkType newPerk)
+    {
+        if ((newPerk == PerkType.Power && HasPerk(PerkType.Vitality)) ||
+            (newPerk == PerkType.Vitality && HasPerk(PerkType.Power)))
+        {
+            Debug.Log("⚔️ SYNERGY ACTIVATED: BLOOD BERSERKER! Чем меньше HP — тем сильнее урон!");
+            SynergyUI.Show("BLOOD BERSERKER");
+        }
     }
 
     // Вызывается из EnemyAI.Die()
@@ -184,6 +224,8 @@ public class PassiveItemManager : MonoBehaviour {
         {
             col.GetComponent<EnemyAI>()?.TakeDamage(reflectDamage);
             col.GetComponent<DasherAI>()?.TakeDamage(reflectDamage);
+            col.GetComponent<GhostAI>()?.TakeDamage(reflectDamage);
+            col.GetComponent<MimicAI>()?.TakeDamage(reflectDamage);
         }
     }
 
