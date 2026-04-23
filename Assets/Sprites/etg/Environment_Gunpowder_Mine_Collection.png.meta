@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: wizhad_0
+      name: Environment_Gunpowder_Mine_Collection_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 32
-        width: 32
-        height: 32
+        y: 0
+        width: 433
+        height: 611
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 042bd780ba4950b4ca95ad781210ec72
-      internalID: 1490704198
+      spriteID: ecda3c9ae2e42ac40bb3b37e20e57847
+      internalID: 413671722
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wizhad_1
+      name: Environment_Gunpowder_Mine_Collection_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 32
-        height: 32
+        x: 435
+        y: 96
+        width: 49
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,8 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af0605a0012b6494ca3b5e3cab8dd17e
-      internalID: 525848356
+      spriteID: c14bcf33482e2dc4c8e2bdb47a408d3f
+      internalID: 583691219
       vertices: []
       indices: 
       edges: []
@@ -149,6 +149,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Environment_Gunpowder_Mine_Collection_0: 413671722
+      Environment_Gunpowder_Mine_Collection_1: 583691219
       wizhad_0: 1490704198
       wizhad_1: 525848356
   mipmapLimitGroupName: 

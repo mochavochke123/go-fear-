@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 
 public class LevelGenerator : MonoBehaviour {
@@ -20,6 +21,10 @@ public class LevelGenerator : MonoBehaviour {
     void Awake()
     {
         if (Instance != null) { Destroy(gameObject); return; }
+        
+        string sceneName = SceneManager.GetActiveScene().name;
+        if (sceneName == "Level2") { Destroy(gameObject); return; }
+        
         Instance = this;
         BuildSequence();
         SpawnAllRooms();

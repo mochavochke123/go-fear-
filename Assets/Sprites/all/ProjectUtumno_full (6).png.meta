@@ -558,6 +558,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_full (6)_22
+      rect:
+        serializedVersion: 2
+        x: 1889
+        y: 355
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98fdd0fb58182104a9739a59315874da
+      internalID: -1875681871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -584,6 +605,7 @@ TextureImporter:
       ProjectUtumno_full (6)_2: -555500806
       ProjectUtumno_full (6)_20: 766217237
       ProjectUtumno_full (6)_21: 1199756618
+      ProjectUtumno_full (6)_22: -1875681871
       ProjectUtumno_full (6)_3: 183635347
       ProjectUtumno_full (6)_4: -71146231
       ProjectUtumno_full (6)_5: -1126442820

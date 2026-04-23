@@ -97,32 +97,53 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: wizhad_0
+      name: Environment_Sewer_Collection_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 32
-        width: 32
-        height: 32
+        y: 463
+        width: 97
+        height: 33
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 042bd780ba4950b4ca95ad781210ec72
-      internalID: 1490704198
+      spriteID: 10c7f82059ed72a46a8fef86cd04cab2
+      internalID: -1965241894
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wizhad_1
+      name: Environment_Sewer_Collection_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 98
+        y: 461
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7ab94355fdb1644b97f19654a456aeb
+      internalID: 1837557720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Sewer_Collection_2
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 401
         width: 32
         height: 32
       alignment: 0
@@ -132,8 +153,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af0605a0012b6494ca3b5e3cab8dd17e
-      internalID: 525848356
+      spriteID: 509e78cf56619ee4884045f1fe9db601
+      internalID: 1192399043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Sewer_Collection_3
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 69
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d316f2d2224d30419e721bdedb31787
+      internalID: 1308922855
       vertices: []
       indices: 
       edges: []
@@ -149,6 +191,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Environment_Sewer_Collection_0: -1965241894
+      Environment_Sewer_Collection_1: 1837557720
+      Environment_Sewer_Collection_2: 1192399043
+      Environment_Sewer_Collection_3: 1308922855
       wizhad_0: 1490704198
       wizhad_1: 525848356
   mipmapLimitGroupName: 

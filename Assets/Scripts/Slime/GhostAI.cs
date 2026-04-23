@@ -260,9 +260,10 @@ public class GhostAI : MonoBehaviour
         PassiveItemManager.Instance?.OnEnemyKilled(gameObject);
 
         SoulUI soulUI = FindObjectOfType<SoulUI>();
-        soulUI?.AddSouls(1);
+        soulUI?.AddSouls(2);
 
         GetComponentInParent<RoomManager>()?.OnEnemyDied();
+        GetComponentInParent<WaveRoomManager>()?.OnEnemyDied();
 
         Destroy(gameObject, 1.2f);
     }

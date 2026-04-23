@@ -1,0 +1,2383 @@
+fileFormatVersion: 2
+guid: f96f65484a50eab46a599f224d71a6b1
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1261
+        width: 113
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4e77fd9c8857b8408e4a3080b044441
+      internalID: -723094389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_1
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 1255
+        width: 113
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 455bbf1102d22284db500544a54f3d9f
+      internalID: 770059855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_2
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 1255
+        width: 113
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5edf82fd47cac274e8bdd8c3435d5327
+      internalID: 422817383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_3
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 1255
+        width: 113
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9b6a22e2f125cf42affefdeb85b6a3d
+      internalID: 1347342981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_4
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 1255
+        width: 113
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ead18a2d7c7d75e43a08e24de306f9d0
+      internalID: -1632684840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_5
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 1255
+        width: 113
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b79f4989e55a06d40b8b35b39a612af0
+      internalID: -2113557360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_9
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1147
+        width: 116
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40c4ace51f8abc34c9938c644c208488
+      internalID: -1282642883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_10
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1141
+        width: 116
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b668583dd83db445afc3ffb37e7fc15
+      internalID: -1875117112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_11
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 1141
+        width: 115
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 836cfbcd627589f48851a1d5242800ab
+      internalID: -397026860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_12
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 1141
+        width: 113
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04e1cf45787fb8747ad94734db7cca8d
+      internalID: -589815887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_13
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 1141
+        width: 113
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 576eab5356aa1254daa4a57ea1ea8c49
+      internalID: 2102501903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_14
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 1141
+        width: 113
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1c67cec477dd644aa376d32ad8032f8
+      internalID: -445520229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_15
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 1162
+        width: 113
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9cb3d3d0b88e9f4f9844cc47806f5b8
+      internalID: 1607443365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_16
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 1162
+        width: 113
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a42a0a3207df1714db5b69666f28fe05
+      internalID: -219493059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_17
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1027
+        width: 125
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b3d10b9135e62c4092a1e9200d73f2d
+      internalID: 619320483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_18
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1027
+        width: 130
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70772170906c0f24c8793fb3b164808f
+      internalID: 1612083189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_19
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 1027
+        width: 128
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6c091472bb194645b2a6d167b0bae58
+      internalID: -826621067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_20
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 1027
+        width: 126
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 462f822319b3ebd4b87af6fecb3b0454
+      internalID: 1049322494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_21
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 1027
+        width: 124
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a294fd5b4574cc48802104bd6a6b3a9
+      internalID: 1961135922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_22
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 1027
+        width: 122
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c62b6f615a1eb2143bf8a501a06caf03
+      internalID: -1330630476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_23
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1048
+        width: 120
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 239ab9e0b2318ef41a119bb2c14ef6fe
+      internalID: -1393333888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_24
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 1048
+        width: 118
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 917ee68542ede1c4287a3dc87329ab05
+      internalID: 861152788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_25
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 913
+        width: 138
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93d88947ffb47504d906157db3fa29c2
+      internalID: 1821615544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_26
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 913
+        width: 138
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beb3adde096cb474598bd72c92139556
+      internalID: -476491385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_27
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 913
+        width: 136
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 414241fc970043846a63542b2d3b5d73
+      internalID: -1662637791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_28
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 913
+        width: 135
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31f071d73a34e92499cf3497cade523a
+      internalID: -1023997291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_29
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 913
+        width: 134
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3ea45319ca813d43bb38d3988ab91c8
+      internalID: -1114561704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_30
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 913
+        width: 133
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90028b87537401c4babaf189fc1505e1
+      internalID: 60724256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_31
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 934
+        width: 132
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 040299757c3ade04895ead0039fe97ec
+      internalID: -578167308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_32
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 799
+        width: 138
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3912ad84e2d488488261a727630a814
+      internalID: 871089676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_33
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 799
+        width: 138
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d29b2f67184257f4ca4c5f1b8fb8365f
+      internalID: 327448780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_34
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 799
+        width: 138
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf731133da2134443b0a9fa66b998c49
+      internalID: -1958475536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_35
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 799
+        width: 138
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f953992fbfff1049b42f7ede428728c
+      internalID: 1981138848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_36
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 799
+        width: 138
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af1bfa4e29947fa498dab166dbb10d49
+      internalID: 1254954280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_37
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 799
+        width: 138
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2a70cf39e513864ab5a5b4cb15fbda6
+      internalID: 1824421059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_38
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 820
+        width: 138
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebff7acd66b530f4094acafda1e7be6c
+      internalID: 1242695946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_39
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 685
+        width: 142
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0934a73d947f074ab9801617fd723b5
+      internalID: -548092357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_40
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 685
+        width: 141
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53e47de3c69b50e48a293a369c448862
+      internalID: -1986857196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_41
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 685
+        width: 140
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efbf4c3edd49eaa40b7707418afa5bda
+      internalID: -1136632149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_42
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 685
+        width: 140
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99e7c8c65ff902b4fbe03085a17decbb
+      internalID: -374299751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_43
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 685
+        width: 140
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2486fcd20fdd8e46aa71e6b7405adcb
+      internalID: 253086269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_44
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 685
+        width: 139
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8250da24e09490d49a81ce2cda8a59f6
+      internalID: 2130579862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_45
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 706
+        width: 139
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bac90479dc5d6584e95dce671d49bf30
+      internalID: 1142785093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_46
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 571
+        width: 145
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e8bf3fb850c8624cbef19bfb16d25f4
+      internalID: 104462386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_47
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 571
+        width: 144
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4a83c8427e4ee940bcca9e8daa26849
+      internalID: -483430781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_48
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 571
+        width: 144
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b320b5eee22a7a4c80fe94407f6e118
+      internalID: -616374500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_49
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 571
+        width: 144
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee39ee973b8c0034ebd5ee5e8c436a67
+      internalID: 551737755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_50
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 571
+        width: 143
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c97dca10028a9ad4d99ce8691a202f4a
+      internalID: 636617452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_51
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 571
+        width: 142
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4826e715f3f04b44e90742af53652cdb
+      internalID: -821120920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_52
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 559
+        width: 112
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff48c83c208750249885b1cc7393ca1a
+      internalID: 2093594643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_53
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 457
+        width: 146
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65b83d423dea43f499624dd69a306a81
+      internalID: 36614105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_54
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 457
+        width: 146
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d9f45aea95b2ac4098036b8b90847de
+      internalID: 733943070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_55
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 457
+        width: 146
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 285843ba424cbdf49a55703e53de948c
+      internalID: 2037588342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_56
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 457
+        width: 146
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef82b38c14031b440a6435ecac06ee32
+      internalID: -1492024619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_57
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 457
+        width: 146
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acff0fe899a3707458de6a3a3e86ec2e
+      internalID: 1894775985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_58
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 457
+        width: 146
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 003e03f2ddd60dc4c87d84f8f735db7a
+      internalID: 1183327822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_59
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 411
+        width: 112
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef1490a2d27268d49b3be6e6e43420e9
+      internalID: 1275718064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_60
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 343
+        width: 146
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a51da44fe780d3b489c5f251a1ee7b8c
+      internalID: -560441842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_61
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 343
+        width: 146
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63f90f9fb0fd4a346a28424dde98a91f
+      internalID: -781443258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_62
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 343
+        width: 146
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7772abe7169ddfc4e8cdca68e6e682e4
+      internalID: -2131125998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_63
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 343
+        width: 146
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 567993884ed115e498ef2f4992faa921
+      internalID: -42510655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_64
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 343
+        width: 146
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43b2b0ec09e8fea49915632497cab8ac
+      internalID: 240592608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_65
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 343
+        width: 146
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f2ae6641b57d3e47be4aa742f7e4515
+      internalID: 722968503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_66
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 263
+        width: 112
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50d560683f5da1f4bbc67eb2eea94f02
+      internalID: -458404077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_67
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 229
+        width: 146
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a7d3a602ecbb5b4585d59212eeaf9eb
+      internalID: -1428530220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_68
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 229
+        width: 146
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11b8a9feb67bce94db0b465f4c5c3660
+      internalID: -510518173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_69
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 229
+        width: 146
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98c30322d95ba25409ffc14917894de9
+      internalID: -810173687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_70
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 229
+        width: 146
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3721d5a164c5154184be7660884275e
+      internalID: 44731995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_71
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 229
+        width: 146
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14e1cddbd9708fa46aea8460123a8fad
+      internalID: -411244001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_72
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 229
+        width: 146
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 845024613a8817c4d9f67059e5a41fbd
+      internalID: -1057981900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_73
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 115
+        width: 112
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ccaa08d4c6eaf242808a2f8b47f481a
+      internalID: 1663874646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_74
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 115
+        width: 146
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bad47e39a341c747a913c6a422bb6af
+      internalID: 1307755666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_75
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 115
+        width: 146
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c430a993b1630b74d8697963d7922737
+      internalID: -973485213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_76
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 115
+        width: 146
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61d45b8e28a8b5e4fa3b6068572209a8
+      internalID: 16872082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_77
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 115
+        width: 146
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b156b0a0746544247b437a38289aea89
+      internalID: 1564784577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_78
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 115
+        width: 146
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36efe08e0c78a0342bc842fc19f87aec
+      internalID: -852129916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_79
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 115
+        width: 146
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23310920a45b80b47871e34d6f516d5d
+      internalID: -704332051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_80
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 152
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f48f25e6b1b43b47b18c4330605ac0a
+      internalID: -872410637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_81
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 1
+        width: 151
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 912eb30d6bf16d243840b8ba4a220932
+      internalID: 679090016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_82
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 1
+        width: 151
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b96d193fa6f8a0944b46b819dbc07354
+      internalID: 218989052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_83
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 1
+        width: 150
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f3962142172b7b4b88b48709227886b
+      internalID: 213819860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_84
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 1
+        width: 148
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11bebb403c9e3024fbd137ca209882a2
+      internalID: 1059442663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_85
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 1
+        width: 147
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fde8a46301665243b11530926decc66
+      internalID: -2072383255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_86
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 76
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 259205d511772ba4ca7356f11a6c5fd4
+      internalID: -323199338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_87
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 76
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3613ee3be13b9c9448c5be17bb72ca58
+      internalID: 1092301558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_88
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 76
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0bb9a308e3af0146b4cb79cde535987
+      internalID: -2119340590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_89
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 72
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 151346ceb0dbd7345b164b5f22e74877
+      internalID: -1129004403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_90
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 72
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3eea9eb1e040c34c845bdf5626195ec
+      internalID: 1029220327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_91
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 76
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7729fd300b3d35444b23d8a7b4f26c9f
+      internalID: -1034783868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_92
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 76
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90b0286375c97ed4fb9ba776b637ade0
+      internalID: 711514922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_93
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 60
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 513f3122964076246af08c386a00abde
+      internalID: -2070882176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_94
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 60
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f05821428ede83e47965c3679f972f50
+      internalID: -442343263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_95
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 37
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d4eab6ebd7bfc84f8b07ae3fffe2cc8
+      internalID: -1088742893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_96
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 52
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f8bfd518ec68a649a239e3f50754ed1
+      internalID: -1156365869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_97
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 69
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3fa7bb040128c44d90a361b48bc6a9f
+      internalID: -123127234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_98
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 62
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 097c70245f6338845b8663192f2aa510
+      internalID: -1133528138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_99
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 40
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d655a08e0b455a429da8e869f87d48f
+      internalID: 1185646085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_100
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 40
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a63020afbde9baf41adb6ff851931091
+      internalID: -158717343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_101
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 52
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83423b8e6b73bcb4f9f707ebb8614878
+      internalID: -365547650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_102
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 1
+        width: 42
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffad95ef912503c449946e166a8067e0
+      internalID: 837000152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_103
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 1
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b5140d27f3f591488188dfa3aa9298c
+      internalID: 614055769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_104
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 28
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1672d0c338276645a337b9875e5ca52
+      internalID: 575764351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Bunker_Collection_105
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 1
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 244118584d330a24696f6dfed3f3581e
+      internalID: -1454269411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Boss_Bunker_Collection_0: -723094389
+      Boss_Bunker_Collection_1: 770059855
+      Boss_Bunker_Collection_10: -1875117112
+      Boss_Bunker_Collection_100: -158717343
+      Boss_Bunker_Collection_101: -365547650
+      Boss_Bunker_Collection_102: 837000152
+      Boss_Bunker_Collection_103: 614055769
+      Boss_Bunker_Collection_104: 575764351
+      Boss_Bunker_Collection_105: -1454269411
+      Boss_Bunker_Collection_11: -397026860
+      Boss_Bunker_Collection_12: -589815887
+      Boss_Bunker_Collection_13: 2102501903
+      Boss_Bunker_Collection_14: -445520229
+      Boss_Bunker_Collection_15: 1607443365
+      Boss_Bunker_Collection_16: -219493059
+      Boss_Bunker_Collection_17: 619320483
+      Boss_Bunker_Collection_18: 1612083189
+      Boss_Bunker_Collection_19: -826621067
+      Boss_Bunker_Collection_2: 422817383
+      Boss_Bunker_Collection_20: 1049322494
+      Boss_Bunker_Collection_21: 1961135922
+      Boss_Bunker_Collection_22: -1330630476
+      Boss_Bunker_Collection_23: -1393333888
+      Boss_Bunker_Collection_24: 861152788
+      Boss_Bunker_Collection_25: 1821615544
+      Boss_Bunker_Collection_26: -476491385
+      Boss_Bunker_Collection_27: -1662637791
+      Boss_Bunker_Collection_28: -1023997291
+      Boss_Bunker_Collection_29: -1114561704
+      Boss_Bunker_Collection_3: 1347342981
+      Boss_Bunker_Collection_30: 60724256
+      Boss_Bunker_Collection_31: -578167308
+      Boss_Bunker_Collection_32: 871089676
+      Boss_Bunker_Collection_33: 327448780
+      Boss_Bunker_Collection_34: -1958475536
+      Boss_Bunker_Collection_35: 1981138848
+      Boss_Bunker_Collection_36: 1254954280
+      Boss_Bunker_Collection_37: 1824421059
+      Boss_Bunker_Collection_38: 1242695946
+      Boss_Bunker_Collection_39: -548092357
+      Boss_Bunker_Collection_4: -1632684840
+      Boss_Bunker_Collection_40: -1986857196
+      Boss_Bunker_Collection_41: -1136632149
+      Boss_Bunker_Collection_42: -374299751
+      Boss_Bunker_Collection_43: 253086269
+      Boss_Bunker_Collection_44: 2130579862
+      Boss_Bunker_Collection_45: 1142785093
+      Boss_Bunker_Collection_46: 104462386
+      Boss_Bunker_Collection_47: -483430781
+      Boss_Bunker_Collection_48: -616374500
+      Boss_Bunker_Collection_49: 551737755
+      Boss_Bunker_Collection_5: -2113557360
+      Boss_Bunker_Collection_50: 636617452
+      Boss_Bunker_Collection_51: -821120920
+      Boss_Bunker_Collection_52: 2093594643
+      Boss_Bunker_Collection_53: 36614105
+      Boss_Bunker_Collection_54: 733943070
+      Boss_Bunker_Collection_55: 2037588342
+      Boss_Bunker_Collection_56: -1492024619
+      Boss_Bunker_Collection_57: 1894775985
+      Boss_Bunker_Collection_58: 1183327822
+      Boss_Bunker_Collection_59: 1275718064
+      Boss_Bunker_Collection_6: 451944305
+      Boss_Bunker_Collection_60: -560441842
+      Boss_Bunker_Collection_61: -781443258
+      Boss_Bunker_Collection_62: -2131125998
+      Boss_Bunker_Collection_63: -42510655
+      Boss_Bunker_Collection_64: 240592608
+      Boss_Bunker_Collection_65: 722968503
+      Boss_Bunker_Collection_66: -458404077
+      Boss_Bunker_Collection_67: -1428530220
+      Boss_Bunker_Collection_68: -510518173
+      Boss_Bunker_Collection_69: -810173687
+      Boss_Bunker_Collection_7: 1161335253
+      Boss_Bunker_Collection_70: 44731995
+      Boss_Bunker_Collection_71: -411244001
+      Boss_Bunker_Collection_72: -1057981900
+      Boss_Bunker_Collection_73: 1663874646
+      Boss_Bunker_Collection_74: 1307755666
+      Boss_Bunker_Collection_75: -973485213
+      Boss_Bunker_Collection_76: 16872082
+      Boss_Bunker_Collection_77: 1564784577
+      Boss_Bunker_Collection_78: -852129916
+      Boss_Bunker_Collection_79: -704332051
+      Boss_Bunker_Collection_8: -368452217
+      Boss_Bunker_Collection_80: -872410637
+      Boss_Bunker_Collection_81: 679090016
+      Boss_Bunker_Collection_82: 218989052
+      Boss_Bunker_Collection_83: 213819860
+      Boss_Bunker_Collection_84: 1059442663
+      Boss_Bunker_Collection_85: -2072383255
+      Boss_Bunker_Collection_86: -323199338
+      Boss_Bunker_Collection_87: 1092301558
+      Boss_Bunker_Collection_88: -2119340590
+      Boss_Bunker_Collection_89: -1129004403
+      Boss_Bunker_Collection_9: -1282642883
+      Boss_Bunker_Collection_90: 1029220327
+      Boss_Bunker_Collection_91: -1034783868
+      Boss_Bunker_Collection_92: 711514922
+      Boss_Bunker_Collection_93: -2070882176
+      Boss_Bunker_Collection_94: -442343263
+      Boss_Bunker_Collection_95: -1088742893
+      Boss_Bunker_Collection_96: -1156365869
+      Boss_Bunker_Collection_97: -123127234
+      Boss_Bunker_Collection_98: -1133528138
+      Boss_Bunker_Collection_99: 1185646085
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

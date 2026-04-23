@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 
 public enum PerkType {
@@ -48,6 +49,7 @@ public class PassiveItemManager : MonoBehaviour {
     [HideInInspector] public float doubleHitChance = 0f;
     [HideInInspector] public bool piercingActive = false;
     [HideInInspector] public float reflectionMultiplier = 0f;
+    public bool ReflectionActive => reflectionMultiplier > 0;
 
     private HashSet<EnemyAI> piercedEnemies = new HashSet<EnemyAI>();
     private HashSet<DasherAI> piercedDashers = new HashSet<DasherAI>();
@@ -59,6 +61,18 @@ public class PassiveItemManager : MonoBehaviour {
     {
         if (Instance != null) { Destroy(gameObject); return; }
         Instance = this;
+        DontDestroyOnLoad(gameObject);
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null)
+        {
+            playerHealth = player.GetComponent<PlayerHealth>();
+            swordWeapon = player.GetComponentInChildren<SwordWeapon>();
+        }
     }
 
     public bool HasPerk(PerkType perk) => activePerks.Contains(perk);
@@ -148,6 +162,7 @@ public class PassiveItemManager : MonoBehaviour {
                 break;
             case PerkType.DoubleHit:
                 doubleHitChance += 0.25f;
+                Debug.Log("🎯 DoubleHit активирован! Шанс: " + (doubleHitChance * 100) + "%");
                 break;
             case PerkType.Amulet:
                 enemySlowMultiplier = 0.8f;
@@ -226,6 +241,8 @@ public class PassiveItemManager : MonoBehaviour {
             col.GetComponent<DasherAI>()?.TakeDamage(reflectDamage);
             col.GetComponent<GhostAI>()?.TakeDamage(reflectDamage);
             col.GetComponent<MimicAI>()?.TakeDamage(reflectDamage);
+            col.GetComponent<FireSkeletAI>()?.TakeDamage(reflectDamage);
+            col.GetComponent<BossBullet>()?.TakeDamage(reflectDamage);
         }
     }
 

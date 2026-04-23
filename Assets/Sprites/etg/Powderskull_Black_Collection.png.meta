@@ -1,0 +1,716 @@
+fileFormatVersion: 2
+guid: f73a26ced7988cc4bac95f17300b8a5c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Powderskull_Black_Collection_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 108
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 698479931ae7b004d9783c7a67c3e011
+      internalID: -1451209952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Powderskull_Black_Collection_2
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 95
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc859e90ae4c603448ad9603e41326ce
+      internalID: -1608721041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Powderskull_Black_Collection_4
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 91
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 969b808185e40bc4c81c2beb94c26b7b
+      internalID: -1967127768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Powderskull_Black_Collection_5
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 91
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c6e25a8061e53e4989aec5f7b322094
+      internalID: -906976009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Powderskull_Black_Collection_8
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 78
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a11fdc8538bc9124d94fe3f03b7a3393
+      internalID: -1713898701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Powderskull_Black_Collection_9
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 82
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53f5bf0777c0e0d458c4773dedca2546
+      internalID: -512993583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Powderskull_Black_Collection_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 74
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fa916b9c95219d40ac2a0c85aeebcdf
+      internalID: 130881700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Powderskull_Black_Collection_11
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 74
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b1916a20ceae2348b1da3b2dd8ed527
+      internalID: 1942951649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Powderskull_Black_Collection_13
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 73
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8eb9b9ebca56d6449abb265b1d12b90
+      internalID: 1501969531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Powderskull_Black_Collection_15
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 74
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 789acf7d7d247e6448c9b77d2157fbdb
+      internalID: 685579690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Powderskull_Black_Collection_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 55
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e313481085310d64fbb93cf088edbeec
+      internalID: -1751919603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Powderskull_Black_Collection_17
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 55
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1777914f0bc4112438882cfe2e1322a8
+      internalID: -778673984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Powderskull_Black_Collection_20
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 59
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f0def989194a7f48b3ac291f61eb83a
+      internalID: 1801605086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Powderskull_Black_Collection_21
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 63
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b069cec0264b49f4c8ce25212c4c9896
+      internalID: 906634883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Powderskull_Black_Collection_22
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 54
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 844da55c93073da489f3e321082a0b97
+      internalID: -634936959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Powderskull_Black_Collection_24
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 55
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8bf32ed726026f47a90b4b4eff257f5
+      internalID: 1607937565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Powderskull_Black_Collection_27
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 30
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 365dc209fea4d004883da96c8232e6dc
+      internalID: 494416104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Powderskull_Black_Collection_28
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 34
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6012191f78c7924faa27602588ad319
+      internalID: 1925295597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Powderskull_Black_Collection_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 36
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 802a7564a5f578f4a899048d66266261
+      internalID: 1874718054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Powderskull_Black_Collection_33
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 36
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b98aa0952a509e4c99c4cfafed13e69
+      internalID: 882318342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Powderskull_Black_Collection_36
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 35
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c8f2a01b5a304e46b6b6233e01e22f0
+      internalID: -420759311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Powderskull_Black_Collection_37
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 35
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3c1cde394e0caf44ad37f452a7ea57e
+      internalID: -690382525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Powderskull_Black_Collection_50
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 0
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bc4ac941d9fd8543b88e772c6e36e31
+      internalID: 1454933121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Powderskull_Black_Collection_1
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 99
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bef803dd45ff5e242954e1919066fbd2
+      internalID: 1786651520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Powderskull_Black_Collection_3
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 0
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce52275f51de55d41908926f34c7e36d
+      internalID: -1332026441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Powderskull_Black_Collection_6
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 24
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a52805aae83568d4e9f1c6207cc1e3f4
+      internalID: -118914932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Powderskull_Black_Collection_0: -1451209952
+      Powderskull_Black_Collection_1: 1786651520
+      Powderskull_Black_Collection_10: 130881700
+      Powderskull_Black_Collection_11: 1942951649
+      Powderskull_Black_Collection_12: -2133021891
+      Powderskull_Black_Collection_13: 1501969531
+      Powderskull_Black_Collection_14: 1801248950
+      Powderskull_Black_Collection_15: 685579690
+      Powderskull_Black_Collection_16: -1751919603
+      Powderskull_Black_Collection_17: -778673984
+      Powderskull_Black_Collection_18: -1976645376
+      Powderskull_Black_Collection_19: 1635003445
+      Powderskull_Black_Collection_2: -1608721041
+      Powderskull_Black_Collection_20: 1801605086
+      Powderskull_Black_Collection_21: 906634883
+      Powderskull_Black_Collection_22: -634936959
+      Powderskull_Black_Collection_23: -2048303168
+      Powderskull_Black_Collection_24: 1607937565
+      Powderskull_Black_Collection_25: -1858319894
+      Powderskull_Black_Collection_26: 1838891213
+      Powderskull_Black_Collection_27: 494416104
+      Powderskull_Black_Collection_28: 1925295597
+      Powderskull_Black_Collection_29: -154427493
+      Powderskull_Black_Collection_3: -1332026441
+      Powderskull_Black_Collection_30: 1874718054
+      Powderskull_Black_Collection_31: 1868423419
+      Powderskull_Black_Collection_32: 1922074062
+      Powderskull_Black_Collection_33: 882318342
+      Powderskull_Black_Collection_34: -1277344024
+      Powderskull_Black_Collection_35: 868455082
+      Powderskull_Black_Collection_36: -420759311
+      Powderskull_Black_Collection_37: -690382525
+      Powderskull_Black_Collection_38: 580973966
+      Powderskull_Black_Collection_39: 482637970
+      Powderskull_Black_Collection_4: -1967127768
+      Powderskull_Black_Collection_40: -157056494
+      Powderskull_Black_Collection_41: 555108351
+      Powderskull_Black_Collection_42: -1100212693
+      Powderskull_Black_Collection_43: 1532830631
+      Powderskull_Black_Collection_44: -1442996018
+      Powderskull_Black_Collection_45: 1698303431
+      Powderskull_Black_Collection_46: -739732490
+      Powderskull_Black_Collection_47: 401972504
+      Powderskull_Black_Collection_48: 593754582
+      Powderskull_Black_Collection_49: 961783833
+      Powderskull_Black_Collection_5: -906976009
+      Powderskull_Black_Collection_50: 1454933121
+      Powderskull_Black_Collection_51: 734903724
+      Powderskull_Black_Collection_52: 1673874362
+      Powderskull_Black_Collection_53: 1201230183
+      Powderskull_Black_Collection_54: 1434804510
+      Powderskull_Black_Collection_55: 227548051
+      Powderskull_Black_Collection_6: -118914932
+      Powderskull_Black_Collection_7: 996781680
+      Powderskull_Black_Collection_8: -1713898701
+      Powderskull_Black_Collection_9: -512993583
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

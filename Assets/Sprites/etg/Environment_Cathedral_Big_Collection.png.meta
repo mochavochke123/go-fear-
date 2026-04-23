@@ -1,0 +1,3399 @@
+fileFormatVersion: 2
+guid: 68932d0973be2fb4e8dd621e8fda1179
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 997
+        width: 48
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23878ccfa2e7f014b8c70e099c479e18
+      internalID: 237522150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_1
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 1013
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1766581dbebae0b4fae85073d882cf3e
+      internalID: 423191216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_2
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 1013
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb7e7328c0605b24590880c17fd6ee49
+      internalID: 932690201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_3
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 1013
+        width: 19
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d952027ac14c4b540b50678198dbd0c6
+      internalID: -769797420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_4
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 1013
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc336a3b376a5704ebaebc5abfa5cb14
+      internalID: -444883518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_5
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 1013
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeac4c749e44d0346b088f1dfa46e983
+      internalID: -1938340022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_6
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 1013
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98b4d3d840ff48b4b99838804b0e3758
+      internalID: 37211098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_7
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 1013
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c643a1624e17ea46b5e08582a2e30fe
+      internalID: -882241600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_8
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 1012
+        width: 32
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 878c9faf9deb7a44ba29f583e1411360
+      internalID: -728665680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_9
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1012
+        width: 32
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49318e49d3d6796469fc6378d48368de
+      internalID: -95203814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_10
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 1010
+        width: 32
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c599da55e0b83164c986a69f978b58ae
+      internalID: -1003530217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_11
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 1010
+        width: 23
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59cce1b3607b73b40ace97989bb662d0
+      internalID: -1719178314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_12
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 1010
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 311846ac19276a6489417687cee5a94e
+      internalID: -1896340142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_13
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 1010
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf5a0f0aa273cd146b63a7faf7666f24
+      internalID: 1564744007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_14
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 1010
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dff6f4c554494a4ba21a0d2e5558631
+      internalID: -798828896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_15
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 1010
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 683ffcf1115208745a85794b775476af
+      internalID: 1677061001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_16
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 1010
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05ee7d36a1934e24fb9c335b8640d282
+      internalID: -1174114831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_17
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 1010
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aee4e65fab05bd44b8b95521ab1aad06
+      internalID: -1012113811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_18
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 997
+        width: 36
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aafc1a912ce47214598dac08391258cb
+      internalID: -918657822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_19
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 997
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a24f999bc96c5944ea841a3de66e7710
+      internalID: 1613482758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_20
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 997
+        width: 36
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 866031892434f264b8e0edbacb529089
+      internalID: 1254206281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_21
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 997
+        width: 36
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3534dd495979a5645b704050c3c63b25
+      internalID: 861401727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_22
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 997
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2195fbaaf7c399d40b5b19261d0890aa
+      internalID: 894117756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_23
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 997
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07575a194139a0b4b992a3df974df82d
+      internalID: 486318970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_24
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 997
+        width: 67
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18d20012729a0834ea98f165bc5b5030
+      internalID: 1377279191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_25
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 997
+        width: 39
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6681660b2a99d0c4b9ee985d34a81ef6
+      internalID: 1943884056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_26
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 997
+        width: 34
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d228418825099e44a157cb12eab525a
+      internalID: -1586160141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_27
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 997
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b61b474a8b658be4597b758dd85d3225
+      internalID: -518739477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_28
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 998
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5823db183e32e724ea58b99f7e04805b
+      internalID: 863885411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_29
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 997
+        width: 32
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06499c5b55822694a883717b8464eaf0
+      internalID: 1046613303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_30
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 997
+        width: 29
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23b281ea1b6bf15449c926005174a2bc
+      internalID: 1441611386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_31
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 997
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d9e0973716f0da4f83cd9d4b9fbec9e
+      internalID: -737321723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_32
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 997
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4371f34d1c36514a8022535dea67df4
+      internalID: -532445464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_33
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 997
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccd537faa2363aa489dd685c7b42016e
+      internalID: 2131343257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_34
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 997
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe6bffbb303267441b7da407c2ce7c88
+      internalID: 819090673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_35
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 997
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0100a798ee7ae542b81d131278ce04c
+      internalID: 808409314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_36
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 997
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf32599a3b038614281df9bc324fca7d
+      internalID: -1579679970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_37
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 981
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8800d7cca728c14da6e29697a34e9f6
+      internalID: 1649920926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_38
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 981
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea6cdec81bb598441b4e332c71106552
+      internalID: 1789497237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_39
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 981
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 206d8134626b0574583798d3d3227f2c
+      internalID: 995127624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_40
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 981
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f9f61b1214014f4f98f297b703a5001
+      internalID: 342659733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_41
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 981
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b886d588f8f2f084398ed051f33be586
+      internalID: -1446172472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_42
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 981
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99122e7a36e83f54bb73c69165b718a6
+      internalID: 790594439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_43
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 963
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7613fc530cdf2c448a161cdd93d5c046
+      internalID: 1483978898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_44
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 963
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdef0c5fa7bc1a740881d51fe990655b
+      internalID: -2002607309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_45
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 963
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15c2042ae13e0664398640b2e3981ba4
+      internalID: 278315290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_46
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 963
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1525afd9ac99c44ab044ecb170c48a1
+      internalID: -2122699515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_47
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 963
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d83700442edfba34596b08081f9b2944
+      internalID: 2089892323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_48
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 963
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b0e79c8007a9c2478e2566da565faa8
+      internalID: 381813992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_49
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 773
+        width: 182
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c21ed5f52e324594e8e05d355f8a807c
+      internalID: -465978659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_50
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 766
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dd871da8ea797d4492a250ddcf914f1
+      internalID: -891251247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_51
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 776
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca17a24357b083c4d9cb664a54bbafee
+      internalID: -667411891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_52
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 709
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16eaaa4ec8f3d244589f05a12e4b7f84
+      internalID: -1888667734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_53
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 709
+        width: 94
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8b16786b304e7842901291503e12b12
+      internalID: 1455375205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_54
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 772
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98cc7c165c076e54eb9769d6e0e7b8d9
+      internalID: 875000824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_55
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 766
+        width: 17
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 986b64e0cbcfb3040a60156df88d553a
+      internalID: -1001867490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_56
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 770
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc6d25532c7b0d94d8e2d41f73e2591a
+      internalID: 550014199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_57
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 755
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cbe87c3e27c63e4fbda6f3a6aa3cf76
+      internalID: 901022959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_62
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 762
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eb79767c28208248a6413c00db71a66
+      internalID: 1983719514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_63
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 762
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bf79a4fb4851f7449b0d23bf3acbe3c
+      internalID: 2122368542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_64
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 760
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cb8213415d0f964e8fa563830f96b21
+      internalID: 2119074220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_65
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 747
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fabc7425f03667941b499786992d1ac3
+      internalID: -89238672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_66
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 387
+        width: 64
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3234b33b7b2742541aa1995996653230
+      internalID: -39329868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_67
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 735
+        width: 58
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e4697b52bd982b45a8c1b04f80b8571
+      internalID: -1997082127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_68
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 735
+        width: 58
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20822b7feae95bf479acaf7ba7c80c84
+      internalID: 832439277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_69
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 733
+        width: 58
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8841534a133f6564b8e06b13310f01c6
+      internalID: -1252083547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_70
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 747
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13cfb1588ebf6c041ad9bab06284fe68
+      internalID: -423223466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_71
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 684
+        width: 67
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f49bb5c288e0204fbffcaa39af72397
+      internalID: 379428917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_72
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 748
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 630941e98c560b641a768fd4dc38cfbd
+      internalID: -971253346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_73
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 718
+        width: 13
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d49239c3135cc3409acfa260f467b50
+      internalID: -1794724174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_74
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 743
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 625d616d9fe101341b50e80763621e50
+      internalID: -966261916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_75
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 736
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba6930556ea80a34ba54efa01b20c2f6
+      internalID: 1636576567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_76
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 725
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb86eebad1528334e99aeeb91b88968d
+      internalID: 1364825052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_77
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 726
+        width: 31
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1135cf103d9c0824ab2e08cacc026874
+      internalID: -2061600816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_78
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 726
+        width: 29
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43e9f0f400b132247a33fbd2576d317d
+      internalID: -715625822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_79
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 734
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 194643fb17ba7b14c97231c812cc571b
+      internalID: 362131329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_80
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 701
+        width: 96
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44c62a1b5c4c72b40bf3cb71018205a0
+      internalID: -927525383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_81
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 701
+        width: 58
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44d094c088a508d4687c7cd13eb521b9
+      internalID: 2134907937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_85
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 702
+        width: 31
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb44ad39e65c61747bad12ff3bd9d7a8
+      internalID: -423011375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_86
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 724
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7613f0eaee9b226449329670153fad30
+      internalID: 2055140688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_87
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 724
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c68467c4f009d554abf180c62e74aa0d
+      internalID: -968948117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_88
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 701
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05b592293c5e8814b9c9604996ac4ae4
+      internalID: -762720811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_89
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 701
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 786fa0b3b74add7498648efb168fc12d
+      internalID: 1498486260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_90
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 703
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ade20c705ec97364bb8b5b268d858d2b
+      internalID: 1916352296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_91
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 611
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef88de25bcde3b745b630e46c1f6f988
+      internalID: 1649210448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_92
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 611
+        width: 106
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92d4da313f7ee674fa57675aab3098c1
+      internalID: 729223095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_93
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 682
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 203500acd38e9a340ab334fbd77d6b69
+      internalID: -943039518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_94
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 675
+        width: 19
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 042b58b45b6db314d89c96f0a61d29c8
+      internalID: -1942714842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_95
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 651
+        width: 19
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92a3885ff5be5864ca90f4e444eb614c
+      internalID: -1023249070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_96
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 680
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4556085c1f2b2e4abe44da256a3691e
+      internalID: -1675076950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_97
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 690
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9357fbd4a1ccd3b4384d3eee6deefb4f
+      internalID: -565205914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_98
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 689
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7cfd2f1b5fb93241a92b58d4c4804f3
+      internalID: 781849884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_99
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 689
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8328fcd32782f74c96eaee53b1a516d
+      internalID: 739960595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_100
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 678
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bad2ddacae7d4d243b782c16a6d7f626
+      internalID: -2058763296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_101
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 677
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0eb1b1e01029a249859a623d7f151ae
+      internalID: 1755020207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_102
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 677
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ec72e6c5fe7c5f4c8896a898dc5fa08
+      internalID: -343597521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_103
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 677
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3347840f28c861f4da612be94118bf47
+      internalID: 115555992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_104
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 678
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c81285009a6bbe2449f044ad673667c6
+      internalID: -40470761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_105
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 675
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5408d99a8b95edf48b2faa8df344016f
+      internalID: 1607132678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_106
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 652
+        width: 12
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36a0fb96aee22c9448d8c50b4c369a11
+      internalID: -1601722771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_107
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 678
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6becc2957bc56e408842d888737e9f5
+      internalID: -975692764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_108
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 675
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4edc801bc428e77478e83ac5a4d5214b
+      internalID: -343539271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_109
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 674
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2723248e70facfe47959882798364b46
+      internalID: 941359599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_110
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 626
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0df27469fbf8bab43b5a7f23437daf37
+      internalID: -662296540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_111
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 499
+        width: 80
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a60d998950e3dff44b54da6ceb8c6ef9
+      internalID: 1060234237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_112
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 648
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0317ad3940314f4f9b0938594de0567
+      internalID: 1998754234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_113
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 648
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1712a9c212c26af4287b6ba79fddbadc
+      internalID: -374099729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_114
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 652
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d58ea981762a91d4ea2db90df1729d82
+      internalID: -869770921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_115
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 554
+        width: 6
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5d70eac937630f4cbb647c9ffab5a08
+      internalID: 833644147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_116
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 646
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c7d766f918b71e48a4d144d8f770076
+      internalID: -187603826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_117
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 630
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 220071c036d26a843877620ab1990163
+      internalID: -634152363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_118
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 630
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d041b060604265c489a689610d2a6187
+      internalID: -1828764049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_119
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 642
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c288870a38cd7304dac8237a15d6be9e
+      internalID: 1101780055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_120
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 638
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c75f254666c3a3b42a9d0978842bc770
+      internalID: -657363000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_121
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 630
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeacb7e65f0bee040a8e20dca7466436
+      internalID: -548617855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_122
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 630
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10b59015730dfc4459172dc582733aec
+      internalID: -478960621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_123
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 600
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1b36ed7f4d2e46478b6f3d75bac57db
+      internalID: 712749887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_124
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 620
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d622be375d406247977e493de81c53e
+      internalID: 894686580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_125
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 622
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d6785989d5914742bce16d9ce0ba885
+      internalID: -1671809096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_126
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 611
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62f00892684ed594ca393b9bb21c93b3
+      internalID: 1352340415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_127
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 614
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a504b83573576b84988a8255405e089b
+      internalID: 1730883404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_128
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 581
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed7c331f48170e64894c3c6391c016b8
+      internalID: 1818594371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_129
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 1
+        width: 112
+        height: 608
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9616683882ef9bf4eaaaa0fd940fdf0b
+      internalID: -193670590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_130
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 545
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 315edb7e65fd92c48a8ff5e4ed80ebc0
+      internalID: -1137520993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_131
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 606
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e61d8e5c0de21b4a8b7d470e49fbd9e
+      internalID: 1352343721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_132
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 598
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c580eee4189fd944480504170cbcd06f
+      internalID: 1625072809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_133
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 571
+        width: 17
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bb7e53cc36535c4e8607760f561b7c6
+      internalID: -402571484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_134
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 590
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae6ab88a6f410d5448e95cf91916bc9e
+      internalID: 1551140369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_135
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 582
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd8d8a02380eb3947af7fd71b253b907
+      internalID: -2059019040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_136
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 548
+        width: 13
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51c124dd19a4c764c9e94bb818c2b50c
+      internalID: -712544915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_137
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 547
+        width: 15
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a115fb2f7a53bd49901c44ad8cfb9cc
+      internalID: -1253899033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_138
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 574
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ebca4422c9f43c43adedec57e956c22
+      internalID: 226785496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_139
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 535
+        width: 15
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42925e29c81025b43ac2e3e62d48f7a1
+      internalID: 1383073869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_140
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 566
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55b72dbff6f7d3140b2df58e0e4dba2a
+      internalID: 803143678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_141
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 550
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6d118abf48c7ca41b721530c6cae303
+      internalID: 1750473588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_142
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 550
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52fae18385be3fc4e91f2340e7147659
+      internalID: 143011393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_143
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 562
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3508f7f0ebfdeac4bbe035035c2ff5ac
+      internalID: -1585939405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_144
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 554
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78a8fc9b73307af4cb6fc9c1526dfdb5
+      internalID: -813522715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_145
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 550
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eecf2bb4e41cdaa4383bb2c18fd99cc7
+      internalID: -2146607673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_146
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 483
+        width: 8
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90e66758c9694bd41a5eaf4ff1151990
+      internalID: 2019107067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_147
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 499
+        width: 19
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0758893ec0ba6a4793be645f8acba96
+      internalID: -1743230900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_148
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 499
+        width: 29
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97b303c92d250eb478da0594a763205f
+      internalID: -733975066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_149
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 483
+        width: 53
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 818e0d8a4dd52804e9a2a66bcd9261de
+      internalID: -1407710426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_150
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 704
+        height: 496
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b68ccde0ed30294488915adf1bc639d1
+      internalID: -2029862464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_151
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 433
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47d36471fceb1124fb697df41b5a2de3
+      internalID: 1031720801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_152
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 206
+        width: 64
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b96a731140acd8c44a1add3a820a22a4
+      internalID: -1342983721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_153
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 1
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fad4a89a0607d1341b1eaf2790052061
+      internalID: 644979479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_154
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 1
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b764b85ea9b433c44b08ddcfc6d25e0b
+      internalID: 1039721277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Cathedral_Big_Collection_155
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 1
+        width: 69
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33d304ece2601ea40bda18fe5118a4ae
+      internalID: 1679437892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Environment_Cathedral_Big_Collection_0: 237522150
+      Environment_Cathedral_Big_Collection_1: 423191216
+      Environment_Cathedral_Big_Collection_10: -1003530217
+      Environment_Cathedral_Big_Collection_100: -2058763296
+      Environment_Cathedral_Big_Collection_101: 1755020207
+      Environment_Cathedral_Big_Collection_102: -343597521
+      Environment_Cathedral_Big_Collection_103: 115555992
+      Environment_Cathedral_Big_Collection_104: -40470761
+      Environment_Cathedral_Big_Collection_105: 1607132678
+      Environment_Cathedral_Big_Collection_106: -1601722771
+      Environment_Cathedral_Big_Collection_107: -975692764
+      Environment_Cathedral_Big_Collection_108: -343539271
+      Environment_Cathedral_Big_Collection_109: 941359599
+      Environment_Cathedral_Big_Collection_11: -1719178314
+      Environment_Cathedral_Big_Collection_110: -662296540
+      Environment_Cathedral_Big_Collection_111: 1060234237
+      Environment_Cathedral_Big_Collection_112: 1998754234
+      Environment_Cathedral_Big_Collection_113: -374099729
+      Environment_Cathedral_Big_Collection_114: -869770921
+      Environment_Cathedral_Big_Collection_115: 833644147
+      Environment_Cathedral_Big_Collection_116: -187603826
+      Environment_Cathedral_Big_Collection_117: -634152363
+      Environment_Cathedral_Big_Collection_118: -1828764049
+      Environment_Cathedral_Big_Collection_119: 1101780055
+      Environment_Cathedral_Big_Collection_12: -1896340142
+      Environment_Cathedral_Big_Collection_120: -657363000
+      Environment_Cathedral_Big_Collection_121: -548617855
+      Environment_Cathedral_Big_Collection_122: -478960621
+      Environment_Cathedral_Big_Collection_123: 712749887
+      Environment_Cathedral_Big_Collection_124: 894686580
+      Environment_Cathedral_Big_Collection_125: -1671809096
+      Environment_Cathedral_Big_Collection_126: 1352340415
+      Environment_Cathedral_Big_Collection_127: 1730883404
+      Environment_Cathedral_Big_Collection_128: 1818594371
+      Environment_Cathedral_Big_Collection_129: -193670590
+      Environment_Cathedral_Big_Collection_13: 1564744007
+      Environment_Cathedral_Big_Collection_130: -1137520993
+      Environment_Cathedral_Big_Collection_131: 1352343721
+      Environment_Cathedral_Big_Collection_132: 1625072809
+      Environment_Cathedral_Big_Collection_133: -402571484
+      Environment_Cathedral_Big_Collection_134: 1551140369
+      Environment_Cathedral_Big_Collection_135: -2059019040
+      Environment_Cathedral_Big_Collection_136: -712544915
+      Environment_Cathedral_Big_Collection_137: -1253899033
+      Environment_Cathedral_Big_Collection_138: 226785496
+      Environment_Cathedral_Big_Collection_139: 1383073869
+      Environment_Cathedral_Big_Collection_14: -798828896
+      Environment_Cathedral_Big_Collection_140: 803143678
+      Environment_Cathedral_Big_Collection_141: 1750473588
+      Environment_Cathedral_Big_Collection_142: 143011393
+      Environment_Cathedral_Big_Collection_143: -1585939405
+      Environment_Cathedral_Big_Collection_144: -813522715
+      Environment_Cathedral_Big_Collection_145: -2146607673
+      Environment_Cathedral_Big_Collection_146: 2019107067
+      Environment_Cathedral_Big_Collection_147: -1743230900
+      Environment_Cathedral_Big_Collection_148: -733975066
+      Environment_Cathedral_Big_Collection_149: -1407710426
+      Environment_Cathedral_Big_Collection_15: 1677061001
+      Environment_Cathedral_Big_Collection_150: -2029862464
+      Environment_Cathedral_Big_Collection_151: 1031720801
+      Environment_Cathedral_Big_Collection_152: -1342983721
+      Environment_Cathedral_Big_Collection_153: 644979479
+      Environment_Cathedral_Big_Collection_154: 1039721277
+      Environment_Cathedral_Big_Collection_155: 1679437892
+      Environment_Cathedral_Big_Collection_16: -1174114831
+      Environment_Cathedral_Big_Collection_17: -1012113811
+      Environment_Cathedral_Big_Collection_18: -918657822
+      Environment_Cathedral_Big_Collection_19: 1613482758
+      Environment_Cathedral_Big_Collection_2: 932690201
+      Environment_Cathedral_Big_Collection_20: 1254206281
+      Environment_Cathedral_Big_Collection_21: 861401727
+      Environment_Cathedral_Big_Collection_22: 894117756
+      Environment_Cathedral_Big_Collection_23: 486318970
+      Environment_Cathedral_Big_Collection_24: 1377279191
+      Environment_Cathedral_Big_Collection_25: 1943884056
+      Environment_Cathedral_Big_Collection_26: -1586160141
+      Environment_Cathedral_Big_Collection_27: -518739477
+      Environment_Cathedral_Big_Collection_28: 863885411
+      Environment_Cathedral_Big_Collection_29: 1046613303
+      Environment_Cathedral_Big_Collection_3: -769797420
+      Environment_Cathedral_Big_Collection_30: 1441611386
+      Environment_Cathedral_Big_Collection_31: -737321723
+      Environment_Cathedral_Big_Collection_32: -532445464
+      Environment_Cathedral_Big_Collection_33: 2131343257
+      Environment_Cathedral_Big_Collection_34: 819090673
+      Environment_Cathedral_Big_Collection_35: 808409314
+      Environment_Cathedral_Big_Collection_36: -1579679970
+      Environment_Cathedral_Big_Collection_37: 1649920926
+      Environment_Cathedral_Big_Collection_38: 1789497237
+      Environment_Cathedral_Big_Collection_39: 995127624
+      Environment_Cathedral_Big_Collection_4: -444883518
+      Environment_Cathedral_Big_Collection_40: 342659733
+      Environment_Cathedral_Big_Collection_41: -1446172472
+      Environment_Cathedral_Big_Collection_42: 790594439
+      Environment_Cathedral_Big_Collection_43: 1483978898
+      Environment_Cathedral_Big_Collection_44: -2002607309
+      Environment_Cathedral_Big_Collection_45: 278315290
+      Environment_Cathedral_Big_Collection_46: -2122699515
+      Environment_Cathedral_Big_Collection_47: 2089892323
+      Environment_Cathedral_Big_Collection_48: 381813992
+      Environment_Cathedral_Big_Collection_49: -465978659
+      Environment_Cathedral_Big_Collection_5: -1938340022
+      Environment_Cathedral_Big_Collection_50: -891251247
+      Environment_Cathedral_Big_Collection_51: -667411891
+      Environment_Cathedral_Big_Collection_52: -1888667734
+      Environment_Cathedral_Big_Collection_53: 1455375205
+      Environment_Cathedral_Big_Collection_54: 875000824
+      Environment_Cathedral_Big_Collection_55: -1001867490
+      Environment_Cathedral_Big_Collection_56: 550014199
+      Environment_Cathedral_Big_Collection_57: 901022959
+      Environment_Cathedral_Big_Collection_58: 621570624
+      Environment_Cathedral_Big_Collection_59: 916375316
+      Environment_Cathedral_Big_Collection_6: 37211098
+      Environment_Cathedral_Big_Collection_60: -897816412
+      Environment_Cathedral_Big_Collection_61: -1136152915
+      Environment_Cathedral_Big_Collection_62: 1983719514
+      Environment_Cathedral_Big_Collection_63: 2122368542
+      Environment_Cathedral_Big_Collection_64: 2119074220
+      Environment_Cathedral_Big_Collection_65: -89238672
+      Environment_Cathedral_Big_Collection_66: -39329868
+      Environment_Cathedral_Big_Collection_67: -1997082127
+      Environment_Cathedral_Big_Collection_68: 832439277
+      Environment_Cathedral_Big_Collection_69: -1252083547
+      Environment_Cathedral_Big_Collection_7: -882241600
+      Environment_Cathedral_Big_Collection_70: -423223466
+      Environment_Cathedral_Big_Collection_71: 379428917
+      Environment_Cathedral_Big_Collection_72: -971253346
+      Environment_Cathedral_Big_Collection_73: -1794724174
+      Environment_Cathedral_Big_Collection_74: -966261916
+      Environment_Cathedral_Big_Collection_75: 1636576567
+      Environment_Cathedral_Big_Collection_76: 1364825052
+      Environment_Cathedral_Big_Collection_77: -2061600816
+      Environment_Cathedral_Big_Collection_78: -715625822
+      Environment_Cathedral_Big_Collection_79: 362131329
+      Environment_Cathedral_Big_Collection_8: -728665680
+      Environment_Cathedral_Big_Collection_80: -927525383
+      Environment_Cathedral_Big_Collection_81: 2134907937
+      Environment_Cathedral_Big_Collection_82: -1091183951
+      Environment_Cathedral_Big_Collection_83: -1088549100
+      Environment_Cathedral_Big_Collection_84: -835887658
+      Environment_Cathedral_Big_Collection_85: -423011375
+      Environment_Cathedral_Big_Collection_86: 2055140688
+      Environment_Cathedral_Big_Collection_87: -968948117
+      Environment_Cathedral_Big_Collection_88: -762720811
+      Environment_Cathedral_Big_Collection_89: 1498486260
+      Environment_Cathedral_Big_Collection_9: -95203814
+      Environment_Cathedral_Big_Collection_90: 1916352296
+      Environment_Cathedral_Big_Collection_91: 1649210448
+      Environment_Cathedral_Big_Collection_92: 729223095
+      Environment_Cathedral_Big_Collection_93: -943039518
+      Environment_Cathedral_Big_Collection_94: -1942714842
+      Environment_Cathedral_Big_Collection_95: -1023249070
+      Environment_Cathedral_Big_Collection_96: -1675076950
+      Environment_Cathedral_Big_Collection_97: -565205914
+      Environment_Cathedral_Big_Collection_98: 781849884
+      Environment_Cathedral_Big_Collection_99: 739960595
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

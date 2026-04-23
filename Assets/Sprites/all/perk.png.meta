@@ -164,9 +164,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 898
-        y: 165
-        width: 27
-        height: 28
+        y: 164
+        width: 28
+        height: 29
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -185,9 +185,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 706
-        y: 70
-        width: 27
-        height: 26
+        y: 68
+        width: 28
+        height: 28
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,9 +206,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1250
-        y: 197
-        width: 27
-        height: 27
+        y: 196
+        width: 28
+        height: 28
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -227,9 +227,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1314
-        y: 197
-        width: 27
-        height: 27
+        y: 196
+        width: 28
+        height: 28
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -248,9 +248,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1602
-        y: 229
-        width: 27
-        height: 27
+        y: 228
+        width: 28
+        height: 28
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -269,9 +269,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1569
-        y: 197
-        width: 28
-        height: 27
+        y: 196
+        width: 30
+        height: 28
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -290,9 +290,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1506
-        y: 101
-        width: 27
-        height: 27
+        y: 100
+        width: 28
+        height: 28
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -311,9 +311,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1442
-        y: 133
-        width: 27
-        height: 27
+        y: 132
+        width: 28
+        height: 28
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -331,9 +331,9 @@ TextureImporter:
       name: ProjectUtumno_full (2)_11
       rect:
         serializedVersion: 2
-        x: 897
-        y: 69
-        width: 29
+        x: 898
+        y: 68
+        width: 28
         height: 28
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -375,7 +375,7 @@ TextureImporter:
         serializedVersion: 2
         x: 353
         y: 68
-        width: 28
+        width: 29
         height: 28
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -395,7 +395,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 226
-        y: 69
+        y: 68
         width: 27
         height: 28
       alignment: 0
@@ -437,9 +437,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 290
-        y: 101
+        y: 100
         width: 28
-        height: 27
+        height: 28
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -459,7 +459,7 @@ TextureImporter:
         serializedVersion: 2
         x: 98
         y: 164
-        width: 29
+        width: 28
         height: 29
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -479,7 +479,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1026
-        y: 69
+        y: 68
         width: 28
         height: 28
       alignment: 0
@@ -491,6 +491,48 @@ TextureImporter:
       bones: []
       spriteID: 7fe6a663715109f4789cd1eb36cadef4
       internalID: -1579988468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: perk_0
+      rect:
+        serializedVersion: 2
+        x: 1762
+        y: 228
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fee584655dcd5b840b2009b966d1fd94
+      internalID: 889666960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: perk_1
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 99
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 644f0488475b0134c9073d26c6e85943
+      internalID: 1307313466
       vertices: []
       indices: 
       edges: []
@@ -525,6 +567,8 @@ TextureImporter:
       ProjectUtumno_full (2)_7: -435021007
       ProjectUtumno_full (2)_8: 1670798107
       ProjectUtumno_full (2)_9: -1876618508
+      perk_0: 889666960
+      perk_1: 1307313466
       wizhad_0: 1490704198
       wizhad_1: 525848356
   mipmapLimitGroupName: 

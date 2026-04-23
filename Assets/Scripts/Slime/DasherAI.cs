@@ -54,7 +54,10 @@ public class DasherAI : MonoBehaviour {
         if (dist < detectionRange)
         {
             if (spriteRenderer != null)
-                spriteRenderer.flipX = player.position.x < transform.position.x;
+            {
+                bool faceRight = player.position.x > transform.position.x;
+                spriteRenderer.flipX = !faceRight;
+            }
 
             if (dist < attackRange && attackTimer <= 0f)
             {
@@ -160,6 +163,7 @@ public class DasherAI : MonoBehaviour {
         soulUI?.AddSouls(1);
 
 GetComponentInParent<RoomManager>()?.OnEnemyDied();
+        GetComponentInParent<WaveRoomManager>()?.OnEnemyDied();
         Destroy(gameObject, 1f);
     }
 

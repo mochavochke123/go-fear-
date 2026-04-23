@@ -1,0 +1,1249 @@
+fileFormatVersion: 2
+guid: ece8cd344c70398489b1dc55fadb9704
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Boss_BulletBishop_Collection_2
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 447
+        width: 30
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21b087007b964a44b90db446c1464d05
+      internalID: 1027707430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_BulletBishop_Collection_3
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 455
+        width: 34
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb676bcdf01665b429652013b4bc73f4
+      internalID: -477911792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_BulletBishop_Collection_5
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 418
+        width: 28
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3966950cb26b5a24eb101303426972aa
+      internalID: 549054798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_BulletBishop_Collection_6
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 399
+        width: 29
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 245d1ccd472611a42ac061a1aeefcb61
+      internalID: -719322994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_BulletBishop_Collection_8
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 439
+        width: 42
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7419eeea1b7b72f4289ef4f1cb348f04
+      internalID: 1596612636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_BulletBishop_Collection_9
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 399
+        width: 31
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bc9ff16869545a4c91c1d164cef3cc0
+      internalID: -62910690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_BulletBishop_Collection_10
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 400
+        width: 34
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2600762bd6b0b4b47a9545dc9f71368c
+      internalID: -1178629147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_BulletBishop_Collection_11
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 396
+        width: 34
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 088599c2e8746d342a5e905219824070
+      internalID: -1186899307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_BulletBishop_Collection_15
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 343
+        width: 32
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da467578bdfbb644f887df66043cbc8a
+      internalID: 788549473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_BulletBishop_Collection_16
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 395
+        width: 31
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a6573b9c6a1faf4093852adf4cc1e49
+      internalID: -377106954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_BulletBishop_Collection_17
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 387
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52fb4ff89e58a4543afd1c3af82dc441
+      internalID: 606789312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_BulletBishop_Collection_18
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 341
+        width: 28
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7619cd4fe653d374586f30ff661015f2
+      internalID: 647216290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_BulletBishop_Collection_19
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 378
+        width: 32
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5de96091c8656645b06c685aa7fc9f6
+      internalID: 1314736509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_BulletBishop_Collection_20
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 378
+        width: 36
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ce975dd3b222ff4a933d638ba035574
+      internalID: 91095594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_BulletBishop_Collection_21
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 339
+        width: 40
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75b56c49c46293f4981022e2ecd57879
+      internalID: 1033233668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_BulletBishop_Collection_26
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 331
+        width: 32
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17e1c7005a42ce34baf7e8a53997756b
+      internalID: 858395108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_BulletBishop_Collection_27
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 321
+        width: 34
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6e17a57663a21e43bd8932d368b573d
+      internalID: -1832744851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_BulletBishop_Collection_28
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 320
+        width: 23
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa7ed15159991064e88b1466d68b8f9f
+      internalID: 595375596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_BulletBishop_Collection_29
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 316
+        width: 36
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f81caf8b27fc12047baf6cf03cc3da8c
+      internalID: 1849217665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_BulletBishop_Collection_31
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 338
+        width: 33
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4bea1f105a800a4dbc632f448b4aa98
+      internalID: -1654899021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_BulletBishop_Collection_32
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 288
+        width: 33
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f4cba11bfbc50e4b82ed7c0169b6e97
+      internalID: 717541022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_BulletBishop_Collection_35
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 273
+        width: 34
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7bb39fa152b30c4ea3e2664958276d8
+      internalID: -735449934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_BulletBishop_Collection_36
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 278
+        width: 23
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37deb6b6eabc62b41bed1c89697f7e6c
+      internalID: -1398761966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_BulletBishop_Collection_38
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 278
+        width: 36
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14ad4ddcac1147740a618f7b30886ce8
+      internalID: -395149892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_BulletBishop_Collection_39
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 274
+        width: 30
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a78eb00fd7f5776439bc69aa4771ee20
+      internalID: -1047780188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_BulletBishop_Collection_40
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 230
+        width: 34
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18a5fbaa722c7f640a9e09778a720916
+      internalID: 575716914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_BulletBishop_Collection_43
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 259
+        width: 30
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27fb39f56f3f38e4aaf8f855d4400727
+      internalID: -980533469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_BulletBishop_Collection_44
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 256
+        width: 23
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec9594cb8fdf7a443ac022beacf31974
+      internalID: 1346891739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_BulletBishop_Collection_45
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 272
+        width: 47
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 262f2cbc6a2887d438ab2825778b213b
+      internalID: -1270213740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_BulletBishop_Collection_49
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 214
+        width: 23
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f990d52fe8e2e9841befb3a82aa12f7a
+      internalID: 2144877578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_BulletBishop_Collection_50
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 220
+        width: 26
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2662936ade701944a5648380cc51c16
+      internalID: -1114088303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_BulletBishop_Collection_52
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 215
+        width: 34
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 602d8bde8fb719a4abe6c87f3ec1a4b5
+      internalID: -640543657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_BulletBishop_Collection_55
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 216
+        width: 28
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b0ff7be423f3544aab3b7724c52d3ce
+      internalID: -477217113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_BulletBishop_Collection_56
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 172
+        width: 34
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cced29efc4523e5449f5d973fd35b60a
+      internalID: -1510533461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_BulletBishop_Collection_60
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 192
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00d0a76863d1c1247a794a39be51a00e
+      internalID: 1143542574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_BulletBishop_Collection_61
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 192
+        width: 25
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07a614b3d68400a488be7b4f36565e21
+      internalID: 650147998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_BulletBishop_Collection_63
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 156
+        width: 25
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 881759721712e0d489e1e9ae6611dc52
+      internalID: -449863969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_BulletBishop_Collection_64
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 157
+        width: 29
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03c5829228c18514aaad7a289a0e3e82
+      internalID: 1529766601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_BulletBishop_Collection_67
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 150
+        width: 34
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93ef118046020e348a6b9de934c6fbf3
+      internalID: 744708642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_BulletBishop_Collection_68
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 150
+        width: 23
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6c940857c1ecc74db65e3a5198e728f
+      internalID: 871121758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_BulletBishop_Collection_70
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 144
+        width: 40
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15ddfbc148cd1894c858b2d58053a47a
+      internalID: -1573769411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_BulletBishop_Collection_84
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 84
+        width: 40
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81ccc536040c76443a7089b30e11d942
+      internalID: 204124191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_BulletBishop_Collection_86
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 84
+        width: 79
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd0fcbe5437d73540a9f1ff8d01d2503
+      internalID: -365326254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_BulletBishop_Collection_87
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 95
+        width: 66
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68e96bb1355c61645b71344c1de2b065
+      internalID: -1331417459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_BulletBishop_Collection_88
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 95
+        width: 27
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 395a0531f404c5c49bf507eb7e82495c
+      internalID: -990463478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_BulletBishop_Collection_93
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 1
+        width: 76
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07eeceae28902bb4a977be8b05103f06
+      internalID: -1740066432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_BulletBishop_Collection_79
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 87
+        width: 44
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2be069e2a5c45e40ac36803c001c9a8
+      internalID: -393538462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_BulletBishop_Collection_81
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 1
+        width: 102
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 414112f8cbbba9f4eb880e071b259763
+      internalID: 952815391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Boss_BulletBishop_Collection_0: 528935324
+      Boss_BulletBishop_Collection_1: -1853702003
+      Boss_BulletBishop_Collection_10: -1178629147
+      Boss_BulletBishop_Collection_100: -1937780693
+      Boss_BulletBishop_Collection_101: 738402647
+      Boss_BulletBishop_Collection_102: -1519673378
+      Boss_BulletBishop_Collection_103: -2126183030
+      Boss_BulletBishop_Collection_104: 853733336
+      Boss_BulletBishop_Collection_105: 1567746074
+      Boss_BulletBishop_Collection_106: 215700837
+      Boss_BulletBishop_Collection_107: 1853444647
+      Boss_BulletBishop_Collection_108: 2065621756
+      Boss_BulletBishop_Collection_109: -513422723
+      Boss_BulletBishop_Collection_11: -1186899307
+      Boss_BulletBishop_Collection_110: -355501973
+      Boss_BulletBishop_Collection_111: -393986174
+      Boss_BulletBishop_Collection_112: -139589000
+      Boss_BulletBishop_Collection_113: -2038794615
+      Boss_BulletBishop_Collection_114: 1049911345
+      Boss_BulletBishop_Collection_115: -969313024
+      Boss_BulletBishop_Collection_116: 1852017200
+      Boss_BulletBishop_Collection_117: 1864166698
+      Boss_BulletBishop_Collection_118: -1916157048
+      Boss_BulletBishop_Collection_119: -566471738
+      Boss_BulletBishop_Collection_12: -954320240
+      Boss_BulletBishop_Collection_120: -2115610655
+      Boss_BulletBishop_Collection_121: 493468462
+      Boss_BulletBishop_Collection_122: 1436970274
+      Boss_BulletBishop_Collection_123: -1780481538
+      Boss_BulletBishop_Collection_124: -520942559
+      Boss_BulletBishop_Collection_125: 1152651001
+      Boss_BulletBishop_Collection_126: 639298294
+      Boss_BulletBishop_Collection_13: 654177160
+      Boss_BulletBishop_Collection_14: 1230175784
+      Boss_BulletBishop_Collection_15: 788549473
+      Boss_BulletBishop_Collection_16: -377106954
+      Boss_BulletBishop_Collection_17: 606789312
+      Boss_BulletBishop_Collection_18: 647216290
+      Boss_BulletBishop_Collection_19: 1314736509
+      Boss_BulletBishop_Collection_2: 1027707430
+      Boss_BulletBishop_Collection_20: 91095594
+      Boss_BulletBishop_Collection_21: 1033233668
+      Boss_BulletBishop_Collection_22: -1524652427
+      Boss_BulletBishop_Collection_23: -1006399718
+      Boss_BulletBishop_Collection_24: -1425654910
+      Boss_BulletBishop_Collection_25: 1724287460
+      Boss_BulletBishop_Collection_26: 858395108
+      Boss_BulletBishop_Collection_27: -1832744851
+      Boss_BulletBishop_Collection_28: 595375596
+      Boss_BulletBishop_Collection_29: 1849217665
+      Boss_BulletBishop_Collection_3: -477911792
+      Boss_BulletBishop_Collection_30: -907137837
+      Boss_BulletBishop_Collection_31: -1654899021
+      Boss_BulletBishop_Collection_32: 717541022
+      Boss_BulletBishop_Collection_33: -897023312
+      Boss_BulletBishop_Collection_34: 1751412241
+      Boss_BulletBishop_Collection_35: -735449934
+      Boss_BulletBishop_Collection_36: -1398761966
+      Boss_BulletBishop_Collection_37: 1329730594
+      Boss_BulletBishop_Collection_38: -395149892
+      Boss_BulletBishop_Collection_39: -1047780188
+      Boss_BulletBishop_Collection_4: 796699530
+      Boss_BulletBishop_Collection_40: 575716914
+      Boss_BulletBishop_Collection_41: -345867963
+      Boss_BulletBishop_Collection_42: -1954681659
+      Boss_BulletBishop_Collection_43: -980533469
+      Boss_BulletBishop_Collection_44: 1346891739
+      Boss_BulletBishop_Collection_45: -1270213740
+      Boss_BulletBishop_Collection_46: 1115258655
+      Boss_BulletBishop_Collection_47: -155526539
+      Boss_BulletBishop_Collection_48: -1571794521
+      Boss_BulletBishop_Collection_49: 2144877578
+      Boss_BulletBishop_Collection_5: 549054798
+      Boss_BulletBishop_Collection_50: -1114088303
+      Boss_BulletBishop_Collection_51: 1510452890
+      Boss_BulletBishop_Collection_52: -640543657
+      Boss_BulletBishop_Collection_53: -1310745988
+      Boss_BulletBishop_Collection_54: 266723604
+      Boss_BulletBishop_Collection_55: -477217113
+      Boss_BulletBishop_Collection_56: -1510533461
+      Boss_BulletBishop_Collection_57: -365984665
+      Boss_BulletBishop_Collection_58: -959316896
+      Boss_BulletBishop_Collection_59: 943832080
+      Boss_BulletBishop_Collection_6: -719322994
+      Boss_BulletBishop_Collection_60: 1143542574
+      Boss_BulletBishop_Collection_61: 650147998
+      Boss_BulletBishop_Collection_62: -1420027506
+      Boss_BulletBishop_Collection_63: -449863969
+      Boss_BulletBishop_Collection_64: 1529766601
+      Boss_BulletBishop_Collection_65: 1439264467
+      Boss_BulletBishop_Collection_66: 834589674
+      Boss_BulletBishop_Collection_67: 744708642
+      Boss_BulletBishop_Collection_68: 871121758
+      Boss_BulletBishop_Collection_69: 1030969763
+      Boss_BulletBishop_Collection_7: 499469611
+      Boss_BulletBishop_Collection_70: -1573769411
+      Boss_BulletBishop_Collection_71: -412039613
+      Boss_BulletBishop_Collection_72: 1719818146
+      Boss_BulletBishop_Collection_73: -788238384
+      Boss_BulletBishop_Collection_74: 557861949
+      Boss_BulletBishop_Collection_75: 307078401
+      Boss_BulletBishop_Collection_76: -1591440588
+      Boss_BulletBishop_Collection_77: 1308550887
+      Boss_BulletBishop_Collection_78: -658344454
+      Boss_BulletBishop_Collection_79: -393538462
+      Boss_BulletBishop_Collection_8: 1596612636
+      Boss_BulletBishop_Collection_80: 779586776
+      Boss_BulletBishop_Collection_81: 952815391
+      Boss_BulletBishop_Collection_82: 161548534
+      Boss_BulletBishop_Collection_83: 2095076035
+      Boss_BulletBishop_Collection_84: 204124191
+      Boss_BulletBishop_Collection_85: 1375796087
+      Boss_BulletBishop_Collection_86: -365326254
+      Boss_BulletBishop_Collection_87: -1331417459
+      Boss_BulletBishop_Collection_88: -990463478
+      Boss_BulletBishop_Collection_89: -1361770484
+      Boss_BulletBishop_Collection_9: -62910690
+      Boss_BulletBishop_Collection_90: 1087551767
+      Boss_BulletBishop_Collection_91: -2143160018
+      Boss_BulletBishop_Collection_92: -388718458
+      Boss_BulletBishop_Collection_93: -1740066432
+      Boss_BulletBishop_Collection_94: 78177981
+      Boss_BulletBishop_Collection_95: 2097447841
+      Boss_BulletBishop_Collection_96: 1878765625
+      Boss_BulletBishop_Collection_97: -1724142017
+      Boss_BulletBishop_Collection_98: -984486365
+      Boss_BulletBishop_Collection_99: -2110576451
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

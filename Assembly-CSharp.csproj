@@ -62,10 +62,12 @@
   <ItemGroup>
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
+    <Compile Include="Assets\Scripts\Level\Level2Spawn.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
     <Compile Include="Assets\Scripts\UI\MainMenu.cs" />
     <Compile Include="Assets\Scripts\Player\CameraFollower.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
+    <Compile Include="Assets\Scripts\Slime\FireSkeletAI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
     <Compile Include="Assets\Scripts\Weapon\AutoDestroy.cs" />
@@ -74,6 +76,7 @@
     <Compile Include="Assets\Scripts\Level\Door.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
     <Compile Include="Assets\Scripts\Player\playerhealth.cs" />
+    <Compile Include="Assets\Scripts\UI\SynergyUI.cs" />
     <Compile Include="Assets\Scripts\Player\Healthcontainer.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
@@ -81,11 +84,16 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
+    <Compile Include="Assets\Scripts\Slime\FireProjectile.cs" />
     <Compile Include="Assets\Scripts\Soul\OwnedPerksUI.cs" />
+    <Compile Include="Assets\Scripts\Soul\PerkDatabase.cs" />
     <Compile Include="Assets\Scripts\Level\LevelGenerator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
+    <Compile Include="Assets\Scripts\Level\EnemyDatabase.cs" />
     <Compile Include="Assets\PlayerinputActions\PlayerinputActions.cs" />
+    <Compile Include="Assets\Scripts\Level\LockedDoor.cs" />
+    <Compile Include="Assets\Scripts\Slime\GhostAI.cs" />
     <Compile Include="Assets\Scripts\Level\RoomManager.cs" />
     <Compile Include="Assets\Scripts\UI\GameReset.cs" />
     <Compile Include="Assets\Scripts\Level\RoomEnemySpawner.cs" />
@@ -95,17 +103,23 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
     <Compile Include="Assets\Scripts\Soul\VampirismParticle.cs" />
+    <Compile Include="Assets\Scripts\Level\Level2Generator.cs" />
     <Compile Include="Assets\Scripts\Player\Player.cs" />
+    <Compile Include="Assets\Scripts\Slime\BossBulletProjectile.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
+    <Compile Include="Assets\Scripts\Slime\MimicAI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
     <Compile Include="Assets\Scripts\Soul\Soului.cs" />
+    <Compile Include="Assets\Scripts\Level\WaveCounter.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
     <Compile Include="Assets\Scripts\Soul\MinionAI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
+    <Compile Include="Assets\Scripts\Level\WaveRoomManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
+    <Compile Include="Assets\Scripts\Slime\BossBullet.cs" />
     <Compile Include="Assets\Scripts\Weapon\ActiveWeapon.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
     <Compile Include="Assets\Scripts\Weapon\SwordWeapon.cs" />
@@ -116,6 +130,7 @@
     <Compile Include="Assets\Scripts\Soul\ShopUi.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
     <Compile Include="Assets\Scripts\Soul\PassiveItemManager.cs" />
+    <Compile Include="Assets\Scripts\Player\BloodBerserkerAura.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
     <Compile Include="Assets\Scripts\Slime\DasherAI.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerDash.cs" />
@@ -1225,14 +1240,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="NavMeshPlus.csproj">
-      <Project>{7B1CEA96-ECDB-D067-89CE-EDA989DB9276}</Project>
-      <Name>NavMeshPlus</Name>
-    </ProjectReference>
-    <ProjectReference Include="NavMeshPlusEditor.csproj">
-      <Project>{25D250DE-4835-D417-B532-D37D9D2A744D}</Project>
-      <Name>NavMeshPlusEditor</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

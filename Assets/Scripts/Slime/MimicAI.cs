@@ -8,7 +8,6 @@ public class MimicAI : MonoBehaviour
     [SerializeField] private float moveSpeed = 3f;
     [SerializeField] private float damage = 0.5f;
     [SerializeField] private float awakeRange = 5f;
-    [SerializeField] private float followRange = 10f;
     [SerializeField] private float attackRange = 2.5f;
     [SerializeField] private float attackCooldown = 1.2f;
 
@@ -246,5 +245,18 @@ public class MimicAI : MonoBehaviour
         if (soulUI != null) soulUI.AddSouls(10);
 
         GetComponentInParent<RoomManager>()?.OnEnemyDied();
+        GetComponentInParent<WaveRoomManager>()?.OnEnemyDied();
+
+        UnlockDoors();
+    }
+
+    private void UnlockDoors()
+    {
+        var doors = FindObjectsOfType<LockedDoor>();
+        Debug.Log($"🚪 Найдено дверей: {doors.Length}");
+        foreach (var door in doors)
+        {
+            door.Unlock();
+        }
     }
 }

@@ -1,12 +1,12 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System.Collections;
 
 public class SwordWeapon : MonoBehaviour {
     [Header("Атака")]
     [SerializeField] private float attackDamage = 15f;
     [SerializeField] private float attackRadius = 0.8f;
     [SerializeField] private float attackCooldown = 0.6f;
-    [SerializeField] private float attackArcAngle = 90f;
 
     [Header("Ротация")]
     [SerializeField] private Transform swordVisual;
@@ -104,6 +104,12 @@ public class SwordWeapon : MonoBehaviour {
         lastAttackDirection = (mouseWorld - swordVisual.position).normalized;
 
         animator?.SetTrigger("Attack");
+
+        if (PassiveItemManager.Instance != null && PassiveItemManager.Instance.attackSpeedMultiplier > 1f)
+        {
+            StartCoroutine(BattlePaceEffect());
+        }
+
         PlaySlashSound();
 
         if (slashEffectPrefab != null)
@@ -116,68 +122,103 @@ public class SwordWeapon : MonoBehaviour {
 
         DealDamageToEnemies();
 
-        var pm = PassiveItemManager.Instance;
-        if (pm != null && pm.TryDoubleHit())
+        if (PassiveItemManager.Instance?.TryDoubleHit() == true)
         {
+            Debug.Log("⚔️ ДВОЙНОЙ УДАР!");
+            if (slashEffectPrefab != null)
+            {
+                float baseAngle = Mathf.Atan2(lastAttackDirection.y, lastAttackDirection.x) * Mathf.Rad2Deg;
+                for (int i = 0; i < 6; i++)
+                {
+                    float offset = (i - 2.5f) * 12f;
+                    Quaternion slashRotation = Quaternion.Euler(0f, 0f, baseAngle + offset);
+                    GameObject effect = Instantiate(slashEffectPrefab, playerTransform.position, slashRotation);
+                    Destroy(effect, 0.4f);
+                }
+            }
             DealDamageToEnemies();
         }
     }
 
-    private void DealDamageToEnemies()
+private void DealDamageToEnemies()
     {
         var pm = PassiveItemManager.Instance;
         float damage = attackDamage * (pm?.damageMultiplier ?? 1f);
+        damage *= pm?.GetBloodBerserkerMultiplier() ?? 1f;
         float radius = attackRadius * (pm?.weaponSizeMultiplier ?? 1f);
 
-        Vector3 attackPos = swordVisual != null ? swordVisual.position : transform.position;
+        Vector3 attackPos = playerTransform != null ? playerTransform.position : transform.position;
         Collider2D[] hits = Physics2D.OverlapCircleAll(attackPos, radius);
-
 
         foreach (var col in hits)
         {
             if (col.CompareTag("Player")) continue;
 
-            Vector3 toEnemy = (col.transform.position - attackPos).normalized;
-            float angle = Vector3.Angle(lastAttackDirection, toEnemy);
-
-            if (angle <= attackArcAngle / 2f)
+            var enemy = col.GetComponent<EnemyAI>();
+            if (enemy != null)
             {
-                var enemy = col.GetComponent<EnemyAI>();
-                if (enemy != null)
-                {
-                    float finalDamage = pm != null ? pm.GetPiercingDamage(enemy, damage) : damage;
-                    enemy.TakeDamage(finalDamage);
-                    continue;
-                }
+                float finalDamage = pm != null ? pm.GetPiercingDamage(enemy, damage) : damage;
+                enemy.TakeDamage(finalDamage);
+                continue;
+            }
 
-                var dasher = col.GetComponent<DasherAI>();
-                if (dasher != null)
-                {
-                    float dasherDamage = pm != null ? pm.GetDasherPiercingDamage(dasher, damage) : damage;
-                    dasher.TakeDamage(dasherDamage);
-                    continue;
-                }
+            var dasher = col.GetComponent<DasherAI>();
+            if (dasher != null)
+            {
+                float dasherDamage = pm != null ? pm.GetDasherPiercingDamage(dasher, damage) : damage;
+                dasher.TakeDamage(dasherDamage);
+                continue;
+            }
 
-var ghost = col.GetComponent<GhostAI>();
-                if (ghost != null)
-                {
-                    ghost.TakeDamage(damage);
-                    continue;
-                }
+            var ghost = col.GetComponent<GhostAI>();
+            if (ghost != null)
+            {
+                ghost.TakeDamage(damage);
+                continue;
+            }
 
-                var mimic = col.GetComponent<MimicAI>();
-                if (mimic != null)
-                {
-                    mimic.TakeDamage(damage);
-                }
+            var mimic = col.GetComponent<MimicAI>();
+            if (mimic != null)
+            {
+                mimic.TakeDamage(damage);
+                continue;
+            }
+
+            var fireSkelet = col.GetComponent<FireSkeletAI>();
+            if (fireSkelet != null)
+            {
+                fireSkelet.TakeDamage(damage);
+                continue;
+            }
+
+            var bossBullet = col.GetComponent<BossBullet>();
+            if (bossBullet != null)
+            {
+                bossBullet.TakeDamage(damage);
+                continue;
             }
         }
     }
 
-    private void PlaySlashSound()
+private void PlaySlashSound()
     {
         if (audioSource != null && slashSound != null)
             audioSource.PlayOneShot(slashSound);
+    }
+
+    private IEnumerator BattlePaceEffect()
+    {
+        if (swordVisual != null)
+        {
+            SpriteRenderer sr = swordVisual.GetComponent<SpriteRenderer>();
+            if (sr != null)
+            {
+                Color original = sr.color;
+                sr.color = Color.yellow;
+                yield return new WaitForSeconds(0.15f);
+                sr.color = original;
+            }
+        }
     }
 
     public bool IsReadyToAttack() => lastAttackTime <= 0f;
@@ -187,6 +228,8 @@ var ghost = col.GetComponent<GhostAI>();
     {
         if (inputActions == null) return;
         inputActions.Combat.Attack.performed -= OnAttack;
+        inputActions.Combat.Disable();
+        inputActions.Player.Disable();
         inputActions.Dispose();
     }
 }

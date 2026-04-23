@@ -108,6 +108,8 @@ public class PlayerDash : MonoBehaviour {
     {
         if (inputActions == null) return;
         inputActions.Combat.Dash.performed -= OnDash;
+        inputActions.Combat.Disable();
+        inputActions.Player.Disable();
         inputActions.Dispose();
     }
 }

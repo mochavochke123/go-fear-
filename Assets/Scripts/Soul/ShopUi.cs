@@ -57,24 +57,24 @@ public class ShopUI : MonoBehaviour {
     };
 
     private static readonly Dictionary<PerkType, string> perkDescs = new()
-    {
-        { PerkType.Dodge,      "25% шанс не получить урон" },
-        { PerkType.Horror,     "Враги получают -12% здоровья" },
-        { PerkType.Power,      "+20% к урону" },
-        { PerkType.Piercing,   "Первый удар по врагу +50% урона" },
-        { PerkType.NutrFood,   "+1 HP контейнер, +10% урон" },
-        { PerkType.CursedSoul, "25% шанс получить +1 душу с врага" },
-        { PerkType.BigSize,    "+20% размер оружия и радиус" },
-        { PerkType.Reflection, "При уроне — враги получают урон x2.5" },
-        { PerkType.Escape,     "+20% к скорости движения" },
-        { PerkType.Vitality,   "+1 HP контейнер, +10% скорость" },
-        { PerkType.Vampirism,  "15% шанс восстановить HP при убийстве" },
-        { PerkType.BattlePace, "+20% к скорости атаки" },
-        { PerkType.DoubleHit,  "35% шанс нанести двойной удар" },
-        { PerkType.Amulet,     "Враги замедляются на 20%" },
-        { PerkType.FireRing,   "Огненный круг вокруг тебя" },
-        { PerkType.Orda,       "Призывает мини-дракона" }
-    };
+{
+    { PerkType.Dodge,      "19% шанс не получить урон" },
+    { PerkType.Horror,     "Враги получают -15% здоровья" },
+    { PerkType.Power,      "+20% к урону" },
+    { PerkType.Piercing,   "Первый удар по врагу +50% урона" },
+    { PerkType.NutrFood,   "+1 HP контейнер, +10% урон" },
+    { PerkType.CursedSoul, "60% шанс получить +1 душу с врага" },
+    { PerkType.BigSize,    "+20% размер оружия и радиус" },
+    { PerkType.Reflection, "При уроне — враги получают урон x2.5" },
+    { PerkType.Escape,     "+20% к скорости движения" },
+    { PerkType.Vitality,   "+1 HP контейнер, +15% скорость" },
+    { PerkType.Vampirism,  "17.5% шанс восстановить HP при убийстве" },
+    { PerkType.BattlePace, "+25% к скорости атаки" },
+    { PerkType.DoubleHit,  "25% шанс нанести двойной удар" },
+    { PerkType.Amulet,     "Враги замедляются на 20%" },
+    { PerkType.FireRing,   "Огненный круг вокруг тебя" },
+    { PerkType.Orda,       "Призывает дракона-миньона" }
+};
 
     void Start()
     {

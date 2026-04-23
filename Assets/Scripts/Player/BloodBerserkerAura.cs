@@ -30,12 +30,12 @@ public class BloodBerserkerAura : MonoBehaviour
     {
         auraObject = new GameObject("BloodBerserkerAura");
         auraObject.transform.SetParent(playerTransform);
-        auraObject.transform.localPosition = new Vector3(0, 0, -0.1f);
+        auraObject.transform.localPosition = new Vector3(0, 0, 0.1f);
 
         auraSprite = auraObject.AddComponent<SpriteRenderer>();
         auraSprite.sprite = CreateCircleSprite();
         auraSprite.color = auraColor;
-        auraSprite.sortingOrder = -1;
+        auraSprite.sortingOrder = 4;
         auraSprite.material = new Material(Shader.Find("Sprites/Default"));
 
         auraObject.transform.localScale = Vector3.one * auraSize;

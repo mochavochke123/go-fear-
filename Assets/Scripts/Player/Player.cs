@@ -71,10 +71,15 @@ public class Player : MonoBehaviour {
 #if UNITY_EDITOR
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
+            PassiveItemManager.Instance?.ApplyPerk(PerkType.DoubleHit);
+            Debug.Log("DEBUG: DoubleHit perk added");
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
             PassiveItemManager.Instance?.ApplyPerk(PerkType.Power);
             Debug.Log("DEBUG: Power perk added");
         }
-        if (Input.GetKeyDown(KeyCode.Alpha2))
+        if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             PassiveItemManager.Instance?.ApplyPerk(PerkType.Vitality);
             Debug.Log("DEBUG: Vitality perk added");
@@ -176,6 +181,11 @@ public class Player : MonoBehaviour {
 
     void OnDestroy()
     {
-        playerInputActions.Disable();
+        if (playerInputActions != null)
+        {
+            playerInputActions.Disable();
+            playerInputActions.Dispose();
+        }
+        if (Instance == this) Instance = null;
     }
 }

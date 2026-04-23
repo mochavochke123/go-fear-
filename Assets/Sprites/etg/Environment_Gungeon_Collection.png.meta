@@ -97,34 +97,244 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: wizhad_0
+      name: Environment_Gungeon_Collection_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 32
-        width: 32
-        height: 32
+        x: 579
+        y: 323
+        width: 292
+        height: 289
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 042bd780ba4950b4ca95ad781210ec72
-      internalID: 1490704198
+      spriteID: 9d91e5e01eba3384182d20b8eaf6f424
+      internalID: -32394817
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wizhad_1
+      name: Environment_Gungeon_Collection_1
       rect:
         serializedVersion: 2
-        x: 0
+        x: 873
+        y: 545
+        width: 13
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74a379b20c39dfb4a84a7ad4a0b50a5f
+      internalID: -1364390501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Gungeon_Collection_2
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 473
+        width: 13
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8237f76d4aba3842a143939db88d42f
+      internalID: -1924295536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Gungeon_Collection_3
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 557
+        width: 13
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdb935edb23010044a49d33ff51dc73f
+      internalID: 357637459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Gungeon_Collection_4
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 925
+        width: 53
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a893dfd38908374cb9a7786ab5c2c15
+      internalID: -1293929164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Gungeon_Collection_5
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 953
+        width: 37
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c66185a5a0d01e46adb4aadc4c633c7
+      internalID: -521650375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Gungeon_Collection_6
+      rect:
+        serializedVersion: 2
+        x: 579
         y: 0
-        width: 32
+        width: 320
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4730705947677d045a41e3645e453902
+      internalID: -1216484844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Gungeon_Collection_7
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 616
+        width: 13
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f938cca0043e3e3459720a08bb8503b3
+      internalID: 1358046593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Gungeon_Collection_8
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 701
+        width: 13
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 238bd1894c77e1d409dd51e4d75efe61
+      internalID: -77269933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Gungeon_Collection_9
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 629
+        width: 13
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cfc91fa17b8e8f4e98710e95f073811
+      internalID: -210857949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Gungeon_Collection_10
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 289
+        width: 81
         height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 934fcc7c98166ab47b80d65e00b2060d
+      internalID: 1401479503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_Gungeon_Collection_11
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 576
+        height: 432
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,8 +342,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af0605a0012b6494ca3b5e3cab8dd17e
-      internalID: 525848356
+      spriteID: 03ea1e3936c98fb40984a834a62a2928
+      internalID: 898454267
       vertices: []
       indices: 
       edges: []
@@ -149,6 +359,19 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Environment_Gungeon_Collection_0: -32394817
+      Environment_Gungeon_Collection_1: -1364390501
+      Environment_Gungeon_Collection_10: 1401479503
+      Environment_Gungeon_Collection_11: 898454267
+      Environment_Gungeon_Collection_12: 194052301
+      Environment_Gungeon_Collection_2: -1924295536
+      Environment_Gungeon_Collection_3: 357637459
+      Environment_Gungeon_Collection_4: -1293929164
+      Environment_Gungeon_Collection_5: -521650375
+      Environment_Gungeon_Collection_6: -1216484844
+      Environment_Gungeon_Collection_7: 1358046593
+      Environment_Gungeon_Collection_8: -77269933
+      Environment_Gungeon_Collection_9: -210857949
       wizhad_0: 1490704198
       wizhad_1: 525848356
   mipmapLimitGroupName: 

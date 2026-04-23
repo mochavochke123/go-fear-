@@ -169,7 +169,17 @@ public class EnemyAI : MonoBehaviour {
         if (rb == null) return;
 
         var pm = PassiveItemManager.Instance;
-        float speed = moveSpeed * (pm?.enemySlowMultiplier ?? 1f);
+        float slowMult = pm?.enemySlowMultiplier ?? 1f;
+        float speed = moveSpeed * slowMult;
+
+        if (slowMult < 1f && spriteRenderer != null)
+        {
+            spriteRenderer.color = Color.Lerp(originalColor, new Color(0.5f, 0.5f, 1f), 0.5f);
+        }
+        else if (spriteRenderer != null)
+        {
+            spriteRenderer.color = originalColor;
+        }
 
         Vector3 direction = (player.position - transform.position).normalized;
         direction += GetSeparationVector();
@@ -246,6 +256,13 @@ public class EnemyAI : MonoBehaviour {
             soulUI.AddSouls(1);
 
         GetComponentInParent<RoomManager>()?.OnEnemyDied();
+
+        WaveRoomManager wrm = GetComponentInParent<WaveRoomManager>();
+        if (wrm == null)
+        {
+            wrm = FindObjectOfType<WaveRoomManager>();
+        }
+        wrm?.OnEnemyDied();
         Destroy(gameObject, 1f);
     }
 
