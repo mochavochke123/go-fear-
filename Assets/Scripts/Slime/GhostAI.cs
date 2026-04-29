@@ -6,7 +6,7 @@ public class GhostAI : MonoBehaviour
     [Header("Stats")]
     [SerializeField] private float maxHealth = 15f;
     [SerializeField] private float moveSpeed = 2.5f;
-    [SerializeField] private float damage = 0.5f;
+    [SerializeField] private float damage = 1f;
     [SerializeField] private float detectionRange = 6f;
     [SerializeField] private float attackRange = 1f;
     [SerializeField] private float attackCooldown = 2f;

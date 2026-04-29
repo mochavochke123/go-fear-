@@ -504,7 +504,7 @@ TextureImporter:
         width: 28
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -525,7 +525,7 @@ TextureImporter:
         width: 32
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -533,6 +533,48 @@ TextureImporter:
       bones: []
       spriteID: 644f0488475b0134c9073d26c6e85943
       internalID: 1307313466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: perk_2
+      rect:
+        serializedVersion: 2
+        x: 1538
+        y: 228
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ffc76914efd0004488595eb34961207
+      internalID: 2144416246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: perk_3
+      rect:
+        serializedVersion: 2
+        x: 1569
+        y: 7
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1bb59dbd6e644a47863ea694af5ec77
+      internalID: 720121600
       vertices: []
       indices: 
       edges: []
@@ -569,6 +611,8 @@ TextureImporter:
       ProjectUtumno_full (2)_9: -1876618508
       perk_0: 889666960
       perk_1: 1307313466
+      perk_2: 2144416246
+      perk_3: 720121600
       wizhad_0: 1490704198
       wizhad_1: 525848356
   mipmapLimitGroupName: 

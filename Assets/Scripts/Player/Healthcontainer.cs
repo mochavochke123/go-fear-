@@ -20,6 +20,8 @@ public class Healthcontainer : MonoBehaviour {
             if (player != null)
                 playerHealth = player.GetComponent<PlayerHealth>();
         }
+
+        UpdateUI();
     }
 
     public void UpdateUI()
@@ -31,26 +33,22 @@ public class Healthcontainer : MonoBehaviour {
                 playerHealth = player.GetComponent<PlayerHealth>();
         }
 
-        if (playerHealth == null) return;
+        if (playerHealth == null || images == null) return;
 
-        float health = playerHealth.GetHealth();
+        float remaining = playerHealth.GetHealth();
         float maxHealth = playerHealth.GetMaxHealth();
-        int containerCount = images.Count;
 
-        float damageTaken = maxHealth - health;
-        float remaining = damageTaken;
-
-        for (int i = containerCount - 1; i >= 0; i--)
+        for (int i = 0; i < images.Count; i++)
         {
-            if (spritesHealthstates == null || spritesHealthstates.Count < 3)
-                continue;
+            if (images[i] == null) continue;
+
+            float segmentHealth = maxHealth / images.Count;
 
             Sprite targetSprite;
-
-            if (remaining >= 1)
+            if (remaining >= segmentHealth)
             {
-                targetSprite = spritesHealthstates[0];
-                remaining -= 1;
+                targetSprite = spritesHealthstates[2];
+                remaining -= segmentHealth;
             }
             else if (remaining >= 0.5f)
             {
@@ -59,7 +57,7 @@ public class Healthcontainer : MonoBehaviour {
             }
             else
             {
-                targetSprite = spritesHealthstates[2];
+                targetSprite = spritesHealthstates[0];
             }
 
             if (targetSprite != null)
@@ -90,6 +88,7 @@ public class Healthcontainer : MonoBehaviour {
             heartImage.sprite = fullSprite;
         }
 
+        if (images == null) images = new List<Image>();
         images.Add(heartImage);
         playerHealth?.AddMaxHP(2f);
         UpdateUI();

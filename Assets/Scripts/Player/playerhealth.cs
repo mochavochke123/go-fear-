@@ -1,7 +1,11 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour {
+    public static PlayerHealth Instance { get; private set; }
+    public static bool IsNewGame { get; set; } = false;
+
     [Header("Health")]
     [SerializeField] private float maxHealth = 6f;
     private float currentHealth;
@@ -10,20 +14,58 @@ public class PlayerHealth : MonoBehaviour {
 
     private Healthcontainer healthcontainer;
 
+    void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        Instance = this;
+    }
+
     private void Start()
     {
-        currentHealth = maxHealth;
+        if (IsNewGame)
+        {
+            currentHealth = maxHealth;
+            IsNewGame = false;
+        }
+        
         healthcontainer = FindObjectOfType<Healthcontainer>();
 
         if (healthcontainer != null)
         {
             healthcontainer.UpdateUI();
         }
+
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        healthcontainer = FindObjectOfType<Healthcontainer>();
+        healthcontainer?.UpdateUI();
+    }
+
+    public void ResetHealth()
+    {
+        currentHealth = maxHealth;
+        isDead = false;
+        healthcontainer = FindObjectOfType<Healthcontainer>();
+        healthcontainer?.UpdateUI();
+    }
+
+    private void OnDestroy()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
     public void TakeDamage(float damage)
     {
         if (isDead || isInvulnerable) return;
+
+        healthcontainer = FindObjectOfType<Healthcontainer>();
 
         if (PassiveItemManager.Instance?.TryDodge() == true)
         {
@@ -139,12 +181,14 @@ public class PlayerHealth : MonoBehaviour {
     public float GetMaxHealth() => maxHealth;
     public void Heal(float amount)
     {
+        healthcontainer = FindObjectOfType<Healthcontainer>();
         currentHealth = Mathf.Min(currentHealth + amount, maxHealth + 1f);
         healthcontainer?.UpdateUI();
     }
 
     public void AddMaxHP(float amount)
     {
+        healthcontainer = FindObjectOfType<Healthcontainer>();
         maxHealth += amount;
         currentHealth += amount;
         healthcontainer?.UpdateUI();

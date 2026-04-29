@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31d26dc622f761d4b8c2569511fb3b9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 200
+  maxHealth: 500
   moveSpeed: 3
   meleeDamage: 1
   meleeRange: 2
@@ -132,6 +132,7 @@ MonoBehaviour:
   chillDuration: 2
   aggroRange: 20
   bulletRange: 10
+  deathDelay: 1.5
 --- !u!61 &2128696052992345627
 BoxCollider2D:
   m_ObjectHideFlags: 0

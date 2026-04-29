@@ -60,7 +60,7 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.62f3\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Editor\PsychomanSlicer.cs" />
+    <Compile Include="Assets\Editor\CleanMissingScripts.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -1208,14 +1208,6 @@
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{A28CDF72-3F6E-0D94-3D56-5EAEAC0F3FDD}</Project>
       <Name>Assembly-CSharp</Name>
-    </ProjectReference>
-    <ProjectReference Include="NavMeshPlus.csproj">
-      <Project>{7B1CEA96-ECDB-D067-89CE-EDA989DB9276}</Project>
-      <Name>NavMeshPlus</Name>
-    </ProjectReference>
-    <ProjectReference Include="NavMeshPlusEditor.csproj">
-      <Project>{25D250DE-4835-D417-B532-D37D9D2A744D}</Project>
-      <Name>NavMeshPlusEditor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

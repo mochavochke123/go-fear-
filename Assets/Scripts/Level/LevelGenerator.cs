@@ -34,6 +34,7 @@ public class LevelGenerator : MonoBehaviour {
     {
         GameObject room02 = PickRandom(room02Variants, room02Variants[0]);
         GameObject room03 = PickRandom(room03Variants, room03Variants[0]);
+        GameObject room04 = PickRandom(room02Variants, room02Variants[0]);
 
         sequence = new GameObject[]
         {
@@ -42,6 +43,8 @@ public class LevelGenerator : MonoBehaviour {
             room02,
             corridorPrefab,
             room03,
+            corridorPrefab,
+            room04,
             corridorPrefab,
             bossRoomPrefab
         };
@@ -57,7 +60,9 @@ public class LevelGenerator : MonoBehaviour {
             new Vector3(75.6f, -10.15f, 0f),
             new Vector3(101.1f, 0f, 0f),
             new Vector3(126.6f, -10.15f, 0f),
-            new Vector3(152.1f, 0f, 0f)
+            new Vector3(152.1f, 0f, 0f),
+            new Vector3(177.7f, -10.15f, 0f),
+            new Vector3(203.2f, 0f, 0f)
         };
 
         for (int i = 0; i < sequence.Length; i++)

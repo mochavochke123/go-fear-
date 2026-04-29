@@ -12,7 +12,7 @@ public class EnemyAI : MonoBehaviour {
     [SerializeField] private float detectionRange = 5f;
     [SerializeField] private float attackRange = 1f;
     [SerializeField] private float moveSpeed = 2f;
-    [SerializeField] private float attackDamage = 0.5f;
+    [SerializeField] private float attackDamage = 1f;
     [SerializeField] private float attackCooldown = 1f;
     private float lastAttackTime = 0;
 
@@ -224,8 +224,7 @@ public class EnemyAI : MonoBehaviour {
             return;
 
         currentHealth -= damage;
-
-        StartCoroutine(FlashDamage());
+        FlashDamage();
 
         if (currentHealth <= 0)
         {
@@ -233,14 +232,20 @@ public class EnemyAI : MonoBehaviour {
         }
     }
 
-    private IEnumerator FlashDamage()
+    private void FlashDamage()
     {
         if (spriteRenderer != null)
         {
             spriteRenderer.color = Color.red;
-            yield return new WaitForSeconds(0.15f);
-            spriteRenderer.color = originalColor;
+            CancelInvoke(nameof(ResetColor));
+            Invoke(nameof(ResetColor), 0.1f);
         }
+    }
+
+    private void ResetColor()
+    {
+        if (spriteRenderer != null)
+            spriteRenderer.color = originalColor;
     }
 
     private void Die()

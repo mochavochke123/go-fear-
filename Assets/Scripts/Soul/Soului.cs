@@ -1,33 +1,42 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using UnityEngine.SceneManagement;
 
 public class SoulUI : MonoBehaviour {
     public static SoulUI Instance { get; private set; }
+    public static int TotalSouls = 0;
 
     [SerializeField] private Image soulIcon;
     [SerializeField] private TextMeshProUGUI soulCountText;
 
-    private int totalSouls = 0;
+    private bool initialized = false;
 
     private void Awake()
     {
-        if (Instance != null) { Destroy(gameObject); return; }
+        if (Instance != null && Instance != this) 
+        { 
+            Destroy(gameObject); 
+            return; 
+        }
         Instance = this;
-        DontDestroyOnLoad(gameObject);
-        SceneManager.sceneLoaded += OnSceneLoaded;
-    }
-
-    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        GameObject soulCountObj = GameObject.Find("SoulCountText");
-        if (soulCountObj != null)
-            soulCountText = soulCountObj.GetComponent<TextMeshProUGUI>();
-        UpdateDisplay();
+        
+        if (transform.parent == null)
+        {
+            DontDestroyOnLoad(gameObject);
+        }
     }
 
     private void Start()
+    {
+        if (!initialized)
+        {
+            FindSoulText();
+            UpdateDisplay();
+            initialized = true;
+        }
+    }
+
+    private void FindSoulText()
     {
         if (soulCountText == null)
         {
@@ -35,30 +44,29 @@ public class SoulUI : MonoBehaviour {
             if (soulCountObj != null)
                 soulCountText = soulCountObj.GetComponent<TextMeshProUGUI>();
         }
-
-        UpdateDisplay();
     }
 
     public void AddSouls(int amount)
     {
-        totalSouls += amount;
+        TotalSouls += amount;
         UpdateDisplay();
     }
 
     private void UpdateDisplay()
     {
+        FindSoulText();
         if (soulCountText != null)
         {
-            soulCountText.text = totalSouls.ToString();
+            soulCountText.text = TotalSouls.ToString();
         }
     }
 
-    public int GetTotalSouls() => totalSouls;
-    public int GetSouls() => totalSouls;
+    public int GetTotalSouls() => TotalSouls;
+    public int GetSouls() => TotalSouls;
 
     public void SpendSouls(int amount)
     {
-        totalSouls -= amount;
+        TotalSouls -= amount;
         UpdateDisplay();
     }
 }

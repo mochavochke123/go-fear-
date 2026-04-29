@@ -567,7 +567,7 @@ TextureImporter:
         width: 30
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -575,6 +575,90 @@ TextureImporter:
       bones: []
       spriteID: 98fdd0fb58182104a9739a59315874da
       internalID: -1875681871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_full (6)_23
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 354
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54ac7474640ab1a4f8b76ce8356b79be
+      internalID: 1218205655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_full (6)_24
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 355
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d3ceb355cec7e34bbab00be3f2d96c1
+      internalID: -1303249591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_full (6)_25
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 354
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3ff2a406fa087549902af1eec0309c0
+      internalID: -349781151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_full (6)_26
+      rect:
+        serializedVersion: 2
+        x: 1247
+        y: 354
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34d7283e966760d4ea001a278999e746
+      internalID: 1416897568
       vertices: []
       indices: 
       edges: []
@@ -606,6 +690,10 @@ TextureImporter:
       ProjectUtumno_full (6)_20: 766217237
       ProjectUtumno_full (6)_21: 1199756618
       ProjectUtumno_full (6)_22: -1875681871
+      ProjectUtumno_full (6)_23: 1218205655
+      ProjectUtumno_full (6)_24: -1303249591
+      ProjectUtumno_full (6)_25: -349781151
+      ProjectUtumno_full (6)_26: 1416897568
       ProjectUtumno_full (6)_3: 183635347
       ProjectUtumno_full (6)_4: -71146231
       ProjectUtumno_full (6)_5: -1126442820

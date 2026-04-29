@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using TMPro;
 
 public class ShopUI : MonoBehaviour {
+    public static ShopUI Instance { get; private set; }
+
     [Header("UI элементы")]
     public GameObject shopPanel;
     public TextMeshProUGUI perkNameText;
@@ -53,7 +55,8 @@ public class ShopUI : MonoBehaviour {
         { PerkType.DoubleHit,  "Двойной удар" },
         { PerkType.Amulet,     "Амулет" },
         { PerkType.FireRing,   "Огненный круг" },
-        { PerkType.Orda,       "Орда" }
+        { PerkType.Orda,       "Орда" },
+        { PerkType.Void,       "Войд" }
     };
 
     private static readonly Dictionary<PerkType, string> perkDescs = new()
@@ -73,8 +76,15 @@ public class ShopUI : MonoBehaviour {
     { PerkType.DoubleHit,  "25% шанс нанести двойной удар" },
     { PerkType.Amulet,     "Враги замедляются на 20%" },
     { PerkType.FireRing,   "Огненный круг вокруг тебя" },
-    { PerkType.Orda,       "Призывает дракона-миньона" }
+    { PerkType.Orda,       "Призывает дракона-миньона" },
+    { PerkType.Void,       "Портал над игроком выпускает самонаводящийся снаряд каждые 3 сек (урон 7), если враги рядом" }
 };
+
+    void Awake()
+    {
+        if (Instance != null) { Destroy(gameObject); return; }
+        Instance = this;
+    }
 
     void Start()
     {
@@ -90,11 +100,13 @@ public class ShopUI : MonoBehaviour {
         {
             shopPanel.SetActive(false);
             Time.timeScale = 1f;
+            GameplayMusicManager.Instance?.StopShopMusic();
         }
         else
         {
             shopPanel.SetActive(true);
             Time.timeScale = 0f;
+            GameplayMusicManager.Instance?.PlayShopMusic();
             UpdateStats();
             StartCoroutine(SpinAndReveal());
         }
@@ -174,6 +186,7 @@ public class ShopUI : MonoBehaviour {
 
         shopPanel.SetActive(false);
         Time.timeScale = 1f;
+        GameplayMusicManager.Instance?.StopShopMusic();
     }
 
     private void UpdateStats()

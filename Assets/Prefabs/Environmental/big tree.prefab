@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 12183551177379728}
   - component: {fileID: 7784291608992105771}
   - component: {fileID: 7832172357742775818}
-  - component: {fileID: 5295570879157871304}
   m_Layer: 0
   m_Name: big tree
   m_TagString: Untagged
@@ -74,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 555461963, guid: 3039860f6b7a45a4293480295fc91967, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -121,19 +120,3 @@ CapsuleCollider2D:
   m_Offset: {x: -0.44560996, y: 1.0781081}
   m_Size: {x: 2.641397, y: 2.3378384}
   m_Direction: 1
---- !u!114 &5295570879157871304
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4316966889073283483}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fa0352a4d56abd42ad2fc69deb72448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 3.3472238, y: 2.626985, z: 4}
-  m_Center: {x: -0.32638812, y: 0.81349254, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff

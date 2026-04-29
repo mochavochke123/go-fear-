@@ -104,9 +104,11 @@ public class WaveCounter : MonoBehaviour
 
     private void SpawnBoss()
     {
-        if (holeIndicators != null && holeIndicators[totalHoles] != null)
+        if (bossMode) return;
+        
+        if (holeIndicators != null && holeIndicators.Length > totalHoles - 1 && holeIndicators[totalHoles - 1] != null)
         {
-            holeIndicators[totalHoles].SetActive(true);
+            holeIndicators[totalHoles - 1].SetActive(true);
         }
 
         Debug.Log("👹 БОСС ПОЯВИЛСЯ!");

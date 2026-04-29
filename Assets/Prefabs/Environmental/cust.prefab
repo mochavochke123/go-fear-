@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 1415293720748217268}
   - component: {fileID: 331382679006854636}
   - component: {fileID: 4678180807209173874}
-  - component: {fileID: 919946205199875075}
   m_Layer: 0
   m_Name: cust
   m_TagString: Untagged
@@ -74,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: -921878163, guid: 3039860f6b7a45a4293480295fc91967, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -121,19 +120,3 @@ CapsuleCollider2D:
   m_Offset: {x: -0.059819676, y: -0.25690335}
   m_Size: {x: 2.4294412, y: 1.7802113}
   m_Direction: 1
---- !u!114 &919946205199875075
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1615826749545445330}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fa0352a4d56abd42ad2fc69deb72448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 2.4577916, y: 1.7819295, z: 4}
-  m_Center: {x: -0.05477798, y: -0.23625088, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff

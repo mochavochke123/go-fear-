@@ -38,10 +38,15 @@ public class PlayerDash : MonoBehaviour {
 
     private void Start()
     {
-        inputActions = new PlayerinputActions();
-        inputActions.Enable();
-        inputActions.Combat.Enable();
-        inputActions.Combat.Dash.performed += OnDash;
+        if (mainCamera == null) mainCamera = Camera.main;
+        
+        if (inputActions == null)
+        {
+            inputActions = new PlayerinputActions();
+            inputActions.Enable();
+            inputActions.Combat.Enable();
+            inputActions.Combat.Dash.performed += OnDash;
+        }
     }
 
     private void Update()
@@ -73,6 +78,9 @@ public class PlayerDash : MonoBehaviour {
     // ── Логика ──────────────────────────────────────────────────────────────
     private void StartDash()
     {
+        if (mainCamera == null) mainCamera = Camera.main;
+        if (mainCamera == null) return;
+        
         // Считаем направление к курсору мыши
         Vector3 mouseScreen = Input.mousePosition;
         mouseScreen.z = Mathf.Abs(mainCamera.transform.position.z);
@@ -111,5 +119,15 @@ public class PlayerDash : MonoBehaviour {
         inputActions.Combat.Disable();
         inputActions.Player.Disable();
         inputActions.Dispose();
+    }
+
+    public void CleanupInput()
+    {
+        if (inputActions == null) return;
+        inputActions.Combat.Dash.performed -= OnDash;
+        inputActions.Combat.Disable();
+        inputActions.Player.Disable();
+        inputActions.Dispose();
+        inputActions = null;
     }
 }

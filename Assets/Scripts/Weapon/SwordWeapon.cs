@@ -38,10 +38,13 @@ public class SwordWeapon : MonoBehaviour {
         audioSource = GetComponent<AudioSource>()
                       ?? gameObject.AddComponent<AudioSource>();
 
-        inputActions = new PlayerinputActions();
-        inputActions.Enable();
-        inputActions.Combat.Enable();
-        inputActions.Combat.Attack.performed += OnAttack;
+        if (inputActions == null)
+        {
+            inputActions = new PlayerinputActions();
+            inputActions.Enable();
+            inputActions.Combat.Enable();
+            inputActions.Combat.Attack.performed += OnAttack;
+        }
 
         Debug.Log("✅ SwordWeapon инициализирован");
     }
@@ -62,8 +65,16 @@ public class SwordWeapon : MonoBehaviour {
     // ПОВОРОТ — точная копия старого рабочего кода, ничего не меняем!
     private void RotateSwordTowardMouse()
     {
-        if (mainCamera == null || swordVisual == null || playerTransform == null)
+        if (mainCamera == null)
+        {
+            mainCamera = Camera.main;
+            if (mainCamera == null || swordVisual == null || playerTransform == null)
+                return;
+        }
+        else if (swordVisual == null || playerTransform == null)
+        {
             return;
+        }
 
         Vector3 mouseScreen = Input.mousePosition;
         mouseScreen.z = Mathf.Abs(mainCamera.transform.position.z);
@@ -98,10 +109,16 @@ public class SwordWeapon : MonoBehaviour {
 
     private void PerformAttack()
     {
+        if (mainCamera == null)
+        {
+            mainCamera = Camera.main;
+            if (mainCamera == null) return;
+        }
+
         Vector3 mouseScreen = Input.mousePosition;
         mouseScreen.z = Mathf.Abs(mainCamera.transform.position.z);
         Vector3 mouseWorld = mainCamera.ScreenToWorldPoint(mouseScreen);
-        lastAttackDirection = (mouseWorld - swordVisual.position).normalized;
+        lastAttackDirection = (swordVisual.position - mouseWorld).normalized;
 
         animator?.SetTrigger("Attack");
 
@@ -231,5 +248,15 @@ private void PlaySlashSound()
         inputActions.Combat.Disable();
         inputActions.Player.Disable();
         inputActions.Dispose();
+    }
+
+    public void CleanupInput()
+    {
+        if (inputActions == null) return;
+        inputActions.Combat.Attack.performed -= OnAttack;
+        inputActions.Combat.Disable();
+        inputActions.Player.Disable();
+        inputActions.Dispose();
+        inputActions = null;
     }
 }

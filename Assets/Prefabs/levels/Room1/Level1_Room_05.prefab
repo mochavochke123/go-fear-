@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 4746268172881493890}
   - component: {fileID: 2532053649444159829}
   - component: {fileID: 502232198533395760}
-  - component: {fileID: 2013906882965836519}
   m_Layer: 0
   m_Name: tree-variations_56 (7)
   m_TagString: Untagged
@@ -121,22 +120,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.07835056, y: 1.0378271}
   m_Size: {x: 2.6699607, y: 2.6699607}
   m_Direction: 1
---- !u!114 &2013906882965836519
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 56549291043462078}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fa0352a4d56abd42ad2fc69deb72448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 2.02318, y: 1.2848172, z: 4}
-  m_Center: {x: 0.06783199, y: 0.33621478, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &133443532504765135
 GameObject:
   m_ObjectHideFlags: 0
@@ -148,7 +131,6 @@ GameObject:
   - component: {fileID: 4186566774974893252}
   - component: {fileID: 6212081634109572735}
   - component: {fileID: 6233988967007997278}
-  - component: {fileID: 8308931326007353756}
   m_Layer: 0
   m_Name: big tree (2)
   m_TagString: Untagged
@@ -258,22 +240,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.44560996, y: 1.0781081}
   m_Size: {x: 2.641397, y: 2.3378384}
   m_Direction: 1
---- !u!114 &8308931326007353756
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 133443532504765135}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fa0352a4d56abd42ad2fc69deb72448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 3.3472238, y: 2.626985, z: 4}
-  m_Center: {x: -0.32638812, y: 0.81349254, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &145340694714403794
 GameObject:
   m_ObjectHideFlags: 0
@@ -285,7 +251,6 @@ GameObject:
   - component: {fileID: 4833096947193196526}
   - component: {fileID: 2445195870383608121}
   - component: {fileID: 303135727954617692}
-  - component: {fileID: 1819006144694895243}
   m_Layer: 0
   m_Name: tree-variations_56 (35)
   m_TagString: Untagged
@@ -395,22 +360,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.07835056, y: 1.0378271}
   m_Size: {x: 2.6699607, y: 2.6699607}
   m_Direction: 1
---- !u!114 &1819006144694895243
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 145340694714403794}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fa0352a4d56abd42ad2fc69deb72448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 2.02318, y: 1.2848172, z: 4}
-  m_Center: {x: 0.06783199, y: 0.33621478, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &192860811302838803
 GameObject:
   m_ObjectHideFlags: 0
@@ -506,7 +455,6 @@ GameObject:
   - component: {fileID: 4777198721322356544}
   - component: {fileID: 2355818340147048855}
   - component: {fileID: 390243797483767282}
-  - component: {fileID: 1756668353011638821}
   m_Layer: 0
   m_Name: tree-variations_56 (20)
   m_TagString: Untagged
@@ -616,22 +564,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.07835056, y: 1.0378271}
   m_Size: {x: 2.6699607, y: 2.6699607}
   m_Direction: 1
---- !u!114 &1756668353011638821
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 241719296252406652}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fa0352a4d56abd42ad2fc69deb72448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 2.02318, y: 1.2848172, z: 4}
-  m_Center: {x: 0.06783199, y: 0.33621478, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &593661191919927768
 GameObject:
   m_ObjectHideFlags: 0
@@ -643,7 +575,6 @@ GameObject:
   - component: {fileID: 5272551000366343652}
   - component: {fileID: 3158806275525532467}
   - component: {fileID: 1012665004102004566}
-  - component: {fileID: 1371110041175984257}
   m_Layer: 0
   m_Name: tree-variations_56 (8)
   m_TagString: Untagged
@@ -753,22 +684,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.07835056, y: 1.0378271}
   m_Size: {x: 2.6699607, y: 2.6699607}
   m_Direction: 1
---- !u!114 &1371110041175984257
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 593661191919927768}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fa0352a4d56abd42ad2fc69deb72448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 2.02318, y: 1.2848172, z: 4}
-  m_Center: {x: 0.06783199, y: 0.33621478, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &835693872052668700
 GameObject:
   m_ObjectHideFlags: 0
@@ -780,7 +695,6 @@ GameObject:
   - component: {fileID: 5372299164263542048}
   - component: {fileID: 2914872399788790775}
   - component: {fileID: 984130973367084946}
-  - component: {fileID: 1198742286527955013}
   m_Layer: 0
   m_Name: tree-variations_56 (31)
   m_TagString: Untagged
@@ -890,22 +804,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.07835056, y: 1.0378271}
   m_Size: {x: 2.6699607, y: 2.6699607}
   m_Direction: 1
---- !u!114 &1198742286527955013
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 835693872052668700}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fa0352a4d56abd42ad2fc69deb72448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 2.02318, y: 1.2848172, z: 4}
-  m_Center: {x: 0.06783199, y: 0.33621478, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &888658788003879927
 GameObject:
   m_ObjectHideFlags: 0
@@ -917,7 +815,6 @@ GameObject:
   - component: {fileID: 5567540902536544203}
   - component: {fileID: 3440301869877674268}
   - component: {fileID: 749155220795864441}
-  - component: {fileID: 1688591000917152430}
   m_Layer: 0
   m_Name: tree-variations_56 (38)
   m_TagString: Untagged
@@ -1027,22 +924,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.07835056, y: 1.0378271}
   m_Size: {x: 2.6699607, y: 2.6699607}
   m_Direction: 1
---- !u!114 &1688591000917152430
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 888658788003879927}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fa0352a4d56abd42ad2fc69deb72448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 2.02318, y: 1.2848172, z: 4}
-  m_Center: {x: 0.06783199, y: 0.33621478, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &1030390339529679468
 GameObject:
   m_ObjectHideFlags: 0
@@ -1054,7 +935,6 @@ GameObject:
   - component: {fileID: 5717997075603179088}
   - component: {fileID: 3289845077123463303}
   - component: {fileID: 611363976621821154}
-  - component: {fileID: 1546595500906490677}
   m_Layer: 0
   m_Name: tree-variations_56 (10)
   m_TagString: Untagged
@@ -1164,22 +1044,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.07835056, y: 1.0378271}
   m_Size: {x: 2.6699607, y: 2.6699607}
   m_Direction: 1
---- !u!114 &1546595500906490677
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1030390339529679468}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fa0352a4d56abd42ad2fc69deb72448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 2.02318, y: 1.2848172, z: 4}
-  m_Center: {x: 0.06783199, y: 0.33621478, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &1383847824441665170
 GameObject:
   m_ObjectHideFlags: 0
@@ -1336,7 +1200,6 @@ GameObject:
   - component: {fileID: 6112984541749011766}
   - component: {fileID: 3902412700334513121}
   - component: {fileID: 1437711827397521284}
-  - component: {fileID: 1078994122138978387}
   m_Layer: 0
   m_Name: tree-variations_56 (6)
   m_TagString: Untagged
@@ -1446,22 +1309,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.07835056, y: 1.0378271}
   m_Size: {x: 2.6699607, y: 2.6699607}
   m_Direction: 1
---- !u!114 &1078994122138978387
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1568213145032491274}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fa0352a4d56abd42ad2fc69deb72448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 2.02318, y: 1.2848172, z: 4}
-  m_Center: {x: 0.06783199, y: 0.33621478, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &1571952387743886623
 GameObject:
   m_ObjectHideFlags: 0
@@ -1473,7 +1320,6 @@ GameObject:
   - component: {fileID: 6108698416893184291}
   - component: {fileID: 3907994698713069556}
   - component: {fileID: 1432176154552796049}
-  - component: {fileID: 1074812998479750214}
   m_Layer: 0
   m_Name: tree-variations_56 (11)
   m_TagString: Untagged
@@ -1583,22 +1429,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.07835056, y: 1.0378271}
   m_Size: {x: 2.6699607, y: 2.6699607}
   m_Direction: 1
---- !u!114 &1074812998479750214
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1571952387743886623}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fa0352a4d56abd42ad2fc69deb72448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 2.02318, y: 1.2848172, z: 4}
-  m_Center: {x: 0.06783199, y: 0.33621478, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &1625360417605124126
 GameObject:
   m_ObjectHideFlags: 0
@@ -1610,7 +1440,6 @@ GameObject:
   - component: {fileID: 6311995221927289890}
   - component: {fileID: 3847550275204045557}
   - component: {fileID: 1206646331053911696}
-  - component: {fileID: 987487147756030279}
   m_Layer: 0
   m_Name: tree-variations_56 (14)
   m_TagString: Untagged
@@ -1720,22 +1549,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.07835056, y: 1.0378271}
   m_Size: {x: 2.6699607, y: 2.6699607}
   m_Direction: 1
---- !u!114 &987487147756030279
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1625360417605124126}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fa0352a4d56abd42ad2fc69deb72448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 2.02318, y: 1.2848172, z: 4}
-  m_Center: {x: 0.06783199, y: 0.33621478, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &1675548393242397558
 GameObject:
   m_ObjectHideFlags: 0
@@ -1747,7 +1560,6 @@ GameObject:
   - component: {fileID: 6221292858835824458}
   - component: {fileID: 3795391294371221917}
   - component: {fileID: 1256522588429624824}
-  - component: {fileID: 899185586427265583}
   m_Layer: 0
   m_Name: tree-variations_56 (13)
   m_TagString: Untagged
@@ -1857,22 +1669,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.07835056, y: 1.0378271}
   m_Size: {x: 2.6699607, y: 2.6699607}
   m_Direction: 1
---- !u!114 &899185586427265583
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1675548393242397558}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fa0352a4d56abd42ad2fc69deb72448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 2.02318, y: 1.2848172, z: 4}
-  m_Center: {x: 0.06783199, y: 0.33621478, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &1728552356114895440
 GameObject:
   m_ObjectHideFlags: 0
@@ -1968,7 +1764,6 @@ GameObject:
   - component: {fileID: 6621046356258990123}
   - component: {fileID: 4116050596068857596}
   - component: {fileID: 2073000339702375065}
-  - component: {fileID: 130141455045182798}
   m_Layer: 0
   m_Name: tree-variations_56 (24)
   m_TagString: Untagged
@@ -2078,22 +1873,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.07835056, y: 1.0378271}
   m_Size: {x: 2.6699607, y: 2.6699607}
   m_Direction: 1
---- !u!114 &130141455045182798
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1942291768969251863}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fa0352a4d56abd42ad2fc69deb72448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 2.02318, y: 1.2848172, z: 4}
-  m_Center: {x: 0.06783199, y: 0.33621478, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &2044639768198085305
 GameObject:
   m_ObjectHideFlags: 0
@@ -2105,7 +1884,6 @@ GameObject:
   - component: {fileID: 6734785312610885253}
   - component: {fileID: 4578836108816588882}
   - component: {fileID: 1896204321251382327}
-  - component: {fileID: 529797398290232288}
   m_Layer: 0
   m_Name: tree-variations_56 (30)
   m_TagString: Untagged
@@ -2215,22 +1993,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.07835056, y: 1.0378271}
   m_Size: {x: 2.6699607, y: 2.6699607}
   m_Direction: 1
---- !u!114 &529797398290232288
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2044639768198085305}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fa0352a4d56abd42ad2fc69deb72448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 2.02318, y: 1.2848172, z: 4}
-  m_Center: {x: 0.06783199, y: 0.33621478, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &2047133713786926363
 GameObject:
   m_ObjectHideFlags: 0
@@ -2242,7 +2004,6 @@ GameObject:
   - component: {fileID: 6736865807983907111}
   - component: {fileID: 4576694486516969456}
   - component: {fileID: 1898354679366310805}
-  - component: {fileID: 527716791525866562}
   m_Layer: 0
   m_Name: tree-variations_56 (26)
   m_TagString: Untagged
@@ -2352,22 +2113,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.07835056, y: 1.0378271}
   m_Size: {x: 2.6699607, y: 2.6699607}
   m_Direction: 1
---- !u!114 &527716791525866562
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2047133713786926363}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fa0352a4d56abd42ad2fc69deb72448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 2.02318, y: 1.2848172, z: 4}
-  m_Center: {x: 0.06783199, y: 0.33621478, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &2086774604935542307
 GameObject:
   m_ObjectHideFlags: 0
@@ -2379,7 +2124,6 @@ GameObject:
   - component: {fileID: 6765375258998919711}
   - component: {fileID: 4548345718969396424}
   - component: {fileID: 1928975175527143597}
-  - component: {fileID: 562814259976454010}
   m_Layer: 0
   m_Name: tree-variations_56 (41)
   m_TagString: Untagged
@@ -2489,22 +2233,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.07835056, y: 1.0378271}
   m_Size: {x: 2.6699607, y: 2.6699607}
   m_Direction: 1
---- !u!114 &562814259976454010
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2086774604935542307}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fa0352a4d56abd42ad2fc69deb72448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 2.02318, y: 1.2848172, z: 4}
-  m_Center: {x: 0.06783199, y: 0.33621478, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &2150950604990594224
 GameObject:
   m_ObjectHideFlags: 0
@@ -2516,7 +2244,6 @@ GameObject:
   - component: {fileID: 6687687854132680844}
   - component: {fileID: 4481917305051932251}
   - component: {fileID: 2011166110678422078}
-  - component: {fileID: 496386386370672105}
   m_Layer: 0
   m_Name: tree-variations_56 (48)
   m_TagString: Untagged
@@ -2626,22 +2353,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.07835056, y: 1.0378271}
   m_Size: {x: 2.6699607, y: 2.6699607}
   m_Direction: 1
---- !u!114 &496386386370672105
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2150950604990594224}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fa0352a4d56abd42ad2fc69deb72448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 2.02318, y: 1.2848172, z: 4}
-  m_Center: {x: 0.06783199, y: 0.33621478, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &2169888222002537680
 GameObject:
   m_ObjectHideFlags: 0
@@ -2653,7 +2364,6 @@ GameObject:
   - component: {fileID: 6848351402774102252}
   - component: {fileID: 4465235400032009787}
   - component: {fileID: 1741858512967387742}
-  - component: {fileID: 371211838996966793}
   m_Layer: 0
   m_Name: tree-variations_56 (33)
   m_TagString: Untagged
@@ -2763,22 +2473,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.07835056, y: 1.0378271}
   m_Size: {x: 2.6699607, y: 2.6699607}
   m_Direction: 1
---- !u!114 &371211838996966793
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2169888222002537680}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fa0352a4d56abd42ad2fc69deb72448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 2.02318, y: 1.2848172, z: 4}
-  m_Center: {x: 0.06783199, y: 0.33621478, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &2263810234476662104
 GameObject:
   m_ObjectHideFlags: 0
@@ -2790,7 +2484,6 @@ GameObject:
   - component: {fileID: 6808437598957463908}
   - component: {fileID: 4360018033738766259}
   - component: {fileID: 1826778834478474198}
-  - component: {fileID: 310917209553011713}
   m_Layer: 0
   m_Name: tree-variations_56 (16)
   m_TagString: Untagged
@@ -2900,22 +2593,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.07835056, y: 1.0378271}
   m_Size: {x: 2.6699607, y: 2.6699607}
   m_Direction: 1
---- !u!114 &310917209553011713
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2263810234476662104}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fa0352a4d56abd42ad2fc69deb72448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 2.02318, y: 1.2848172, z: 4}
-  m_Center: {x: 0.06783199, y: 0.33621478, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &2340470176040835848
 GameObject:
   m_ObjectHideFlags: 0
@@ -3157,7 +2834,6 @@ GameObject:
   - component: {fileID: 6918857361153403694}
   - component: {fileID: 214256049562785273}
   - component: {fileID: 2820045406319829404}
-  - component: {fileID: 4190683560733460043}
   m_Layer: 0
   m_Name: tree-variations_56 (1)
   m_TagString: Untagged
@@ -3267,22 +2943,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.07835056, y: 1.0378271}
   m_Size: {x: 2.6699607, y: 2.6699607}
   m_Direction: 1
---- !u!114 &4190683560733460043
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2383106356187025170}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fa0352a4d56abd42ad2fc69deb72448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 2.02318, y: 1.2848172, z: 4}
-  m_Center: {x: 0.06783199, y: 0.33621478, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &2436751864510745300
 GameObject:
   m_ObjectHideFlags: 0
@@ -3294,7 +2954,6 @@ GameObject:
   - component: {fileID: 6973773924207881960}
   - component: {fileID: 160540578243989567}
   - component: {fileID: 2873782721711547482}
-  - component: {fileID: 4245528911220933517}
   m_Layer: 0
   m_Name: tree-variations_56 (39)
   m_TagString: Untagged
@@ -3404,22 +3063,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.07835056, y: 1.0378271}
   m_Size: {x: 2.6699607, y: 2.6699607}
   m_Direction: 1
---- !u!114 &4245528911220933517
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2436751864510745300}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fa0352a4d56abd42ad2fc69deb72448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 2.02318, y: 1.2848172, z: 4}
-  m_Center: {x: 0.06783199, y: 0.33621478, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &2484976928589313991
 GameObject:
   m_ObjectHideFlags: 0
@@ -3431,7 +3074,6 @@ GameObject:
   - component: {fileID: 7163731533058970619}
   - component: {fileID: 114603740261035308}
   - component: {fileID: 2615684940975692105}
-  - component: {fileID: 4127086978968452766}
   m_Layer: 0
   m_Name: tree-variations_56 (4)
   m_TagString: Untagged
@@ -3541,22 +3183,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.07835056, y: 1.0378271}
   m_Size: {x: 2.6699607, y: 2.6699607}
   m_Direction: 1
---- !u!114 &4127086978968452766
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2484976928589313991}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fa0352a4d56abd42ad2fc69deb72448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 2.02318, y: 1.2848172, z: 4}
-  m_Center: {x: 0.06783199, y: 0.33621478, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &2647297974261065001
 GameObject:
   m_ObjectHideFlags: 0
@@ -3568,7 +3194,6 @@ GameObject:
   - component: {fileID: 7326180104408973589}
   - component: {fileID: 528708259710435266}
   - component: {fileID: 2489850379984669607}
-  - component: {fileID: 4577668912407620720}
   m_Layer: 0
   m_Name: tree-variations_56 (21)
   m_TagString: Untagged
@@ -3678,22 +3303,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.07835056, y: 1.0378271}
   m_Size: {x: 2.6699607, y: 2.6699607}
   m_Direction: 1
---- !u!114 &4577668912407620720
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2647297974261065001}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fa0352a4d56abd42ad2fc69deb72448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 2.02318, y: 1.2848172, z: 4}
-  m_Center: {x: 0.06783199, y: 0.33621478, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &2670057492114983562
 GameObject:
   m_ObjectHideFlags: 0
@@ -4077,7 +3686,6 @@ GameObject:
   - component: {fileID: 7686018332876220756}
   - component: {fileID: 601142944836360067}
   - component: {fileID: 3282086963497493478}
-  - component: {fileID: 3496707087609185329}
   m_Layer: 0
   m_Name: tree-variations_56 (54)
   m_TagString: Untagged
@@ -4187,22 +3795,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.078350395, y: 1.7024659}
   m_Size: {x: 3.9992583, y: 3.9992583}
   m_Direction: 1
---- !u!114 &3496707087609185329
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3151673621569588584}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fa0352a4d56abd42ad2fc69deb72448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 2.02318, y: 1.2848172, z: 4}
-  m_Center: {x: 0.06783199, y: 0.33621478, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &3239629762068417768
 GameObject:
   m_ObjectHideFlags: 0
@@ -4382,7 +3974,6 @@ GameObject:
   - component: {fileID: 8034537347267672254}
   - component: {fileID: 972181065935455849}
   - component: {fileID: 2929030126717956620}
-  - component: {fileID: 3867639097313777115}
   m_Layer: 0
   m_Name: tree-variations_56 (2)
   m_TagString: Untagged
@@ -4492,22 +4083,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.07835056, y: 1.0378271}
   m_Size: {x: 2.6699607, y: 2.6699607}
   m_Direction: 1
---- !u!114 &3867639097313777115
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3357063675991710850}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fa0352a4d56abd42ad2fc69deb72448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 2.02318, y: 1.2848172, z: 4}
-  m_Center: {x: 0.06783199, y: 0.33621478, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &3518007161627520051
 GameObject:
   m_ObjectHideFlags: 0
@@ -4749,7 +4324,6 @@ GameObject:
   - component: {fileID: 8506573238180280518}
   - component: {fileID: 1508956473753486865}
   - component: {fileID: 3542928890464514676}
-  - component: {fileID: 3179997806603998627}
   m_Layer: 0
   m_Name: tree-variations_56 (37)
   m_TagString: Untagged
@@ -4859,22 +4433,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.07835056, y: 1.0378271}
   m_Size: {x: 2.6699607, y: 2.6699607}
   m_Direction: 1
---- !u!114 &3179997806603998627
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3970958588749389050}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fa0352a4d56abd42ad2fc69deb72448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 2.02318, y: 1.2848172, z: 4}
-  m_Center: {x: 0.06783199, y: 0.33621478, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &4051301105482429600
 GameObject:
   m_ObjectHideFlags: 0
@@ -5138,7 +4696,6 @@ GameObject:
   - component: {fileID: 9074507134987443684}
   - component: {fileID: 2239037268010640179}
   - component: {fileID: 4235996564983895894}
-  - component: {fileID: 2865367208138109057}
   m_Layer: 0
   m_Name: tree-variations_56 (47)
   m_TagString: Untagged
@@ -5248,22 +4805,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.07835056, y: 1.0378271}
   m_Size: {x: 2.6699607, y: 2.6699607}
   m_Direction: 1
---- !u!114 &2865367208138109057
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4393796552465414616}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fa0352a4d56abd42ad2fc69deb72448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 2.02318, y: 1.2848172, z: 4}
-  m_Center: {x: 0.06783199, y: 0.33621478, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &4454596018361508722
 GameObject:
   m_ObjectHideFlags: 0
@@ -5275,7 +4816,6 @@ GameObject:
   - component: {fileID: 8991192548859660110}
   - component: {fileID: 2178239586950805913}
   - component: {fileID: 4314810989613944316}
-  - component: {fileID: 2804570068243458603}
   m_Layer: 0
   m_Name: tree-variations_56 (43)
   m_TagString: Untagged
@@ -5385,22 +4925,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.07835056, y: 1.0378271}
   m_Size: {x: 2.6699607, y: 2.6699607}
   m_Direction: 1
---- !u!114 &2804570068243458603
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4454596018361508722}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fa0352a4d56abd42ad2fc69deb72448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 2.02318, y: 1.2848172, z: 4}
-  m_Center: {x: 0.06783199, y: 0.33621478, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &4589068605159460639
 GameObject:
   m_ObjectHideFlags: 0
@@ -5412,7 +4936,6 @@ GameObject:
   - component: {fileID: 9131438654567787299}
   - component: {fileID: 2037012082284991988}
   - component: {fileID: 4152049840165478801}
-  - component: {fileID: 2636179668909934150}
   m_Layer: 0
   m_Name: tree-variations_56 (36)
   m_TagString: Untagged
@@ -5522,22 +5045,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.07835056, y: 1.0378271}
   m_Size: {x: 2.6699607, y: 2.6699607}
   m_Direction: 1
---- !u!114 &2636179668909934150
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4589068605159460639}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fa0352a4d56abd42ad2fc69deb72448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 2.02318, y: 1.2848172, z: 4}
-  m_Center: {x: 0.06783199, y: 0.33621478, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &4790760595428891283
 GameObject:
   m_ObjectHideFlags: 0
@@ -5549,7 +5056,6 @@ GameObject:
   - component: {fileID: 246279504142515887}
   - component: {fileID: 7032227083397988472}
   - component: {fileID: 4921481807067673629}
-  - component: {fileID: 6432830788545074122}
   m_Layer: 0
   m_Name: tree-variations_56 (5)
   m_TagString: Untagged
@@ -5659,22 +5165,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.07835056, y: 1.0378271}
   m_Size: {x: 2.6699607, y: 2.6699607}
   m_Direction: 1
---- !u!114 &6432830788545074122
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4790760595428891283}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fa0352a4d56abd42ad2fc69deb72448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 2.02318, y: 1.2848172, z: 4}
-  m_Center: {x: 0.06783199, y: 0.33621478, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &4818958566181059641
 GameObject:
   m_ObjectHideFlags: 0
@@ -6058,7 +5548,6 @@ GameObject:
   - component: {fileID: 879782199139339623}
   - component: {fileID: 7982654111644890032}
   - component: {fileID: 5409937473589921749}
-  - component: {fileID: 6204105813185454082}
   m_Layer: 0
   m_Name: tree-variations_56 (22)
   m_TagString: Untagged
@@ -6168,22 +5657,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.07835056, y: 1.0378271}
   m_Size: {x: 2.6699607, y: 2.6699607}
   m_Direction: 1
---- !u!114 &6204105813185454082
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5558387218500577627}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fa0352a4d56abd42ad2fc69deb72448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 2.02318, y: 1.2848172, z: 4}
-  m_Center: {x: 0.06783199, y: 0.33621478, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &5612608555216982040
 GameObject:
   m_ObjectHideFlags: 0
@@ -6194,7 +5667,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5608162775406469793}
   - component: {fileID: 7239527360892661057}
-  - component: {fileID: 4832569590100258905}
   m_Layer: 0
   m_Name: background
   m_TagString: Untagged
@@ -6269,22 +5741,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
---- !u!114 &4832569590100258905
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5612608555216982040}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_OverrideArea: 1
-  m_Area: 0
-  m_IgnoreFromBuild: 0
-  m_AffectedAgents: ffffffff
 --- !u!1 &5625214629866208872
 GameObject:
   m_ObjectHideFlags: 0
@@ -6380,7 +5836,6 @@ GameObject:
   - component: {fileID: 1289964096745970849}
   - component: {fileID: 8294318949747860086}
   - component: {fileID: 6251198340709635603}
-  - component: {fileID: 5461225741817377220}
   m_Layer: 0
   m_Name: tree-variations_56 (28)
   m_TagString: Untagged
@@ -6490,22 +5945,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.07835056, y: 1.0378271}
   m_Size: {x: 2.6699607, y: 2.6699607}
   m_Direction: 1
---- !u!114 &5461225741817377220
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5832189025068841117}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fa0352a4d56abd42ad2fc69deb72448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 2.02318, y: 1.2848172, z: 4}
-  m_Center: {x: 0.06783199, y: 0.33621478, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &5933654501290038172
 GameObject:
   m_ObjectHideFlags: 0
@@ -6601,7 +6040,6 @@ GameObject:
   - component: {fileID: 1302153507950020060}
   - component: {fileID: 8137904566502816523}
   - component: {fileID: 6139609092553740142}
-  - component: {fileID: 5205837728420243641}
   m_Layer: 0
   m_Name: tree-variations_56 (42)
   m_TagString: Untagged
@@ -6711,22 +6149,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.07835056, y: 1.0378271}
   m_Size: {x: 2.6699607, y: 2.6699607}
   m_Direction: 1
---- !u!114 &5205837728420243641
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5982164801106092512}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fa0352a4d56abd42ad2fc69deb72448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 2.02318, y: 1.2848172, z: 4}
-  m_Center: {x: 0.06783199, y: 0.33621478, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &6030269120866306106
 GameObject:
   m_ObjectHideFlags: 0
@@ -7182,7 +6604,6 @@ GameObject:
   - component: {fileID: 1662126500583250354}
   - component: {fileID: 8497315716679673701}
   - component: {fileID: 5780202417719628544}
-  - component: {fileID: 5565881089265005783}
   m_Layer: 0
   m_Name: tree-variations_56
   m_TagString: Untagged
@@ -7292,22 +6713,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.07835056, y: 1.0378271}
   m_Size: {x: 2.6699607, y: 2.6699607}
   m_Direction: 1
---- !u!114 &5565881089265005783
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6199145206468771214}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fa0352a4d56abd42ad2fc69deb72448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 2.02318, y: 1.2848172, z: 4}
-  m_Center: {x: 0.06783199, y: 0.33621478, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &6284952471026617362
 GameObject:
   m_ObjectHideFlags: 0
@@ -7319,7 +6724,6 @@ GameObject:
   - component: {fileID: 1598325415869720622}
   - component: {fileID: 8418332566887241465}
   - component: {fileID: 5838930355593929372}
-  - component: {fileID: 5477098551816734027}
   m_Layer: 0
   m_Name: tree-variations_56 (34)
   m_TagString: Untagged
@@ -7429,22 +6833,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.07835056, y: 1.0378271}
   m_Size: {x: 2.6699607, y: 2.6699607}
   m_Direction: 1
---- !u!114 &5477098551816734027
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6284952471026617362}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fa0352a4d56abd42ad2fc69deb72448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 2.02318, y: 1.2848172, z: 4}
-  m_Center: {x: 0.06783199, y: 0.33621478, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &6369963094986388626
 GameObject:
   m_ObjectHideFlags: 0
@@ -7660,7 +7048,6 @@ GameObject:
   - component: {fileID: 2116368705586091737}
   - component: {fileID: 9197285843175761934}
   - component: {fileID: 6519156552840584299}
-  - component: {fileID: 5148228441036110780}
   m_Layer: 0
   m_Name: tree-variations_56 (23)
   m_TagString: Untagged
@@ -7770,22 +7157,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.07835056, y: 1.0378271}
   m_Size: {x: 2.6699607, y: 2.6699607}
   m_Direction: 1
---- !u!114 &5148228441036110780
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6649596295945368293}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fa0352a4d56abd42ad2fc69deb72448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 2.02318, y: 1.2848172, z: 4}
-  m_Center: {x: 0.06783199, y: 0.33621478, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &6831442812196166511
 GameObject:
   m_ObjectHideFlags: 0
@@ -7797,7 +7168,6 @@ GameObject:
   - component: {fileID: 2294847401128427347}
   - component: {fileID: 9017727268359946628}
   - component: {fileID: 6412712224648050145}
-  - component: {fileID: 5040684596401771062}
   m_Layer: 0
   m_Name: tree-variations_56 (3)
   m_TagString: Untagged
@@ -7907,22 +7277,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.07835056, y: 1.0378271}
   m_Size: {x: 2.6699607, y: 2.6699607}
   m_Direction: 1
---- !u!114 &5040684596401771062
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6831442812196166511}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fa0352a4d56abd42ad2fc69deb72448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 2.02318, y: 1.2848172, z: 4}
-  m_Center: {x: 0.06783199, y: 0.33621478, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &6977152111539946729
 GameObject:
   m_ObjectHideFlags: 0
@@ -8018,7 +7372,6 @@ GameObject:
   - component: {fileID: 2456129665400954921}
   - component: {fileID: 4677098489372204798}
   - component: {fileID: 7292318101508106907}
-  - component: {fileID: 8662982333037972812}
   m_Layer: 0
   m_Name: tree-variations_56 (51)
   m_TagString: Untagged
@@ -8128,22 +7481,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.07835056, y: 1.0378271}
   m_Size: {x: 2.6699607, y: 2.6699607}
   m_Direction: 1
---- !u!114 &8662982333037972812
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7134592880531735573}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fa0352a4d56abd42ad2fc69deb72448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 2.02318, y: 1.2848172, z: 4}
-  m_Center: {x: 0.06783199, y: 0.33621478, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &7218783121714170195
 GameObject:
   m_ObjectHideFlags: 0
@@ -8459,7 +7796,6 @@ GameObject:
   - component: {fileID: 2828072749419954693}
   - component: {fileID: 5026823744076496082}
   - component: {fileID: 6924633423863400631}
-  - component: {fileID: 9012724631258328928}
   m_Layer: 0
   m_Name: tree-variations_56 (46)
   m_TagString: Untagged
@@ -8569,22 +7905,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.07835056, y: 1.0378271}
   m_Size: {x: 2.6699607, y: 2.6699607}
   m_Direction: 1
---- !u!114 &9012724631258328928
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7361577419931018809}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fa0352a4d56abd42ad2fc69deb72448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 2.02318, y: 1.2848172, z: 4}
-  m_Center: {x: 0.06783199, y: 0.33621478, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &7567957771262164995
 GameObject:
   m_ObjectHideFlags: 0
@@ -8596,7 +7916,6 @@ GameObject:
   - component: {fileID: 2886824925255492671}
   - component: {fileID: 5399120340927830760}
   - component: {fileID: 8013706656445083277}
-  - component: {fileID: 8231730862101334362}
   m_Layer: 0
   m_Name: tree-variations_56 (12)
   m_TagString: Untagged
@@ -8706,22 +8025,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.07835056, y: 1.0378271}
   m_Size: {x: 2.6699607, y: 2.6699607}
   m_Direction: 1
---- !u!114 &8231730862101334362
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7567957771262164995}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fa0352a4d56abd42ad2fc69deb72448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 2.02318, y: 1.2848172, z: 4}
-  m_Center: {x: 0.06783199, y: 0.33621478, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &7701358358792689791
 GameObject:
   m_ObjectHideFlags: 0
@@ -8932,7 +8235,6 @@ GameObject:
   - component: {fileID: 3406159814553365126}
   - component: {fileID: 5600389892206482513}
   - component: {fileID: 7521983387522211892}
-  - component: {fileID: 8460548652649842659}
   m_Layer: 0
   m_Name: tree-variations_56 (44)
   m_TagString: Untagged
@@ -9042,22 +8344,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.07835056, y: 1.0378271}
   m_Size: {x: 2.6699607, y: 2.6699607}
   m_Direction: 1
---- !u!114 &8460548652649842659
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7949938321697541818}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fa0352a4d56abd42ad2fc69deb72448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 2.02318, y: 1.2848172, z: 4}
-  m_Center: {x: 0.06783199, y: 0.33621478, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &7976205216630424334
 GameObject:
   m_ObjectHideFlags: 0
@@ -9069,7 +8355,6 @@ GameObject:
   - component: {fileID: 3433971509918050098}
   - component: {fileID: 5573875540058970597}
   - component: {fileID: 7530443690015550848}
-  - component: {fileID: 8469897087319362135}
   m_Layer: 0
   m_Name: tree-variations_56 (32)
   m_TagString: Untagged
@@ -9179,22 +8464,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.07835056, y: 1.0378271}
   m_Size: {x: 2.6699607, y: 2.6699607}
   m_Direction: 1
---- !u!114 &8469897087319362135
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7976205216630424334}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fa0352a4d56abd42ad2fc69deb72448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 2.02318, y: 1.2848172, z: 4}
-  m_Center: {x: 0.06783199, y: 0.33621478, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &8219580398992629824
 GameObject:
   m_ObjectHideFlags: 0
@@ -9206,7 +8475,6 @@ GameObject:
   - component: {fileID: 3676932173708772476}
   - component: {fileID: 5907208640633502379}
   - component: {fileID: 8368108202768895694}
-  - component: {fileID: 7578399523189205273}
   m_Layer: 0
   m_Name: tree-variations_56 (49)
   m_TagString: Untagged
@@ -9316,22 +8584,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.07835056, y: 1.0378271}
   m_Size: {x: 2.6699607, y: 2.6699607}
   m_Direction: 1
---- !u!114 &7578399523189205273
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8219580398992629824}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fa0352a4d56abd42ad2fc69deb72448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 2.02318, y: 1.2848172, z: 4}
-  m_Center: {x: 0.06783199, y: 0.33621478, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &8300341558447260738
 GameObject:
   m_ObjectHideFlags: 0
@@ -9427,7 +8679,6 @@ GameObject:
   - component: {fileID: 3615538455937746224}
   - component: {fileID: 5823560796241738727}
   - component: {fileID: 8433713052651638658}
-  - component: {fileID: 7494004570425419861}
   m_Layer: 0
   m_Name: tree-variations_56 (15)
   m_TagString: Untagged
@@ -9537,22 +8788,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.07835056, y: 1.0378271}
   m_Size: {x: 2.6699607, y: 2.6699607}
   m_Direction: 1
---- !u!114 &7494004570425419861
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8303018783607021836}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fa0352a4d56abd42ad2fc69deb72448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 2.02318, y: 1.2848172, z: 4}
-  m_Center: {x: 0.06783199, y: 0.33621478, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &8465509007524547033
 GameObject:
   m_ObjectHideFlags: 0
@@ -9684,7 +8919,6 @@ GameObject:
   - component: {fileID: 3817857869023208264}
   - component: {fileID: 6198722340319190431}
   - component: {fileID: 8349015955019508218}
-  - component: {fileID: 7986911715163737645}
   m_Layer: 0
   m_Name: tree-variations_56 (25)
   m_TagString: Untagged
@@ -9794,22 +9028,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.07835056, y: 1.0378271}
   m_Size: {x: 2.6699607, y: 2.6699607}
   m_Direction: 1
---- !u!114 &7986911715163737645
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8497455800571856756}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fa0352a4d56abd42ad2fc69deb72448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 2.02318, y: 1.2848172, z: 4}
-  m_Center: {x: 0.06783199, y: 0.33621478, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &8499225960531947723
 GameObject:
   m_ObjectHideFlags: 0
@@ -9852,7 +9070,6 @@ GameObject:
   - component: {fileID: 4030293637180088754}
   - component: {fileID: 6130509689700278117}
   - component: {fileID: 8126766358209604352}
-  - component: {fileID: 7909040953377262807}
   m_Layer: 0
   m_Name: tree-variations_56 (27)
   m_TagString: Untagged
@@ -9962,22 +9179,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.07835056, y: 1.0378271}
   m_Size: {x: 2.6699607, y: 2.6699607}
   m_Direction: 1
---- !u!114 &7909040953377262807
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8572808821570209166}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fa0352a4d56abd42ad2fc69deb72448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 2.02318, y: 1.2848172, z: 4}
-  m_Center: {x: 0.06783199, y: 0.33621478, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &8604737443041014076
 GameObject:
   m_ObjectHideFlags: 0
@@ -10193,7 +9394,6 @@ GameObject:
   - component: {fileID: 4125230479675206168}
   - component: {fileID: 6611930639646692559}
   - component: {fileID: 9086481758553694378}
-  - component: {fileID: 7139110452290963325}
   m_Layer: 0
   m_Name: tree-variations_56 (9)
   m_TagString: Untagged
@@ -10303,22 +9503,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.07835056, y: 1.0378271}
   m_Size: {x: 2.6699607, y: 2.6699607}
   m_Direction: 1
---- !u!114 &7139110452290963325
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8658458105417453092}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fa0352a4d56abd42ad2fc69deb72448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 2.02318, y: 1.2848172, z: 4}
-  m_Center: {x: 0.06783199, y: 0.33621478, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &9055348267595962610
 GameObject:
   m_ObjectHideFlags: 0
@@ -10450,7 +9634,6 @@ GameObject:
   - component: {fileID: 4608450961395007544}
   - component: {fileID: 6703899530893459183}
   - component: {fileID: 8706278299272120970}
-  - component: {fileID: 7338745171467742557}
   m_Layer: 0
   m_Name: tree-variations_56 (40)
   m_TagString: Untagged
@@ -10560,22 +9743,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.07835056, y: 1.0378271}
   m_Size: {x: 2.6699607, y: 2.6699607}
   m_Direction: 1
---- !u!114 &7338745171467742557
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9142948524716205060}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fa0352a4d56abd42ad2fc69deb72448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 2.02318, y: 1.2848172, z: 4}
-  m_Center: {x: 0.06783199, y: 0.33621478, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &9208861097363682259
 GameObject:
   m_ObjectHideFlags: 0
@@ -10587,7 +9754,6 @@ GameObject:
   - component: {fileID: 4529131279234586607}
   - component: {fileID: 6640342454407883064}
   - component: {fileID: 8790143157958090077}
-  - component: {fileID: 7275073186349202058}
   m_Layer: 0
   m_Name: tree-variations_56 (29)
   m_TagString: Untagged
@@ -10697,19 +9863,3 @@ CapsuleCollider2D:
   m_Offset: {x: 0.07835056, y: 1.0378271}
   m_Size: {x: 2.6699607, y: 2.6699607}
   m_Direction: 1
---- !u!114 &7275073186349202058
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9208861097363682259}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fa0352a4d56abd42ad2fc69deb72448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 2.02318, y: 1.2848172, z: 4}
-  m_Center: {x: 0.06783199, y: 0.33621478, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff

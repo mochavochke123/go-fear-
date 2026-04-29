@@ -637,7 +637,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: -1907045719, guid: b8ff57b4f0eb80441a50e5ec229f6d0c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1429,7 +1429,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3350764258242167529}
   - component: {fileID: 8910555245413051382}
-  - component: {fileID: 3893542285827176182}
   m_Layer: 0
   m_Name: background
   m_TagString: Untagged
@@ -1504,22 +1503,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
---- !u!114 &3893542285827176182
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8930440118526879191}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_OverrideArea: 1
-  m_Area: 0
-  m_IgnoreFromBuild: 0
-  m_AffectedAgents: ffffffff
 --- !u!1 &9139992605077009204
 GameObject:
   m_ObjectHideFlags: 0
@@ -1877,6 +1860,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2417406660715094038}
     m_Modifications:
+    - target: {fileID: 1948328668336804200, guid: 913c689747b994a42a6a4b91a159c4c2, type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4099002157951814531, guid: 913c689747b994a42a6a4b91a159c4c2, type: 3}
       propertyPath: m_Name
       value: tree-variations_56 (46)

@@ -273,7 +273,7 @@ TextureImporter:
         width: 24
         height: 19
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -281,6 +281,111 @@ TextureImporter:
       bones: []
       spriteID: 20e7003044a47374caea1c0941d99ba2
       internalID: -1773813237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nado_0
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 8
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01de0567c43d73c4fa4bf03736a3a668
+      internalID: 723488900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nado_1
+      rect:
+        serializedVersion: 2
+        x: 1633
+        y: 8
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdb99aca1b9d66f418ed4af91b6e7cac
+      internalID: 1189409754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nado_2
+      rect:
+        serializedVersion: 2
+        x: 1665
+        y: 9
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a494c26f8974454599c0d8bff258ea7
+      internalID: 1289799014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nado_3
+      rect:
+        serializedVersion: 2
+        x: 1696
+        y: 10
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 505b531d0528b5144be16ba5a5a881c7
+      internalID: 597587087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nado_4
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 8
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a168ad31fa5c8254bbea66a1e12698be
+      internalID: 1683831140
       vertices: []
       indices: 
       edges: []
@@ -305,6 +410,11 @@ TextureImporter:
       ProjectUtumno_full (4) 1_6: 106024722
       ProjectUtumno_full (4) 1_7: 2115859375
       ProjectUtumno_full (4) 1_8: -996698755
+      nado_0: 723488900
+      nado_1: 1189409754
+      nado_2: 1289799014
+      nado_3: 597587087
+      nado_4: 1683831140
       wizhad_0: 1490704198
       wizhad_1: 525848356
   mipmapLimitGroupName: 

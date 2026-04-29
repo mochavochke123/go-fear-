@@ -6,9 +6,19 @@ public class Player : MonoBehaviour {
     // Singleton
     public static Player Instance { get; private set; }
 
+    [Header("Movement")]
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float minSpeedForRun = 0.1f;
     [SerializeField] private GameObject playerVisual; // PlayerVisio
+
+    [Header("Turn")]
+    [SerializeField] private float turnSmoothSpeed = 12f;
+    private float currentFlipX = 1f;
+
+    [Header("Tilt")]
+    [SerializeField] private float tiltAmount = 8f;
+    [SerializeField] private float tiltSmoothSpeed = 10f;
+    private float currentTilt = 0f;
 
     private Vector2 moveDirection = Vector2.zero;
     private Vector2 lookDirection = Vector2.one;
@@ -26,13 +36,21 @@ public class Player : MonoBehaviour {
             return;
         }
         Instance = this;
-
-        playerInputActions = new PlayerinputActions();
-        playerInputActions.Enable();
+        
+        if (transform.parent == null)
+        {
+            DontDestroyOnLoad(gameObject);
+        }
     }
 
     void Start()
     {
+        if (playerInputActions == null)
+        {
+            playerInputActions = new PlayerinputActions();
+            playerInputActions.Enable();
+        }
+        
         rb = GetComponent<Rigidbody2D>();
         playerDash = GetComponent<PlayerDash>();
 
@@ -46,12 +64,7 @@ public class Player : MonoBehaviour {
             if (spriteRenderer != null)
             {
                 baseColor = spriteRenderer.color;
-                Debug.Log($"✓ PlayerVisio найден, baseColor={baseColor}");
             }
-        }
-        else
-        {
-            Debug.LogError("✗ PlayerVisio не найден!");
         }
 
         BloodBerserkerAura aura = FindObjectOfType<BloodBerserkerAura>();
@@ -67,19 +80,39 @@ public class Player : MonoBehaviour {
         HandleLook();
         UpdateAnimations();
         UpdateBloodBerserkerEffect();
+        UpdateTilt();
+
+        if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            if (ShopUI.Instance != null && ShopUI.Instance.shopPanel != null)
+            {
+                ShopUI.Instance.ToggleShop();
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            PassiveItemManager.Instance?.ApplyPerk(PerkType.FireRing);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            PassiveItemManager.Instance?.ApplyPerk(PerkType.Void);
+            Debug.Log("DEBUG: Void perk added");
+        }
 
 #if UNITY_EDITOR
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             PassiveItemManager.Instance?.ApplyPerk(PerkType.DoubleHit);
             Debug.Log("DEBUG: DoubleHit perk added");
         }
-        if (Input.GetKeyDown(KeyCode.Alpha2))
+        if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             PassiveItemManager.Instance?.ApplyPerk(PerkType.Power);
             Debug.Log("DEBUG: Power perk added");
         }
-        if (Input.GetKeyDown(KeyCode.Alpha3))
+        if (Input.GetKeyDown(KeyCode.Alpha4))
         {
             PassiveItemManager.Instance?.ApplyPerk(PerkType.Vitality);
             Debug.Log("DEBUG: Vitality perk added");
@@ -123,42 +156,53 @@ public class Player : MonoBehaviour {
 
     void HandleMovement()
     {
+        if (playerInputActions == null) return;
         moveDirection = playerInputActions.Player.Move.ReadValue<Vector2>();
     }
 
     void HandleLook()
     {
-        // Получаем позицию мышки в мировых координатах
+        if (Camera.main == null) return;
+        
         Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mouseWorldPos.z = 0;
 
-        // Получаем позицию персонажа
         Vector3 playerPos = transform.position;
 
-        // Вычисляем направление от персонажа к мышке
         lookDirection = (mouseWorldPos - playerPos).normalized;
 
-        // Разворачиваем персонажа в сторону мышки
         RotatePlayerTowardsMouse(lookDirection);
     }
 
-    void RotatePlayerTowardsMouse(Vector2 direction)
+void RotatePlayerTowardsMouse(Vector2 direction)
     {
         if (spriteRenderer == null)
             return;
 
-        // Если мышка слева от персонажа — переворачиваем спрайт
-        if (direction.x < 0)
+        float targetFlipX = direction.x >= 0 ? 1f : 0f;
+        float startFlipX = currentFlipX;
+        currentFlipX = Mathf.MoveTowardsAngle(startFlipX, targetFlipX, turnSmoothSpeed * Time.deltaTime * 100f);
+        spriteRenderer.flipX = currentFlipX < 0.5f;
+    }
+
+    private void UpdateTilt()
+    {
+        float speed = rb.velocity.magnitude;
+        bool isMoving = speed > minSpeedForRun;
+
+        float targetTilt = 0f;
+        if (isMoving)
         {
-            spriteRenderer.flipX = true;
-        }
-        else if (direction.x > 0)
-        {
-            spriteRenderer.flipX = false;
+            Vector2 dir = rb.velocity.normalized;
+            targetTilt = -dir.y * tiltAmount;
         }
 
-        
-       
+        currentTilt = Mathf.Lerp(currentTilt, targetTilt, Time.deltaTime * tiltSmoothSpeed);
+
+        if (playerVisual != null)
+        {
+            playerVisual.transform.rotation = Quaternion.Euler(0f, 0f, currentTilt);
+        }
     }
 
     void FixedUpdate()
@@ -187,5 +231,21 @@ public class Player : MonoBehaviour {
             playerInputActions.Dispose();
         }
         if (Instance == this) Instance = null;
+    }
+
+    public void CleanupInput()
+    {
+        if (playerInputActions != null)
+        {
+            playerInputActions.Disable();
+            playerInputActions.Dispose();
+            playerInputActions = null;
+        }
+
+        PlayerDash dash = GetComponent<PlayerDash>();
+        dash?.CleanupInput();
+
+        SwordWeapon sword = GetComponentInChildren<SwordWeapon>();
+        sword?.CleanupInput();
     }
 }

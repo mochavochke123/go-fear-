@@ -3,34 +3,43 @@ using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 
 public enum PerkType {
-    Dodge,          // Уклонение
-    Horror,         // Ужас
-    Power,          // Сила
-    Piercing,       // Пронзание
-    NutrFood,       // Полезное питание
-    CursedSoul,     // Проклятая душа
-    BigSize,        // Размер не главное
-    Reflection,     // Отражение
-    Escape,         // Побег
-    Vitality,       // Жизненная сила
-    Vampirism,      // Вампиризм
-    BattlePace,     // Боевой темп
-    DoubleHit,      // Двойной удар
-    Amulet,         // Амулет
-    FireRing,       // Огненный круг
-    Orda            // Орда
+    Dodge,
+    Horror,         
+    Power,           
+    Piercing,       
+    NutrFood,       
+    CursedSoul,     
+    BigSize,        
+    Reflection,     
+    Escape,         
+    Vitality,       
+    Vampirism,      
+    BattlePace,     
+    DoubleHit,      
+    Amulet,         
+    FireRing,       
+    Orda,
+    Void            
 }
 
 public class PassiveItemManager : MonoBehaviour {
     public static PassiveItemManager Instance;
+    public static HashSet<PerkType> ActivePerks = new HashSet<PerkType>();
 
-    private HashSet<PerkType> activePerks = new HashSet<PerkType>();
+    void Awake()
+    {
+        if (Instance != null && Instance != this) { Destroy(gameObject); return; }
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+    }
 
     [Header("Ссылки")]
     public PlayerHealth playerHealth;
     public SwordWeapon swordWeapon;
     public GameObject fireRingPrefab;
     public GameObject minionPrefab;
+    public GameObject voidPortalPrefab;
+    public GameObject voidProjectilePrefab;
 
     // Статы модифицированные перками
     [HideInInspector] public float damageMultiplier = 1f;
@@ -57,14 +66,6 @@ public class PassiveItemManager : MonoBehaviour {
     private List<GameObject> minions = new List<GameObject>();
     private int ordaCount = 0;
 
-    void Awake()
-    {
-        if (Instance != null) { Destroy(gameObject); return; }
-        Instance = this;
-        DontDestroyOnLoad(gameObject);
-        SceneManager.sceneLoaded += OnSceneLoaded;
-    }
-
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         GameObject player = GameObject.FindGameObjectWithTag("Player");
@@ -75,11 +76,18 @@ public class PassiveItemManager : MonoBehaviour {
         }
     }
 
-    public bool HasPerk(PerkType perk) => activePerks.Contains(perk);
+    public bool HasPerk(PerkType perk) => ActivePerks.Contains(perk);
+
+    public HashSet<PerkType> GetAllPerks() => new HashSet<PerkType>(ActivePerks);
+
+    public void RestorePerks(HashSet<PerkType> perks)
+    {
+        ActivePerks = new HashSet<PerkType>(perks);
+    }
 
     public bool HasBloodBerserkerSynergy()
     {
-        return activePerks.Contains(PerkType.Power) && activePerks.Contains(PerkType.Vitality);
+        return ActivePerks.Contains(PerkType.Power) && ActivePerks.Contains(PerkType.Vitality);
     }
 
     public float GetBloodBerserkerMultiplier()
@@ -113,8 +121,8 @@ public class PassiveItemManager : MonoBehaviour {
 
     public bool ApplyPerk(PerkType perk)
     {
-        if (activePerks.Contains(perk)) return false;
-        activePerks.Add(perk);
+        if (ActivePerks.Contains(perk)) return false;
+        ActivePerks.Add(perk);
 
         switch (perk)
         {
@@ -177,11 +185,58 @@ public class PassiveItemManager : MonoBehaviour {
             case PerkType.Orda:
                 SpawnOrda();
                 break;
+            case PerkType.Void:
+                if (voidPortalPrefab != null && voidProjectilePrefab != null)
+                {
+                    GameObject portal = Instantiate(voidPortalPrefab, transform.position + Vector3.up * 2f, Quaternion.identity, transform);
+                    StartCoroutine(SpawnVoidProjectileRoutine(portal));
+                }
+                break;
         }
 
         FindObjectOfType<OwnedPerksUI>()?.OnPerkAdded(perk);
 
         return true;
+    }
+
+    private System.Collections.IEnumerator SpawnVoidProjectileRoutine(GameObject portal)
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(3f);
+
+            PlayerHealth ph = FindObjectOfType<PlayerHealth>();
+            Debug.Log($"Void tick | playerHealth={ph != null} | hp={ph?.GetHealth()} | portal={portal != null} | prefab={voidProjectilePrefab != null}");
+
+            if (ph != null && ph.GetHealth() > 0 && portal != null && voidProjectilePrefab != null)
+            {
+                Collider2D[] enemies = Physics2D.OverlapCircleAll(ph.transform.position, 10f);
+                Debug.Log($"Colliders в радиусе 10: {enemies.Length}");
+
+                bool hasEnemy = false;
+                foreach (Collider2D enemy in enemies)
+                {
+                    Debug.Log($"  Объект: {enemy.name}");
+                    if (enemy.GetComponent<EnemyAI>() != null ||
+                        enemy.GetComponent<DasherAI>() != null ||
+                        enemy.GetComponent<GhostAI>() != null ||
+                        enemy.GetComponent<MimicAI>() != null ||
+                        enemy.GetComponent<FireSkeletAI>() != null)
+                    {
+                        hasEnemy = true;
+                        break;
+                    }
+                }
+
+                Debug.Log($"hasEnemy={hasEnemy}");
+
+                if (hasEnemy)
+                {
+                    Debug.Log("Спавним снаряд!");
+                    Instantiate(voidProjectilePrefab, portal.transform.position, Quaternion.identity);
+                }
+            }
+        }
     }
 
     private void CheckBloodBerserkerSynergy(PerkType newPerk)
@@ -292,7 +347,7 @@ public class PassiveItemManager : MonoBehaviour {
 
         GameObject minion = Instantiate(minionPrefab, pos, Quaternion.identity);
         minions.Add(minion);
-        ordaCount++;
+ordaCount++;
     }
 
     public void RemoveMinion(GameObject minion)

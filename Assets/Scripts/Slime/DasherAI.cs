@@ -16,7 +16,7 @@ public class DasherAI : MonoBehaviour {
 
     [Header("�����")]
     [SerializeField] private float attackRange = 1.2f;
-    [SerializeField] private float attackDamage = 0.5f;
+    [SerializeField] private float attackDamage = 1f;
     [SerializeField] private float attackCooldown = 1.2f;
     [SerializeField] private float detectionRange = 7f;
 
