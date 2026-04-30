@@ -9,46 +9,42 @@ public class MainMenu : MonoBehaviour {
 
     private SpriteRenderer bgRenderer;
     private float timer;
+    private bool initialized = false;
 
     void Start()
     {
-        Debug.Log("MainMenu Start! BackgroundObject: " + backgroundObject + ", Sprites count: " + (backgroundSprites?.Length ?? 0));
-        
         if (backgroundObject != null)
         {
             bgRenderer = backgroundObject.GetComponent<SpriteRenderer>();
             if (bgRenderer == null)
-            {
-                Debug.Log("No SpriteRenderer on backgroundObject, checking children...");
                 bgRenderer = backgroundObject.GetComponentInChildren<SpriteRenderer>();
-            }
         }
-        
-        Debug.Log("bgRenderer found: " + bgRenderer);
 
-        if (bgRenderer != null && backgroundSprites != null && backgroundSprites.Length > 0)
+        if (bgRenderer != null)
         {
-            int randomIndex = Random.Range(0, backgroundSprites.Length);
-            bgRenderer.sprite = backgroundSprites[randomIndex];
-            Debug.Log("Set background sprite to: " + backgroundSprites[randomIndex].name);
-        }
-        else
-        {
-            Debug.Log("FAILED: bgRenderer=" + bgRenderer + ", backgroundSprites=" + (backgroundSprites?.Length ?? 0));
+            bgRenderer.drawMode = SpriteDrawMode.Sliced;
+            bgRenderer.size = new Vector2(20, 12);
+            bgRenderer.color = Color.white;
+            bgRenderer.sortingOrder = -100;
+            
+            if (backgroundSprites != null && backgroundSprites.Length > 0)
+            {
+                initialized = true;
+            }
         }
     }
 
     void Update()
     {
-        if (bgRenderer == null || backgroundSprites == null || backgroundSprites.Length == 0) return;
+        if (!initialized || bgRenderer == null || backgroundSprites == null || backgroundSprites.Length == 0) return;
 
         timer += Time.deltaTime;
         if (timer >= changeInterval)
         {
             timer = 0;
             int randomIndex = Random.Range(0, backgroundSprites.Length);
+            bgRenderer.sprite = null;
             bgRenderer.sprite = backgroundSprites[randomIndex];
-            Debug.Log("Changed background to sprite: " + backgroundSprites[randomIndex].name);
         }
     }
 
