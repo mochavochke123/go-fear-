@@ -46,6 +46,12 @@ public class GameReset : MonoBehaviour {
             restartButton.onClick.AddListener(RestartScene);
     }
 
+    [ContextMenu("Test Victory")]
+    public void DebugTestVictory()
+    {
+        ShowVictory();
+    }
+
     private void HandleLog(string logString, string stackTrace, LogType type)
     {
         if (type == LogType.Error || type == LogType.Exception || type == LogType.Assert)
