@@ -15,7 +15,14 @@ public class MainMenu : MonoBehaviour {
         Debug.Log("MainMenu Start! BackgroundObject: " + backgroundObject + ", Sprites count: " + (backgroundSprites?.Length ?? 0));
         
         if (backgroundObject != null)
+        {
             bgRenderer = backgroundObject.GetComponent<SpriteRenderer>();
+            if (bgRenderer == null)
+            {
+                Debug.Log("No SpriteRenderer on backgroundObject, checking children...");
+                bgRenderer = backgroundObject.GetComponentInChildren<SpriteRenderer>();
+            }
+        }
         
         Debug.Log("bgRenderer found: " + bgRenderer);
 
