@@ -23,7 +23,7 @@ public class MainMenu : MonoBehaviour {
         if (bgRenderer != null)
         {
             bgRenderer.drawMode = SpriteDrawMode.Sliced;
-            bgRenderer.size = new Vector2(20, 12);
+            bgRenderer.size = new Vector2(551.4796f, 324.839f);
             bgRenderer.color = Color.white;
             bgRenderer.sortingOrder = -100;
             
