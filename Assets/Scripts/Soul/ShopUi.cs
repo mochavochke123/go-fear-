@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -110,6 +111,24 @@ public class ShopUI : MonoBehaviour {
             UpdateStats();
             StartCoroutine(SpinAndReveal());
         }
+    }
+
+    public void ExitToMainMenu()
+    {
+        Debug.Log("Выход в Main Menu...");
+        shopPanel.SetActive(false);
+        Time.timeScale = 1f;
+        GameplayMusicManager.Instance?.StopShopMusic();
+
+        SoulUI.TotalSouls = 0;
+        PassiveItemManager.ActivePerks.Clear();
+
+        if (PlayerHealth.Instance != null)
+        {
+            Destroy(PlayerHealth.Instance.gameObject);
+        }
+
+        SceneManager.LoadScene("MainMenu");
     }
 
     private IEnumerator SpinAndReveal()

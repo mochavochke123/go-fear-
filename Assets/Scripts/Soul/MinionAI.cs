@@ -44,6 +44,13 @@ public class MinionAI : MonoBehaviour {
 
         if (target != null)
         {
+            // Если враг убит (выключен) - ищем нового
+            if (!target.gameObject.activeSelf)
+            {
+                target = FindNearestEnemy();
+                return;
+            }
+
             float distToTarget = Vector3.Distance(transform.position, target.position);
 
             if (distToTarget <= detectionRange)
@@ -79,7 +86,7 @@ public class MinionAI : MonoBehaviour {
         }
     }
 
-    private Transform FindNearestEnemy()
+private Transform FindNearestEnemy()
     {
         Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, detectionRange);
         Transform nearest = null;
@@ -87,6 +94,11 @@ public class MinionAI : MonoBehaviour {
 
         foreach (var hit in hits)
         {
+            GameObject obj = hit.gameObject;
+            
+            // Пропускаем неактивные объекты (мертвые враги)
+            if (!obj.activeSelf) continue;
+
             EnemyAI enemy = hit.GetComponent<EnemyAI>();
             if (enemy != null)
             {
@@ -117,6 +129,28 @@ public class MinionAI : MonoBehaviour {
                 {
                     minDist = dist;
                     nearest = mimic.transform;
+                }
+            }
+
+            GhostAI ghost = hit.GetComponent<GhostAI>();
+            if (ghost != null)
+            {
+                float dist = Vector3.Distance(transform.position, ghost.transform.position);
+                if (dist < minDist)
+                {
+                    minDist = dist;
+                    nearest = ghost.transform;
+                }
+            }
+
+            FireSkeletAI fireSkelet = hit.GetComponent<FireSkeletAI>();
+            if (fireSkelet != null)
+            {
+                float dist = Vector3.Distance(transform.position, fireSkelet.transform.position);
+                if (dist < minDist)
+                {
+                    minDist = dist;
+                    nearest = fireSkelet.transform;
                 }
             }
         }

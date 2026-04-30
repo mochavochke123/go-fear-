@@ -49,7 +49,13 @@ public class VoidPerk : MonoBehaviour
 
         foreach (Collider2D enemy in enemies)
         {
-            if (enemy.CompareTag("Enemy") || enemy.GetComponent<EnemyAI>() != null)
+            if (enemy.CompareTag("Enemy") || enemy.CompareTag("Boss") || 
+                enemy.GetComponent<EnemyAI>() != null ||
+                enemy.GetComponent<DasherAI>() != null ||
+                enemy.GetComponent<GhostAI>() != null ||
+                enemy.GetComponent<MimicAI>() != null ||
+                enemy.GetComponent<FireSkeletAI>() != null ||
+                enemy.GetComponent<BossBullet>() != null)
             {
                 hasEnemy = true;
                 break;

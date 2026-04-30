@@ -19,6 +19,9 @@ public class WaveCounter : MonoBehaviour
 
     [Header("Wave Settings")]
     public WaveRoomManager roomManager;
+    [SerializeField] private float interactionRange = 2f;
+
+    private Transform player;
 
     public UnityEvent onWaveStarted;
     public UnityEvent onBossSpawned;
@@ -26,11 +29,15 @@ public class WaveCounter : MonoBehaviour
     void Start()
     {
         DeactivateAllHoles();
+        player = GameObject.FindGameObjectWithTag("Player")?.transform;
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (player == null) return;
+
+        float dist = Vector2.Distance(transform.position, player.position);
+        if (dist <= interactionRange && Input.GetKeyDown(KeyCode.E))
         {
             TryActivateNextWave();
         }
@@ -104,8 +111,6 @@ public class WaveCounter : MonoBehaviour
 
     private void SpawnBoss()
     {
-        if (bossMode) return;
-        
         if (holeIndicators != null && holeIndicators.Length > totalHoles - 1 && holeIndicators[totalHoles - 1] != null)
         {
             holeIndicators[totalHoles - 1].SetActive(true);

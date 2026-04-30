@@ -23,6 +23,7 @@ public class MainMenu : MonoBehaviour {
 
     public void OnExitClicked()
     {
+        Debug.Log("ВЫХОД нажат!");
         Application.Quit();
     }
 }

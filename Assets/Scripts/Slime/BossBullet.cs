@@ -11,12 +11,18 @@ public class BossBullet : MonoBehaviour
     [SerializeField] private float meleeDamage = 1f;
     [SerializeField] private float meleeRange = 2f;
     [SerializeField] private float meleeCooldown = 2f;
+    [SerializeField] private GameObject meleeBulletPrefab;
 
     [Header("Attack 2 - Выстрел")]
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private float bulletDamage = 0.5f;
     [SerializeField] private float bulletCooldown = 3f;
     [SerializeField] private float bulletSpeed = 8f;
+
+    [Header("Attack 3 - Падающие пули")]
+    [SerializeField] private GameObject bulletFPrefab;
+    [SerializeField] private float bulletFDamage = 0.5f;
+    [SerializeField] private float bulletFCooldown = 6f;
 
     [Header("Chill режим")]
     [SerializeField] private float chillDuration = 0.5f;
@@ -37,6 +43,7 @@ public class BossBullet : MonoBehaviour
 
     private float meleeTimer = 0f;
     private float bulletTimer = 0f;
+    private float bulletFTimer = 0f;
     private float chillTimer = 0f;
     private bool isAttacking = false;
 
@@ -79,6 +86,11 @@ public class BossBullet : MonoBehaviour
             return;
         }
 
+        if (animator != null)
+        {
+            animator.SetBool("isChill", false);
+        }
+
         if (isAttacking) return;
 
         // Рандомный выбор атаки
@@ -93,6 +105,13 @@ public class BossBullet : MonoBehaviour
         {
             Debug.Log("👹 BULLET АТАКА!");
             StartCoroutine(BulletAttack());
+            return;
+        }
+
+        if (bulletFTimer <= 0f)
+        {
+            Debug.Log("👹 BULLETF АТАКА!");
+            StartCoroutine(BulletFAttack());
             return;
         }
 
@@ -122,9 +141,20 @@ public class BossBullet : MonoBehaviour
         {
             animator.SetBool("isWalking", false);
             animator.SetTrigger("isAttacking1");
+            animator.SetBool("isChill", false);
         }
 
         yield return new WaitForSeconds(0.3f);
+
+        if (meleeBulletPrefab != null)
+        {
+            for (int i = 0; i < 3; i++)
+            {
+                float angle = -30f + i * 30f;
+                Quaternion rot = Quaternion.Euler(0, 0, angle);
+                Instantiate(meleeBulletPrefab, transform.position, rot);
+            }
+        }
 
         float dist = Vector2.Distance(transform.position, player.position);
         if (dist < meleeRange + 1f)
@@ -138,6 +168,15 @@ public class BossBullet : MonoBehaviour
         isAttacking = false;
         meleeTimer = meleeCooldown;
         chillTimer = chillDuration;
+        
+        if (animator != null)
+        {
+            animator.SetBool("isWalking", true);
+            animator.SetBool("isChill", false);
+            animator.Play("MimicChase");
+            animator.ResetTrigger("isAttacking1");
+        }
+        
         Debug.Log("👹 CHILL ПОСЛЕ MELEE!");
     }
 
@@ -155,9 +194,19 @@ public class BossBullet : MonoBehaviour
 
         if (bulletPrefab != null)
         {
-            Vector3 dir = (player.position - transform.position).normalized;
-            GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
-            bullet.GetComponent<BossBulletProjectile>()?.Initialize(dir, bulletDamage, bulletSpeed);
+            Vector3 baseDir = (player.position - transform.position).normalized;
+            
+            for (int i = 0; i < 3; i++)
+            {
+                Vector3 offset = new Vector3(Random.Range(-0.5f, 0.5f), 0, 0);
+                Vector3 dir = (baseDir + offset).normalized;
+                
+                GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+                bullet.GetComponent<BossBulletProjectile>()?.Initialize(dir, bulletDamage, bulletSpeed);
+                
+                if (i < 2)
+                    yield return new WaitForSeconds(0.15f);
+            }
         }
 
         yield return new WaitForSeconds(0.2f);
@@ -165,7 +214,74 @@ public class BossBullet : MonoBehaviour
         isAttacking = false;
         bulletTimer = bulletCooldown;
         chillTimer = chillDuration;
+        
+        if (animator != null)
+        {
+            animator.SetBool("isWalking", true);
+            animator.SetBool("isChill", false);
+            animator.Play("MimicChase");
+            animator.ResetTrigger("isAttacking2");
+        }
         Debug.Log("👹 CHILL ПОСЛЕ BULLET!");
+    }
+
+    private IEnumerator BulletFAttack()
+    {
+        isAttacking = true;
+
+        if (animator != null)
+        {
+            animator.SetBool("isWalking", false);
+            animator.SetTrigger("isChill");
+        }
+
+        if (player == null)
+        {
+            isAttacking = false;
+            bulletFTimer = bulletFCooldown;
+            yield break;
+        }
+
+        Vector3 targetPos = player.position;
+        float startY = targetPos.y + 10f;
+
+        for (int i = 0; i < 3; i++)
+        {
+            Vector3 spawnPos = targetPos + Vector3.up * startY + new Vector3(Random.Range(-3f, 3f), 0, 0);
+            
+            if (bulletFPrefab != null)
+            {
+                GameObject bulletF = Instantiate(bulletFPrefab, spawnPos, Quaternion.identity);
+                Rigidbody2D rb = bulletF.GetComponent<Rigidbody2D>();
+                if (rb != null)
+                {
+                    rb.gravityScale = 0.5f;
+                }
+                
+                BulletFProjectile projectile = bulletF.GetComponent<BulletFProjectile>();
+                if (projectile != null)
+                {
+                    projectile.Initialize(bulletFDamage);
+                }
+            }
+            
+            yield return new WaitForSeconds(1f);
+        }
+
+        yield return new WaitForSeconds(0.2f);
+
+        isAttacking = false;
+        bulletFTimer = bulletFCooldown;
+        chillTimer = chillDuration;
+        
+        if (animator != null)
+        {
+            animator.SetBool("isChill", false);
+            animator.SetBool("isWalking", true);
+            animator.Play("MimicChase");
+        }
+        
+        Debug.Log("👹 CHILL ПОСЛЕ BULLETF!");
     }
 
     public void TakeDamage(float damage)

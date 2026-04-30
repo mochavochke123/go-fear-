@@ -74,6 +74,7 @@ public class VoidProjectile : MonoBehaviour
         GhostAI ghostAI = collision.GetComponent<GhostAI>();
         MimicAI mimicAI = collision.GetComponent<MimicAI>();
         FireSkeletAI fireSkeletAI = collision.GetComponent<FireSkeletAI>();
+        BossBullet bossBullet = collision.GetComponent<BossBullet>();
         
         if (enemyAI != null)
         {
@@ -103,6 +104,12 @@ public class VoidProjectile : MonoBehaviour
         {
             Debug.Log($"Попали в FireSkeletAI! Урон {damage}");
             fireSkeletAI.TakeDamage(damage);
+            Destroy(gameObject);
+        }
+        else if (bossBullet != null)
+        {
+            Debug.Log($"Попали в БОССА (BossBullet)! Урон {damage}");
+            bossBullet.TakeDamage(damage);
             Destroy(gameObject);
         }
     }
