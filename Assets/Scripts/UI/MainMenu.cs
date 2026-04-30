@@ -12,6 +12,8 @@ public class MainMenu : MonoBehaviour {
 
     void Start()
     {
+        Debug.Log("MainMenu Start! BackgroundObject: " + backgroundObject + ", Sprites count: " + (backgroundSprites?.Length ?? 0));
+        
         if (backgroundObject != null)
             bgRenderer = backgroundObject.GetComponent<SpriteRenderer>();
 
@@ -19,6 +21,7 @@ public class MainMenu : MonoBehaviour {
         {
             int randomIndex = Random.Range(0, backgroundSprites.Length);
             bgRenderer.sprite = backgroundSprites[randomIndex];
+            Debug.Log("Set background to: " + randomIndex);
         }
     }
 
@@ -32,6 +35,7 @@ public class MainMenu : MonoBehaviour {
             timer = 0;
             int randomIndex = Random.Range(0, backgroundSprites.Length);
             bgRenderer.sprite = backgroundSprites[randomIndex];
+            Debug.Log("Changed background to: " + randomIndex);
         }
     }
 

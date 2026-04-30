@@ -767,6 +767,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f41d159b30ec80438ef67e801efe453, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backgroundObject: {fileID: 561161327}
+  backgroundSprites:
+  - {fileID: 951819689, guid: c138f11b0588d5c4484f0bc4fee7e67c, type: 3}
+  - {fileID: 21300000, guid: 4013b2154b8032d408bfbc53477b0d12, type: 3}
+  - {fileID: 21300000, guid: 69e8bf66f52771649bbea7453d413495, type: 3}
+  - {fileID: 21300000, guid: c8b07eae89c88c043b78a6191ddc92eb, type: 3}
+  - {fileID: 21300000, guid: c6227c3ab11f75e4aa1f55803d28f1bd, type: 3}
+  - {fileID: 21300000, guid: c7b5760fb4703c94185ab8a9e9988f5d, type: 3}
+  - {fileID: 21300000, guid: 1217214f61456284ea1160b8edc81a43, type: 3}
+  changeInterval: 4
 --- !u!4 &1215139147
 Transform:
   m_ObjectHideFlags: 0
