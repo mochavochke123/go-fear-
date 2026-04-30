@@ -50,8 +50,9 @@ public class VoidProjectile : MonoBehaviour
             GhostAI ghostAI = enemy.GetComponent<GhostAI>();
             MimicAI mimicAI = enemy.GetComponent<MimicAI>();
             FireSkeletAI fireSkeletAI = enemy.GetComponent<FireSkeletAI>();
+            BossBullet bossBullet = enemy.GetComponent<BossBullet>();
             
-            if (enemyAI != null || dasherAI != null || ghostAI != null || mimicAI != null || fireSkeletAI != null)
+            if (enemyAI != null || dasherAI != null || ghostAI != null || mimicAI != null || fireSkeletAI != null || bossBullet != null)
             {
                 float dist = Vector2.Distance(transform.position, enemy.transform.position);
                 if (dist < closestDist)
