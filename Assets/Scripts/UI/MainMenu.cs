@@ -22,10 +22,14 @@ public class MainMenu : MonoBehaviour {
 
         if (bgRenderer != null)
         {
-            bgRenderer.drawMode = SpriteDrawMode.Sliced;
+            bgRenderer.drawMode = SpriteDrawMode.Tiled;
             bgRenderer.size = new Vector2(551.4796f, 324.839f);
             bgRenderer.color = Color.white;
             bgRenderer.sortingOrder = -100;
+            
+            // Force refresh
+            bgRenderer.enabled = false;
+            bgRenderer.enabled = true;
             
             if (backgroundSprites != null && backgroundSprites.Length > 0)
             {
@@ -43,8 +47,11 @@ public class MainMenu : MonoBehaviour {
         {
             timer = 0;
             int randomIndex = Random.Range(0, backgroundSprites.Length);
-            bgRenderer.sprite = null;
+            
+            // Temporarily disable to force texture reload
+            bgRenderer.enabled = false;
             bgRenderer.sprite = backgroundSprites[randomIndex];
+            bgRenderer.enabled = true;
         }
     }
 
