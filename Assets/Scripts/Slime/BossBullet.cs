@@ -328,6 +328,13 @@ public class BossBullet : MonoBehaviour
         if (soulUI != null) soulUI.AddSouls(15);
 
         StartCoroutine(DestroyAfterDeath());
+        StartCoroutine(ShowVictoryDelayed());
+    }
+
+    private IEnumerator ShowVictoryDelayed()
+    {
+        yield return new WaitForSeconds(3f);
+        GameReset.Instance?.ShowVictory();
     }
 
     private IEnumerator DestroyAfterDeath()

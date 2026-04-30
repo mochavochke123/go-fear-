@@ -72,6 +72,9 @@ public class FireRing : MonoBehaviour
             
             FireSkeletAI fs = col.GetComponent<FireSkeletAI>();
             if (fs != null) { fs.TakeDamage(damage); continue; }
+            
+            BossBullet boss = col.GetComponent<BossBullet>();
+            if (boss != null) { boss.TakeDamage(damage); }
         }
     }
 }

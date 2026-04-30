@@ -10,6 +10,9 @@ public class GameReset : MonoBehaviour {
     [Header("Death UI")]
     public GameObject deathScreen;
 
+    [Header("Victory UI")]
+    public TextMeshProUGUI victoryText;
+
     [Header("Error UI")]
     public GameObject errorPanel;
     public TextMeshProUGUI errorText;
@@ -29,6 +32,7 @@ public class GameReset : MonoBehaviour {
         
         HideDeathScreen();
         HideError();
+        if (victoryText != null) victoryText.gameObject.SetActive(false);
         
         Application.logMessageReceived += HandleLog;
     }
@@ -97,6 +101,37 @@ public class GameReset : MonoBehaviour {
     {
         if (deathScreen != null)
             deathScreen.SetActive(false);
+    }
+
+    public void ShowVictory()
+    {
+        if (victoryText != null)
+        {
+            victoryText.gameObject.SetActive(true);
+            
+            AudioSource audio = victoryText.GetComponent<AudioSource>();
+            if (audio != null)
+                audio.Play();
+        }
+
+        StartCoroutine(VictoryRoutine());
+    }
+
+public void HideVictory()
+    {
+        if (victoryText != null)
+            victoryText.gameObject.SetActive(false);
+    }
+
+    private IEnumerator VictoryRoutine()
+    {
+        yield return new WaitForSecondsRealtime(3f);
+        
+        if (victoryText != null)
+            victoryText.gameObject.SetActive(false);
+        
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("MainMenu");
     }
 
     private IEnumerator AutoReturnToMenu()
