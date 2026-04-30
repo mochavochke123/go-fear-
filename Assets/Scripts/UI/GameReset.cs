@@ -10,6 +10,9 @@ public class GameReset : MonoBehaviour {
     [Header("Death UI")]
     public GameObject deathScreen;
 
+    [Header("Death Sounds")]
+    public AudioClip[] deathSounds;
+
     [Header("Victory UI")]
     public TextMeshProUGUI victoryText;
 
@@ -98,7 +101,16 @@ public class GameReset : MonoBehaviour {
     public void ShowDeathScreen()
     {
         if (deathScreen != null)
+        {
             deathScreen.SetActive(true);
+            
+            AudioSource audio = deathScreen.GetComponent<AudioSource>();
+            if (audio != null && deathSounds != null && deathSounds.Length > 0)
+            {
+                int randomIndex = Random.Range(0, deathSounds.Length);
+                audio.PlayOneShot(deathSounds[randomIndex]);
+            }
+        }
 
         StartCoroutine(AutoReturnToMenu());
     }
