@@ -139,10 +139,15 @@ public class PassiveItemManager : MonoBehaviour {
             case PerkType.Piercing:
                 piercingActive = true;
                 break;
-            case PerkType.NutrFood:
-                playerHealth?.AddMaxHP(1);
+case PerkType.NutrFood:
+                playerHealth?.AddMaxHP(0);
                 FindObjectOfType<Healthcontainer>()?.AddHeartContainer();
-                damageMultiplier *= 1.1f;
+                FindObjectOfType<PassiveItemManager>()?.ApplyDamageBonus(0.1f);
+                break;
+
+            case PerkType.BigSize:
+                weaponScale *= 1.2f;
+                attackRangeMultiplier *= 1.2f;
                 break;
             case PerkType.CursedSoul:
                 cursedSoulChance += 0.6f;
@@ -156,10 +161,10 @@ public class PassiveItemManager : MonoBehaviour {
             case PerkType.Escape:
                 speedMultiplier *= 1.2f;
                 break;
-            case PerkType.Vitality:
-                playerHealth?.AddMaxHP(1);
+case PerkType.Vitality:
+                playerHealth?.AddMaxHP(0);
                 FindObjectOfType<Healthcontainer>()?.AddHeartContainer();
-                speedMultiplier *= 1.15f;
+                FindObjectOfType<PassiveItemManager>()?.ApplySpeedBonus(0.15f);
                 CheckBloodBerserkerSynergy(PerkType.Vitality);
                 break;
             case PerkType.Vampirism:
