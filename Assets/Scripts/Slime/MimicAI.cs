@@ -18,6 +18,7 @@ public class MimicAI : MonoBehaviour
 
     private float currentHealth;
     private bool isDead = false;
+    public bool IsDead => isDead;
     private bool isAwake = false;
     private bool isAttacking = false;
     private Transform player;
@@ -205,7 +206,7 @@ public class MimicAI : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-        if (isDead) return;
+        if (isDead || !isAwake) return;
 
         currentHealth -= damage;
         StartCoroutine(FlashDamage());

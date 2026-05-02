@@ -122,7 +122,7 @@ private Transform FindNearestEnemy()
             }
 
             MimicAI mimic = hit.GetComponent<MimicAI>();
-            if (mimic != null)
+            if (mimic != null && !mimic.IsDead)
             {
                 float dist = Vector3.Distance(transform.position, mimic.transform.position);
                 if (dist < minDist)
@@ -183,6 +183,9 @@ private Transform FindNearestEnemy()
     private void AttackTarget()
     {
         if (target == null || rb == null) return;
+
+        MimicAI mimicCheck = target.GetComponent<MimicAI>();
+        if (mimicCheck != null && mimicCheck.IsDead) return;
 
         rb.velocity = Vector2.zero;
 

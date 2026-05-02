@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 public class PlayerHealth : MonoBehaviour {
     public static PlayerHealth Instance { get; private set; }
     public static bool IsNewGame { get; set; } = false;
+    private static float savedHealth = 6f;
+    private static float savedMaxHealth = 6f;
 
     [Header("Health")]
     [SerializeField] private float maxHealth = 6f;
@@ -22,6 +24,7 @@ public class PlayerHealth : MonoBehaviour {
             return;
         }
         Instance = this;
+        DontDestroyOnLoad(gameObject);
     }
 
     private void Start()
@@ -29,7 +32,14 @@ public class PlayerHealth : MonoBehaviour {
         if (IsNewGame)
         {
             currentHealth = maxHealth;
+            savedMaxHealth = maxHealth;
+            savedHealth = maxHealth;
             IsNewGame = false;
+        }
+        else
+        {
+            currentHealth = savedHealth;
+            maxHealth = savedMaxHealth;
         }
         
         healthcontainer = FindObjectOfType<Healthcontainer>();
@@ -44,8 +54,17 @@ public class PlayerHealth : MonoBehaviour {
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        StartCoroutine(UpdateHealthAfterDelay());
+    }
+
+    private IEnumerator UpdateHealthAfterDelay()
+    {
+        yield return null;
         healthcontainer = FindObjectOfType<Healthcontainer>();
-        healthcontainer?.UpdateUI();
+        if (healthcontainer != null)
+        {
+            healthcontainer.UpdateUI();
+        }
     }
 
     public void ResetHealth()
@@ -190,7 +209,9 @@ public class PlayerHealth : MonoBehaviour {
     {
         healthcontainer = FindObjectOfType<Healthcontainer>();
         maxHealth += amount;
+        savedMaxHealth += amount;
         currentHealth += amount;
+        savedHealth += amount;
         healthcontainer?.UpdateUI();
     }
 }

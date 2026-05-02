@@ -72,20 +72,20 @@ public class DasherAI : MonoBehaviour {
                 StartCoroutine(Dash(toward));
                 dashCooldownTimer = dashCooldown;
             }
-            else if (dist > attackRange)
-            {
-                MoveTowardsPlayer();
-            }
-        }
-        else
-        {
-            if (rb != null) rb.velocity = Vector2.zero;
         }
     }
 
     private void MoveTowardsPlayer()
     {
         if (rb == null) return;
+
+        float dist = Vector3.Distance(transform.position, player.position);
+        
+        if (dist > detectionRange * 1.5f)
+        {
+            rb.velocity = Vector2.zero;
+            return;
+        }
 
         Vector3 dir = (player.position - transform.position).normalized;
         dir += GetSeparationVector();
@@ -105,12 +105,44 @@ public class DasherAI : MonoBehaviour {
         rb.freezeRotation = true;
         rb.gravityScale = 0f;
         rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
+        rb.angularDrag = 10f;
+    }
+
+    void FixedUpdate()
+    {
+        if (rb != null)
+        {
+            rb.angularVelocity = 0f;
+        }
+        if (isDead || player == null || isDashing) return;
+
+        float dist = Vector3.Distance(transform.position, player.position);
+        if (dist <= detectionRange * 1.5f)
+        {
+            MoveTowardsPlayer();
+        }
+        else if (rb != null)
+        {
+            rb.velocity = Vector2.zero;
+        }
     }
 
     private IEnumerator Dash(bool toward)
     {
+        float dist = Vector3.Distance(transform.position, player.position);
+        if (dist > detectionRange * 2f)
+        {
+            yield break;
+        }
+
         isDashing = true;
         animator?.SetBool("isDashing", true);
+
+        if (rb != null)
+        {
+            rb.velocity = Vector2.zero;
+            rb.angularVelocity = 0f;
+        }
 
         Vector3 dir = (player.position - transform.position).normalized;
         if (!toward) dir = -dir;

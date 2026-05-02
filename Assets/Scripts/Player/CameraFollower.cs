@@ -2,27 +2,28 @@ using UnityEngine;
 
 public class CameraFollower : MonoBehaviour {
     [SerializeField] private Transform player;
-    [SerializeField] private float smoothSpeed = 0.08f;
+    [SerializeField] private float smoothTime = 0.1f;
+
+    private Vector3 _velocity = Vector3.zero;
 
     private void Start()
     {
         if (player == null)
-        {
             player = GameObject.FindGameObjectWithTag("Player")?.transform;
-            if (player == null)
-                Debug.LogError("Player не найден!");
-        }
+
+        // Мгновенно ставим камеру на старте
+        if (player != null)
+            transform.position = new Vector3(player.position.x, player.position.y, -10f);
     }
 
     private void LateUpdate()
     {
-        if (player == null)
-            return;
+        if (player == null) return;
 
-        // Целевая позиция
-        Vector3 targetPos = new Vector3(player.position.x, player.position.y, -10f);
+        Vector3 target = new Vector3(player.position.x, player.position.y, -10f);
 
-        // Плавное движение Lerp
-        transform.position = Vector3.Lerp(transform.position, targetPos, smoothSpeed);
+        transform.position = Vector3.SmoothDamp(
+            transform.position, target, ref _velocity, smoothTime
+        );
     }
 }

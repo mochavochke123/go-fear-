@@ -43,10 +43,14 @@ public class PassiveItemManager : MonoBehaviour {
 
     // Статы модифицированные перками
     [HideInInspector] public float damageMultiplier = 1f;
+    [HideInInspector] public float damageBonus = 0f;
     [HideInInspector] public float speedMultiplier = 1f;
+    [HideInInspector] public float speedBonus = 0f;
     [HideInInspector] public float attackSpeedMultiplier = 1f;
     [HideInInspector] public float enemyHealthMultiplier = 1f;
     [HideInInspector] public float weaponSizeMultiplier = 1f;
+    [HideInInspector] public float weaponScale = 1f;
+    [HideInInspector] public float attackRangeMultiplier = 1f;
     [HideInInspector] public float enemySlowMultiplier = 1f;
 
     [HideInInspector] public float dodgeChance = 0f;
@@ -145,15 +149,13 @@ case PerkType.NutrFood:
                 FindObjectOfType<PassiveItemManager>()?.ApplyDamageBonus(0.1f);
                 break;
 
-            case PerkType.BigSize:
+case PerkType.BigSize:
+                weaponSizeMultiplier *= 1.2f;
                 weaponScale *= 1.2f;
                 attackRangeMultiplier *= 1.2f;
                 break;
             case PerkType.CursedSoul:
                 cursedSoulChance += 0.6f;
-                break;
-            case PerkType.BigSize:
-                weaponSizeMultiplier *= 1.2f;
                 break;
             case PerkType.Reflection:
                 reflectionMultiplier = 2.5f;
@@ -252,6 +254,28 @@ case PerkType.Vitality:
             Debug.Log("⚔️ SYNERGY ACTIVATED: BLOOD BERSERKER! Чем меньше HP — тем сильнее урон!");
             SynergyUI.Show("BLOOD BERSERKER");
         }
+    }
+
+    public void ApplyDamageBonus(float bonus)
+    {
+        damageBonus += bonus;
+        Debug.Log($"💥 ApplyDamageBonus: +{bonus} (всего: {damageBonus})");
+    }
+
+    public void ApplySpeedBonus(float bonus)
+    {
+        speedBonus += bonus;
+        Debug.Log($"🏃 ApplySpeedBonus: +{bonus} (всего: {speedBonus})");
+    }
+
+    public float GetTotalDamageMultiplier()
+    {
+        return damageMultiplier + damageBonus;
+    }
+
+    public float GetTotalSpeedMultiplier()
+    {
+        return speedMultiplier + speedBonus;
     }
 
     // Вызывается из EnemyAI.Die()

@@ -160,7 +160,7 @@ public class SwordWeapon : MonoBehaviour {
 private void DealDamageToEnemies()
     {
         var pm = PassiveItemManager.Instance;
-        float damage = attackDamage * (pm?.damageMultiplier ?? 1f);
+        float damage = attackDamage * (pm?.GetTotalDamageMultiplier() ?? 1f);
         damage *= pm?.GetBloodBerserkerMultiplier() ?? 1f;
         float radius = attackRadius * (pm?.weaponSizeMultiplier ?? 1f);
 

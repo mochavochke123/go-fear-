@@ -1,9 +1,8 @@
 using UnityEngine;
 using System.Collections;
 
-public class BossBullet : MonoBehaviour
-{
-[Header("Stats")]
+public class BossBullet : MonoBehaviour {
+    [Header("Stats")]
     [SerializeField] private float maxHealth = 200f;
     [SerializeField] private float moveSpeed = 3f;
 
@@ -23,6 +22,11 @@ public class BossBullet : MonoBehaviour
     [SerializeField] private GameObject bulletFPrefab;
     [SerializeField] private float bulletFDamage = 0.5f;
     [SerializeField] private float bulletFCooldown = 6f;
+
+    [Header("Rage - Фаза ярости (50% HP)")]
+    [SerializeField] private float rageDuration = 7f;        // сколько длится ярость
+    [SerializeField] private float rageSpawnInterval = 0.4f; // как часто спавнить bulletF во время ярости
+    [SerializeField] private float rageBulletFDamage = 0.3f; // урон пуль во время ярости
 
     [Header("Chill режим")]
     [SerializeField] private float chillDuration = 0.5f;
@@ -47,6 +51,11 @@ public class BossBullet : MonoBehaviour
     private float chillTimer = 0f;
     private bool isAttacking = false;
 
+    private bool rageTriggered = false; // флаг — ярость уже была или нет
+    private bool isRaging = false;      // флаг — сейчас в режиме ярости
+
+    private SoulUI soulUI;
+
     private void Start()
     {
         var pm = PassiveItemManager.Instance;
@@ -60,6 +69,7 @@ public class BossBullet : MonoBehaviour
             originalColor = spriteRenderer.color;
 
         player = GameObject.FindGameObjectWithTag("Player")?.transform;
+        soulUI = FindObjectOfType<SoulUI>();
     }
 
     private void Update()
@@ -67,50 +77,53 @@ public class BossBullet : MonoBehaviour
         if (isDead || player == null) return;
 
         float dist = Vector2.Distance(transform.position, player.position);
-
         if (dist > aggroRange) return;
+
+        // Проверка на 50% HP — запускаем ярость один раз
+        if (!rageTriggered && !isRaging && currentHealth <= maxHealth * 0.5f)
+        {
+            rageTriggered = true;
+            StartCoroutine(RageAttack());
+            return;
+        }
+
+        // Во время ярости Update не управляет атаками
+        if (isRaging) return;
 
         meleeTimer -= Time.deltaTime;
         bulletTimer -= Time.deltaTime;
+        bulletFTimer -= Time.deltaTime;
         chillTimer -= Time.deltaTime;
 
-        // Chill состояние
         if (chillTimer > 0f)
         {
             if (animator != null)
             {
                 animator.SetBool("isChill", true);
                 animator.SetBool("isWalking", false);
-                Debug.Log("👹 ВКЛЮЧЕН CHILL!");
             }
             return;
         }
 
         if (animator != null)
-        {
             animator.SetBool("isChill", false);
-        }
 
         if (isAttacking) return;
 
-        // Рандомный выбор атаки
         if (dist < meleeRange && meleeTimer <= 0f)
         {
-            Debug.Log("👹 MELEE АТАКА!");
             StartCoroutine(MeleeAttack());
             return;
         }
 
         if (dist < bulletRange && bulletTimer <= 0f)
         {
-            Debug.Log("👹 BULLET АТАКА!");
             StartCoroutine(BulletAttack());
             return;
         }
 
         if (bulletFTimer <= 0f)
         {
-            Debug.Log("👹 BULLETF АТАКА!");
             StartCoroutine(BulletFAttack());
             return;
         }
@@ -118,6 +131,58 @@ public class BossBullet : MonoBehaviour
         ChasePlayer();
     }
 
+    // ===================== RAGE ATTACK =====================
+    private IEnumerator RageAttack()
+    {
+        isRaging = true;
+        isAttacking = true;
+
+        if (animator != null)
+        {
+            animator.SetBool("isWalking", false);
+            animator.SetBool("isChill", false);
+            animator.SetTrigger("isAttacking2");
+        }
+
+        float timer = 0f;
+
+        while (timer < rageDuration)
+        {
+            if (player != null && bulletFPrefab != null)
+            {
+                // Спавним 2 пули с разбросом каждый интервал
+                for (int i = 0; i < 2; i++)
+                {
+                    Vector3 targetPos = player.position;
+                    Vector3 spawnPos = targetPos + Vector3.up * 10f + new Vector3(Random.Range(-4f, 4f), 0, 0);
+
+                    GameObject bulletF = Instantiate(bulletFPrefab, spawnPos, Quaternion.identity);
+
+                    Rigidbody2D rb = bulletF.GetComponent<Rigidbody2D>();
+                    if (rb != null)
+                        rb.gravityScale = 0.5f;
+
+                    bulletF.GetComponent<BulletFProjectile>()?.Initialize(rageBulletFDamage);
+                }
+            }
+
+            yield return new WaitForSeconds(rageSpawnInterval);
+            timer += rageSpawnInterval;
+        }
+
+        // Ярость закончилась
+        isAttacking = false;
+        isRaging = false;
+        chillTimer = 1.5f; // небольшой отдых после ярости
+
+        if (animator != null)
+        {
+            animator.SetBool("isChill", true);
+            animator.SetBool("isWalking", false);
+        }
+    }
+
+    // ===================== ОБЫЧНЫЕ АТАКИ =====================
     private void ChasePlayer()
     {
         Vector2 dir = (player.position - transform.position).normalized;
@@ -140,8 +205,8 @@ public class BossBullet : MonoBehaviour
         if (animator != null)
         {
             animator.SetBool("isWalking", false);
-            animator.SetTrigger("isAttacking1");
             animator.SetBool("isChill", false);
+            animator.SetTrigger("isAttacking1");
         }
 
         yield return new WaitForSeconds(0.3f);
@@ -156,28 +221,17 @@ public class BossBullet : MonoBehaviour
             }
         }
 
-        float dist = Vector2.Distance(transform.position, player.position);
-        if (dist < meleeRange + 1f)
-        {
-            PlayerHealth ph = player.GetComponent<PlayerHealth>();
-            ph?.TakeDamage(meleeDamage);
-        }
-
         yield return new WaitForSeconds(0.2f);
 
         isAttacking = false;
         meleeTimer = meleeCooldown;
         chillTimer = chillDuration;
-        
+
         if (animator != null)
         {
-            animator.SetBool("isWalking", true);
-            animator.SetBool("isChill", false);
-            animator.Play("MimicChase");
-            animator.ResetTrigger("isAttacking1");
+            animator.SetBool("isChill", true);
+            animator.SetBool("isWalking", false);
         }
-        
-        Debug.Log("👹 CHILL ПОСЛЕ MELEE!");
     }
 
     private IEnumerator BulletAttack()
@@ -187,7 +241,7 @@ public class BossBullet : MonoBehaviour
         if (animator != null)
         {
             animator.SetBool("isWalking", false);
-            animator.SetTrigger("isAttacking2");
+            animator.SetTrigger("isAttacking1");
         }
 
         yield return new WaitForSeconds(0.3f);
@@ -195,15 +249,15 @@ public class BossBullet : MonoBehaviour
         if (bulletPrefab != null)
         {
             Vector3 baseDir = (player.position - transform.position).normalized;
-            
+
             for (int i = 0; i < 3; i++)
             {
                 Vector3 offset = new Vector3(Random.Range(-0.5f, 0.5f), 0, 0);
                 Vector3 dir = (baseDir + offset).normalized;
-                
+
                 GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
                 bullet.GetComponent<BossBulletProjectile>()?.Initialize(dir, bulletDamage, bulletSpeed);
-                
+
                 if (i < 2)
                     yield return new WaitForSeconds(0.15f);
             }
@@ -214,15 +268,12 @@ public class BossBullet : MonoBehaviour
         isAttacking = false;
         bulletTimer = bulletCooldown;
         chillTimer = chillDuration;
-        
+
         if (animator != null)
         {
-            animator.SetBool("isWalking", true);
-            animator.SetBool("isChill", false);
-            animator.Play("MimicChase");
-            animator.ResetTrigger("isAttacking2");
+            animator.SetBool("isChill", true);
+            animator.SetBool("isWalking", false);
         }
-        Debug.Log("👹 CHILL ПОСЛЕ BULLET!");
     }
 
     private IEnumerator BulletFAttack()
@@ -232,7 +283,7 @@ public class BossBullet : MonoBehaviour
         if (animator != null)
         {
             animator.SetBool("isWalking", false);
-            animator.SetTrigger("isChill");
+            animator.SetTrigger("isAttacking2");
         }
 
         if (player == null)
@@ -248,23 +299,18 @@ public class BossBullet : MonoBehaviour
         for (int i = 0; i < 3; i++)
         {
             Vector3 spawnPos = targetPos + Vector3.up * startY + new Vector3(Random.Range(-3f, 3f), 0, 0);
-            
+
             if (bulletFPrefab != null)
             {
                 GameObject bulletF = Instantiate(bulletFPrefab, spawnPos, Quaternion.identity);
+
                 Rigidbody2D rb = bulletF.GetComponent<Rigidbody2D>();
                 if (rb != null)
-                {
                     rb.gravityScale = 0.5f;
-                }
-                
-                BulletFProjectile projectile = bulletF.GetComponent<BulletFProjectile>();
-                if (projectile != null)
-                {
-                    projectile.Initialize(bulletFDamage);
-                }
+
+                bulletF.GetComponent<BulletFProjectile>()?.Initialize(bulletFDamage);
             }
-            
+
             yield return new WaitForSeconds(1f);
         }
 
@@ -273,22 +319,19 @@ public class BossBullet : MonoBehaviour
         isAttacking = false;
         bulletFTimer = bulletFCooldown;
         chillTimer = chillDuration;
-        
+
         if (animator != null)
         {
-            animator.SetBool("isChill", false);
-            animator.SetBool("isWalking", true);
-            animator.Play("MimicChase");
+            animator.SetBool("isChill", true);
+            animator.SetBool("isWalking", false);
         }
-        
-        Debug.Log("👹 CHILL ПОСЛЕ BULLETF!");
     }
 
+    // ===================== УРОН / СМЕРТЬ =====================
     public void TakeDamage(float damage)
     {
         if (isDead) return;
 
-        Debug.Log($"👹 BossBullet получил урон: {damage} | HP: {currentHealth}");
         currentHealth -= damage;
 
         if (spriteRenderer != null)
@@ -308,12 +351,9 @@ public class BossBullet : MonoBehaviour
         }
     }
 
-    private bool hasDied = false;
-
     private void Die()
     {
-        if (hasDied) return;
-        hasDied = true;
+        if (isDead) return;
         isDead = true;
 
         if (GetComponent<Collider2D>() != null)
@@ -324,10 +364,9 @@ public class BossBullet : MonoBehaviour
 
         PassiveItemManager.Instance?.OnEnemyKilled(gameObject);
 
-        SoulUI soulUI = FindObjectOfType<SoulUI>();
-        if (soulUI != null) soulUI.AddSouls(15);
+        if (soulUI != null)
+            soulUI.AddSouls(15);
 
-        StartCoroutine(DestroyAfterDeath());
         StartCoroutine(ShowVictoryDelayed());
     }
 
@@ -335,6 +374,7 @@ public class BossBullet : MonoBehaviour
     {
         yield return new WaitForSeconds(3f);
         GameReset.Instance?.ShowVictory();
+        StartCoroutine(DestroyAfterDeath());
     }
 
     private IEnumerator DestroyAfterDeath()

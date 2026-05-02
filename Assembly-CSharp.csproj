@@ -112,6 +112,7 @@
     <Compile Include="Assets\Scripts\Soul\VoidPerk.cs" />
     <Compile Include="Assets\Scripts\Level\Level2Generator.cs" />
     <Compile Include="Assets\Scripts\Player\Player.cs" />
+    <Compile Include="Assets\Scripts\UI\FloatEffect.cs" />
     <Compile Include="Assets\Scripts\Slime\BossBulletProjectile.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />

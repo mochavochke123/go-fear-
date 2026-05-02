@@ -193,7 +193,12 @@ public class WaveRoomManager : MonoBehaviour
         bossSpawned = true;
 
         if (bossPrefab != null)
-            Instantiate(bossPrefab, bossSpawnPosition != Vector3.zero ? bossSpawnPosition : transform.position, Quaternion.identity);
+        {
+            updateSpawnAreaForPlayer();
+            Vector3 pos = GetRandomSpawnPosition();
+            if (pos == transform.position) pos += Vector3.right * 3f;
+            Instantiate(bossPrefab, pos, Quaternion.identity);
+        }
     }
 
     public int GetEnemiesAlive() => enemiesAlive;

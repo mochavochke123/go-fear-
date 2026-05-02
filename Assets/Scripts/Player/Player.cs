@@ -74,7 +74,7 @@ public class Player : MonoBehaviour {
         }
     }
 
-    void Update()
+void Update()
     {
         HandleMovement();
         HandleLook();
@@ -89,35 +89,6 @@ public class Player : MonoBehaviour {
                 ShopUI.Instance.ToggleShop();
             }
         }
-
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            PassiveItemManager.Instance?.ApplyPerk(PerkType.FireRing);
-        }
-
-        if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            PassiveItemManager.Instance?.ApplyPerk(PerkType.Void);
-            Debug.Log("DEBUG: Void perk added");
-        }
-
-#if UNITY_EDITOR
-        if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            PassiveItemManager.Instance?.ApplyPerk(PerkType.DoubleHit);
-            Debug.Log("DEBUG: DoubleHit perk added");
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            PassiveItemManager.Instance?.ApplyPerk(PerkType.Power);
-            Debug.Log("DEBUG: Power perk added");
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha4))
-        {
-            PassiveItemManager.Instance?.ApplyPerk(PerkType.Vitality);
-            Debug.Log("DEBUG: Vitality perk added");
-        }
-#endif
     }
 
     private Color baseColor = Color.white;
@@ -208,7 +179,7 @@ void RotatePlayerTowardsMouse(Vector2 direction)
     void FixedUpdate()
     {
         if (playerDash != null && playerDash.IsDashing) return;
-        float speed = moveSpeed * (PassiveItemManager.Instance?.speedMultiplier ?? 1f);
+        float speed = moveSpeed * (PassiveItemManager.Instance?.GetTotalSpeedMultiplier() ?? 1f);
         rb.velocity = moveDirection * speed;
     }
 
